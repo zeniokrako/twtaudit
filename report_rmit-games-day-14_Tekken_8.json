@@ -1,0 +1,51 @@
+{
+  "tournament": "RMIT Games Day #14",
+  "tournament_slug": "tournament/rmit-games-day-14",
+  "event": "Tekken 8",
+  "event_id": 1207,
+  "tournament_date": "2024-12-15T12:00:00",
+  "audit_timestamp": "2026-01-18T03:09:40.337346",
+  "total_entrants": 33,
+  "legitimacy_score": 87.57575757575758,
+  "risk_level": "LOW",
+  "stats": {
+    "overall_dq_rate": 9.090909090909092,
+    "regulars_total": 20,
+    "regulars_dq_rate": 10.0,
+    "newcomers_total": 13,
+    "newcomers_dq_rate": 7.6923076923076925
+  },
+  "tier_breakdown": {
+    "frequent_fighter": {
+      "total": 7,
+      "dq_count": 1,
+      "dq_rate": 14.285714285714285
+    },
+    "semi_frequent": {
+      "total": 5,
+      "dq_count": 0,
+      "dq_rate": 0.0
+    },
+    "not_newbie": {
+      "total": 8,
+      "dq_count": 1,
+      "dq_rate": 12.5
+    },
+    "initiate": {
+      "total": 4,
+      "dq_count": 0,
+      "dq_rate": 0.0
+    },
+    "brand_new": {
+      "total": 9,
+      "dq_count": 1,
+      "dq_rate": 11.11111111111111
+    },
+    "guest": {
+      "total": 0,
+      "dq_count": 0,
+      "dq_rate": 0.0
+    }
+  },
+  "suspicious_clusters": []
+}

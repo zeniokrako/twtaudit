@@ -1,0 +1,51 @@
+{
+  "tournament": "Wellington FGC Ranbats & Meetup : Tekken 8 + Uni2 Release 28/01/2024",
+  "tournament_slug": "tournament/wellington-fgc-ranbats-meetup-tekken-8-uni2-release-28-01",
+  "event": "Tekken 8",
+  "event_id": 2317,
+  "tournament_date": "2024-01-28T09:00:00",
+  "audit_timestamp": "2026-01-18T03:11:24.500847",
+  "total_entrants": 31,
+  "legitimacy_score": 88.3225806451613,
+  "risk_level": "LOW",
+  "stats": {
+    "overall_dq_rate": 9.67741935483871,
+    "regulars_total": 16,
+    "regulars_dq_rate": 12.5,
+    "newcomers_total": 15,
+    "newcomers_dq_rate": 6.666666666666667
+  },
+  "tier_breakdown": {
+    "frequent_fighter": {
+      "total": 7,
+      "dq_count": 2,
+      "dq_rate": 28.57142857142857
+    },
+    "semi_frequent": {
+      "total": 4,
+      "dq_count": 0,
+      "dq_rate": 0.0
+    },
+    "not_newbie": {
+      "total": 5,
+      "dq_count": 0,
+      "dq_rate": 0.0
+    },
+    "initiate": {
+      "total": 0,
+      "dq_count": 0,
+      "dq_rate": 0.0
+    },
+    "brand_new": {
+      "total": 15,
+      "dq_count": 1,
+      "dq_rate": 6.666666666666667
+    },
+    "guest": {
+      "total": 0,
+      "dq_count": 0,
+      "dq_rate": 0.0
+    }
+  },
+  "suspicious_clusters": []
+}

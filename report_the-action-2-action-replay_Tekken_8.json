@@ -1,0 +1,51 @@
+{
+  "tournament": "The Action 2: Action Replay",
+  "tournament_slug": "tournament/the-action-2-action-replay",
+  "event": "Tekken 8",
+  "event_id": 2071,
+  "tournament_date": "2024-04-05T00:00:00",
+  "audit_timestamp": "2026-01-18T03:09:40.557830",
+  "total_entrants": 35,
+  "legitimacy_score": 86.07142857142857,
+  "risk_level": "LOW",
+  "stats": {
+    "overall_dq_rate": 11.428571428571429,
+    "regulars_total": 19,
+    "regulars_dq_rate": 5.263157894736842,
+    "newcomers_total": 15,
+    "newcomers_dq_rate": 13.333333333333334
+  },
+  "tier_breakdown": {
+    "frequent_fighter": {
+      "total": 11,
+      "dq_count": 1,
+      "dq_rate": 9.090909090909092
+    },
+    "semi_frequent": {
+      "total": 5,
+      "dq_count": 0,
+      "dq_rate": 0.0
+    },
+    "not_newbie": {
+      "total": 3,
+      "dq_count": 0,
+      "dq_rate": 0.0
+    },
+    "initiate": {
+      "total": 3,
+      "dq_count": 1,
+      "dq_rate": 33.33333333333333
+    },
+    "brand_new": {
+      "total": 12,
+      "dq_count": 1,
+      "dq_rate": 8.333333333333332
+    },
+    "guest": {
+      "total": 1,
+      "dq_count": 1,
+      "dq_rate": 100.0
+    }
+  },
+  "suspicious_clusters": []
+}

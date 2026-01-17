@@ -1,0 +1,51 @@
+{
+  "tournament": "OzHadou Nationals 19",
+  "tournament_slug": "tournament/ozhadou-nationals-19",
+  "event": "Tekken 8",
+  "event_id": 90,
+  "tournament_date": "2025-09-05T18:00:00",
+  "audit_timestamp": "2026-01-18T00:03:41.787237",
+  "total_entrants": 104,
+  "legitimacy_score": 92.3076923076923,
+  "risk_level": "LOW",
+  "stats": {
+    "overall_dq_rate": 7.6923076923076925,
+    "regulars_total": 89,
+    "regulars_dq_rate": 8.98876404494382,
+    "newcomers_total": 15,
+    "newcomers_dq_rate": 0.0
+  },
+  "tier_breakdown": {
+    "frequent_fighter": {
+      "total": 68,
+      "dq_count": 8,
+      "dq_rate": 11.76470588235294
+    },
+    "semi_frequent": {
+      "total": 15,
+      "dq_count": 0,
+      "dq_rate": 0.0
+    },
+    "not_newbie": {
+      "total": 6,
+      "dq_count": 0,
+      "dq_rate": 0.0
+    },
+    "initiate": {
+      "total": 12,
+      "dq_count": 0,
+      "dq_rate": 0.0
+    },
+    "brand_new": {
+      "total": 3,
+      "dq_count": 0,
+      "dq_rate": 0.0
+    },
+    "guest": {
+      "total": 0,
+      "dq_count": 0,
+      "dq_rate": 0.0
+    }
+  },
+  "suspicious_clusters": []
+}

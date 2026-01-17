@@ -1,0 +1,51 @@
+{
+  "tournament": "The Iron Crown 29",
+  "tournament_slug": "tournament/the-iron-crown-29",
+  "event": "Tekken 8 - The Iron Crown 29",
+  "event_id": 497,
+  "tournament_date": "2025-12-07T03:00:00",
+  "audit_timestamp": "2026-01-18T03:09:40.071030",
+  "total_entrants": 31,
+  "legitimacy_score": 94.79838709677419,
+  "risk_level": "LOW",
+  "stats": {
+    "overall_dq_rate": 6.451612903225806,
+    "regulars_total": 19,
+    "regulars_dq_rate": 0.0,
+    "newcomers_total": 11,
+    "newcomers_dq_rate": 9.090909090909092
+  },
+  "tier_breakdown": {
+    "frequent_fighter": {
+      "total": 9,
+      "dq_count": 0,
+      "dq_rate": 0.0
+    },
+    "semi_frequent": {
+      "total": 6,
+      "dq_count": 0,
+      "dq_rate": 0.0
+    },
+    "not_newbie": {
+      "total": 4,
+      "dq_count": 0,
+      "dq_rate": 0.0
+    },
+    "initiate": {
+      "total": 3,
+      "dq_count": 0,
+      "dq_rate": 0.0
+    },
+    "brand_new": {
+      "total": 8,
+      "dq_count": 1,
+      "dq_rate": 12.5
+    },
+    "guest": {
+      "total": 1,
+      "dq_count": 1,
+      "dq_rate": 100.0
+    }
+  },
+  "suspicious_clusters": []
+}

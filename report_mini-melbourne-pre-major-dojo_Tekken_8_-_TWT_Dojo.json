@@ -1,0 +1,51 @@
+{
+  "tournament": "Mini Melbourne Pre-Major Dojo",
+  "tournament_slug": "tournament/mini-melbourne-pre-major-dojo",
+  "event": "Tekken 8 - TWT Dojo",
+  "event_id": 1865,
+  "tournament_date": "2024-05-30T18:00:00",
+  "audit_timestamp": "2026-01-18T03:09:40.515053",
+  "total_entrants": 60,
+  "legitimacy_score": 80.0,
+  "risk_level": "LOW",
+  "stats": {
+    "overall_dq_rate": 13.333333333333334,
+    "regulars_total": 34,
+    "regulars_dq_rate": 8.823529411764707,
+    "newcomers_total": 26,
+    "newcomers_dq_rate": 19.230769230769234
+  },
+  "tier_breakdown": {
+    "frequent_fighter": {
+      "total": 21,
+      "dq_count": 0,
+      "dq_rate": 0.0
+    },
+    "semi_frequent": {
+      "total": 10,
+      "dq_count": 3,
+      "dq_rate": 30.0
+    },
+    "not_newbie": {
+      "total": 3,
+      "dq_count": 0,
+      "dq_rate": 0.0
+    },
+    "initiate": {
+      "total": 8,
+      "dq_count": 1,
+      "dq_rate": 12.5
+    },
+    "brand_new": {
+      "total": 18,
+      "dq_count": 4,
+      "dq_rate": 22.22222222222222
+    },
+    "guest": {
+      "total": 0,
+      "dq_count": 0,
+      "dq_rate": 0.0
+    }
+  },
+  "suspicious_clusters": []
+}

@@ -1,0 +1,51 @@
+{
+  "tournament": "Omega Mini: Tekken 8 DOJO",
+  "tournament_slug": "tournament/omega-mini-tekken-8-dojo",
+  "event": "Tekken 8",
+  "event_id": 569,
+  "tournament_date": "2025-10-26T10:00:00",
+  "audit_timestamp": "2026-01-18T03:09:40.098247",
+  "total_entrants": 66,
+  "legitimacy_score": 100,
+  "risk_level": "LOW",
+  "stats": {
+    "overall_dq_rate": 3.0303030303030303,
+    "regulars_total": 46,
+    "regulars_dq_rate": 4.3478260869565215,
+    "newcomers_total": 20,
+    "newcomers_dq_rate": 0.0
+  },
+  "tier_breakdown": {
+    "frequent_fighter": {
+      "total": 31,
+      "dq_count": 1,
+      "dq_rate": 3.225806451612903
+    },
+    "semi_frequent": {
+      "total": 7,
+      "dq_count": 1,
+      "dq_rate": 14.285714285714285
+    },
+    "not_newbie": {
+      "total": 8,
+      "dq_count": 0,
+      "dq_rate": 0.0
+    },
+    "initiate": {
+      "total": 10,
+      "dq_count": 0,
+      "dq_rate": 0.0
+    },
+    "brand_new": {
+      "total": 10,
+      "dq_count": 0,
+      "dq_rate": 0.0
+    },
+    "guest": {
+      "total": 0,
+      "dq_count": 0,
+      "dq_rate": 0.0
+    }
+  },
+  "suspicious_clusters": []
+}

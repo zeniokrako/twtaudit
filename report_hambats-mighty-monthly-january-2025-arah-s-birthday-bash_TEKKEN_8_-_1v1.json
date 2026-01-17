@@ -1,0 +1,51 @@
+{
+  "tournament": "Hambats Mighty Monthly - January 2025 (Arah's Birthday Bash)",
+  "tournament_slug": "tournament/hambats-mighty-monthly-january-2025-arah-s-birthday-bash",
+  "event": "TEKKEN 8 - 1v1",
+  "event_id": 1168,
+  "tournament_date": "2025-01-25T08:00:00",
+  "audit_timestamp": "2026-01-18T03:09:40.316777",
+  "total_entrants": 28,
+  "legitimacy_score": 96.42857142857143,
+  "risk_level": "LOW",
+  "stats": {
+    "overall_dq_rate": 3.571428571428571,
+    "regulars_total": 16,
+    "regulars_dq_rate": 6.25,
+    "newcomers_total": 9,
+    "newcomers_dq_rate": 0.0
+  },
+  "tier_breakdown": {
+    "frequent_fighter": {
+      "total": 8,
+      "dq_count": 1,
+      "dq_rate": 12.5
+    },
+    "semi_frequent": {
+      "total": 4,
+      "dq_count": 0,
+      "dq_rate": 0.0
+    },
+    "not_newbie": {
+      "total": 4,
+      "dq_count": 0,
+      "dq_rate": 0.0
+    },
+    "initiate": {
+      "total": 5,
+      "dq_count": 0,
+      "dq_rate": 0.0
+    },
+    "brand_new": {
+      "total": 4,
+      "dq_count": 0,
+      "dq_rate": 0.0
+    },
+    "guest": {
+      "total": 3,
+      "dq_count": 0,
+      "dq_rate": 0.0
+    }
+  },
+  "suspicious_clusters": []
+}

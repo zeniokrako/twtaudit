@@ -1,0 +1,51 @@
+{
+  "tournament": "\u014ctautahi Onslaught 2024 - Christchurch Fighting Game Major",
+  "tournament_slug": "tournament/tautahi-onslaught-2024-christchurch-fighting-game-major",
+  "event": "Tekken 8 (PS5)",
+  "event_id": 1986,
+  "tournament_date": "2024-04-26T13:00:00",
+  "audit_timestamp": "2026-01-18T03:09:40.540851",
+  "total_entrants": 31,
+  "legitimacy_score": 95.3225806451613,
+  "risk_level": "LOW",
+  "stats": {
+    "overall_dq_rate": 9.67741935483871,
+    "regulars_total": 21,
+    "regulars_dq_rate": 4.761904761904762,
+    "newcomers_total": 10,
+    "newcomers_dq_rate": 20.0
+  },
+  "tier_breakdown": {
+    "frequent_fighter": {
+      "total": 13,
+      "dq_count": 1,
+      "dq_rate": 7.6923076923076925
+    },
+    "semi_frequent": {
+      "total": 6,
+      "dq_count": 0,
+      "dq_rate": 0.0
+    },
+    "not_newbie": {
+      "total": 2,
+      "dq_count": 0,
+      "dq_rate": 0.0
+    },
+    "initiate": {
+      "total": 5,
+      "dq_count": 0,
+      "dq_rate": 0.0
+    },
+    "brand_new": {
+      "total": 5,
+      "dq_count": 2,
+      "dq_rate": 40.0
+    },
+    "guest": {
+      "total": 0,
+      "dq_count": 0,
+      "dq_rate": 0.0
+    }
+  },
+  "suspicious_clusters": []
+}

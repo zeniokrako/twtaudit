@@ -1,0 +1,51 @@
+{
+  "tournament": "Pixel Tekken #168",
+  "tournament_slug": "tournament/pixel-tekken-168",
+  "event": "Singles",
+  "event_id": 975,
+  "tournament_date": "2025-04-23T19:30:00",
+  "audit_timestamp": "2026-01-18T03:09:40.248347",
+  "total_entrants": 25,
+  "legitimacy_score": 92.0,
+  "risk_level": "LOW",
+  "stats": {
+    "overall_dq_rate": 8.0,
+    "regulars_total": 21,
+    "regulars_dq_rate": 9.523809523809524,
+    "newcomers_total": 4,
+    "newcomers_dq_rate": 0.0
+  },
+  "tier_breakdown": {
+    "frequent_fighter": {
+      "total": 11,
+      "dq_count": 1,
+      "dq_rate": 9.090909090909092
+    },
+    "semi_frequent": {
+      "total": 7,
+      "dq_count": 0,
+      "dq_rate": 0.0
+    },
+    "not_newbie": {
+      "total": 3,
+      "dq_count": 1,
+      "dq_rate": 33.33333333333333
+    },
+    "initiate": {
+      "total": 2,
+      "dq_count": 0,
+      "dq_rate": 0.0
+    },
+    "brand_new": {
+      "total": 2,
+      "dq_count": 0,
+      "dq_rate": 0.0
+    },
+    "guest": {
+      "total": 0,
+      "dq_count": 0,
+      "dq_rate": 0.0
+    }
+  },
+  "suspicious_clusters": []
+}

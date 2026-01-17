@@ -1,0 +1,51 @@
+{
+  "tournament": "Pixel Tekken #139",
+  "tournament_slug": "tournament/pixel-tekken-139",
+  "event": "Singles",
+  "event_id": 1447,
+  "tournament_date": "2024-09-18T19:00:00",
+  "audit_timestamp": "2026-01-18T03:09:40.414045",
+  "total_entrants": 25,
+  "legitimacy_score": 96.0,
+  "risk_level": "LOW",
+  "stats": {
+    "overall_dq_rate": 4.0,
+    "regulars_total": 10,
+    "regulars_dq_rate": 10.0,
+    "newcomers_total": 13,
+    "newcomers_dq_rate": 0.0
+  },
+  "tier_breakdown": {
+    "frequent_fighter": {
+      "total": 4,
+      "dq_count": 0,
+      "dq_rate": 0.0
+    },
+    "semi_frequent": {
+      "total": 4,
+      "dq_count": 1,
+      "dq_rate": 25.0
+    },
+    "not_newbie": {
+      "total": 2,
+      "dq_count": 0,
+      "dq_rate": 0.0
+    },
+    "initiate": {
+      "total": 3,
+      "dq_count": 0,
+      "dq_rate": 0.0
+    },
+    "brand_new": {
+      "total": 10,
+      "dq_count": 0,
+      "dq_rate": 0.0
+    },
+    "guest": {
+      "total": 2,
+      "dq_count": 0,
+      "dq_rate": 0.0
+    }
+  },
+  "suspicious_clusters": []
+}

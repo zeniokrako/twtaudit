@@ -1,0 +1,51 @@
+{
+  "tournament": "OMEGA 2: SPACE INVADERS",
+  "tournament_slug": "tournament/omega-2-space-invaders",
+  "event": "Tekken 8",
+  "event_id": 1608,
+  "tournament_date": "2024-07-27T11:00:00",
+  "audit_timestamp": "2026-01-18T03:09:40.457589",
+  "total_entrants": 42,
+  "legitimacy_score": 76.21553884711778,
+  "risk_level": "MEDIUM",
+  "stats": {
+    "overall_dq_rate": 19.047619047619047,
+    "regulars_total": 15,
+    "regulars_dq_rate": 26.666666666666668,
+    "newcomers_total": 27,
+    "newcomers_dq_rate": 14.814814814814813
+  },
+  "tier_breakdown": {
+    "frequent_fighter": {
+      "total": 9,
+      "dq_count": 2,
+      "dq_rate": 22.22222222222222
+    },
+    "semi_frequent": {
+      "total": 3,
+      "dq_count": 1,
+      "dq_rate": 33.33333333333333
+    },
+    "not_newbie": {
+      "total": 3,
+      "dq_count": 1,
+      "dq_rate": 33.33333333333333
+    },
+    "initiate": {
+      "total": 8,
+      "dq_count": 1,
+      "dq_rate": 12.5
+    },
+    "brand_new": {
+      "total": 19,
+      "dq_count": 3,
+      "dq_rate": 15.789473684210526
+    },
+    "guest": {
+      "total": 0,
+      "dq_count": 0,
+      "dq_rate": 0.0
+    }
+  },
+  "suspicious_clusters": []
+}

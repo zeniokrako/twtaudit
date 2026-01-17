@@ -1,0 +1,51 @@
+{
+  "tournament": "Pixel Tekken #200",
+  "tournament_slug": "tournament/pixel-tekken-200-2",
+  "event": "Tekken 7 Side Bracket",
+  "event_id": 500,
+  "tournament_date": "2025-12-06T12:00:00",
+  "audit_timestamp": "2026-01-18T03:09:40.073086",
+  "total_entrants": 36,
+  "legitimacy_score": 83.33333333333334,
+  "risk_level": "LOW",
+  "stats": {
+    "overall_dq_rate": 16.666666666666664,
+    "regulars_total": 32,
+    "regulars_dq_rate": 18.75,
+    "newcomers_total": 4,
+    "newcomers_dq_rate": 0.0
+  },
+  "tier_breakdown": {
+    "frequent_fighter": {
+      "total": 27,
+      "dq_count": 6,
+      "dq_rate": 22.22222222222222
+    },
+    "semi_frequent": {
+      "total": 4,
+      "dq_count": 0,
+      "dq_rate": 0.0
+    },
+    "not_newbie": {
+      "total": 1,
+      "dq_count": 0,
+      "dq_rate": 0.0
+    },
+    "initiate": {
+      "total": 2,
+      "dq_count": 0,
+      "dq_rate": 0.0
+    },
+    "brand_new": {
+      "total": 2,
+      "dq_count": 0,
+      "dq_rate": 0.0
+    },
+    "guest": {
+      "total": 0,
+      "dq_count": 0,
+      "dq_rate": 0.0
+    }
+  },
+  "suspicious_clusters": []
+}

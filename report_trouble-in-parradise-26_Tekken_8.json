@@ -1,0 +1,51 @@
+{
+  "tournament": "Trouble in Parradise #26",
+  "tournament_slug": "tournament/trouble-in-parradise-26",
+  "event": "Tekken 8",
+  "event_id": 802,
+  "tournament_date": "2025-07-16T18:00:00",
+  "audit_timestamp": "2026-01-18T03:09:40.182444",
+  "total_entrants": 17,
+  "legitimacy_score": 94.11764705882354,
+  "risk_level": "LOW",
+  "stats": {
+    "overall_dq_rate": 5.88235294117647,
+    "regulars_total": 14,
+    "regulars_dq_rate": 7.142857142857142,
+    "newcomers_total": 3,
+    "newcomers_dq_rate": 0.0
+  },
+  "tier_breakdown": {
+    "frequent_fighter": {
+      "total": 12,
+      "dq_count": 1,
+      "dq_rate": 8.333333333333332
+    },
+    "semi_frequent": {
+      "total": 2,
+      "dq_count": 0,
+      "dq_rate": 0.0
+    },
+    "not_newbie": {
+      "total": 0,
+      "dq_count": 0,
+      "dq_rate": 0.0
+    },
+    "initiate": {
+      "total": 2,
+      "dq_count": 0,
+      "dq_rate": 0.0
+    },
+    "brand_new": {
+      "total": 1,
+      "dq_count": 0,
+      "dq_rate": 0.0
+    },
+    "guest": {
+      "total": 0,
+      "dq_count": 0,
+      "dq_rate": 0.0
+    }
+  },
+  "suspicious_clusters": []
+}

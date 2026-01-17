@@ -1,0 +1,51 @@
+{
+  "tournament": "Second Wind 2025",
+  "tournament_slug": "tournament/second-wind-2025",
+  "event": "Main Game: TEKKEN 8",
+  "event_id": 808,
+  "tournament_date": "2025-07-11T15:00:00",
+  "audit_timestamp": "2026-01-18T03:09:40.186345",
+  "total_entrants": 60,
+  "legitimacy_score": 83.33333333333334,
+  "risk_level": "LOW",
+  "stats": {
+    "overall_dq_rate": 16.666666666666664,
+    "regulars_total": 49,
+    "regulars_dq_rate": 18.367346938775512,
+    "newcomers_total": 11,
+    "newcomers_dq_rate": 9.090909090909092
+  },
+  "tier_breakdown": {
+    "frequent_fighter": {
+      "total": 33,
+      "dq_count": 6,
+      "dq_rate": 18.181818181818183
+    },
+    "semi_frequent": {
+      "total": 11,
+      "dq_count": 2,
+      "dq_rate": 18.181818181818183
+    },
+    "not_newbie": {
+      "total": 5,
+      "dq_count": 1,
+      "dq_rate": 20.0
+    },
+    "initiate": {
+      "total": 9,
+      "dq_count": 1,
+      "dq_rate": 11.11111111111111
+    },
+    "brand_new": {
+      "total": 2,
+      "dq_count": 0,
+      "dq_rate": 0.0
+    },
+    "guest": {
+      "total": 0,
+      "dq_count": 0,
+      "dq_rate": 0.0
+    }
+  },
+  "suspicious_clusters": []
+}

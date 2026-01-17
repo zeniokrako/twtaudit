@@ -1,0 +1,51 @@
+{
+  "tournament": "Auckland University Esports Club: Rage Art Rumble",
+  "tournament_slug": "tournament/auckland-university-esports-club-rage-art-rumble",
+  "event": "Tekken 8",
+  "event_id": 1762,
+  "tournament_date": "2024-06-15T12:00:00",
+  "audit_timestamp": "2026-01-18T03:09:40.490922",
+  "total_entrants": 30,
+  "legitimacy_score": 86.66666666666667,
+  "risk_level": "LOW",
+  "stats": {
+    "overall_dq_rate": 13.333333333333334,
+    "regulars_total": 12,
+    "regulars_dq_rate": 16.666666666666664,
+    "newcomers_total": 16,
+    "newcomers_dq_rate": 12.5
+  },
+  "tier_breakdown": {
+    "frequent_fighter": {
+      "total": 4,
+      "dq_count": 0,
+      "dq_rate": 0.0
+    },
+    "semi_frequent": {
+      "total": 2,
+      "dq_count": 2,
+      "dq_rate": 100.0
+    },
+    "not_newbie": {
+      "total": 6,
+      "dq_count": 0,
+      "dq_rate": 0.0
+    },
+    "initiate": {
+      "total": 9,
+      "dq_count": 2,
+      "dq_rate": 22.22222222222222
+    },
+    "brand_new": {
+      "total": 7,
+      "dq_count": 0,
+      "dq_rate": 0.0
+    },
+    "guest": {
+      "total": 2,
+      "dq_count": 0,
+      "dq_rate": 0.0
+    }
+  },
+  "suspicious_clusters": []
+}

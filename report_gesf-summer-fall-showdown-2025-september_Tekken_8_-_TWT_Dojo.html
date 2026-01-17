@@ -51,6 +51,12 @@
         .tier-legend { display: flex; flex-wrap: wrap; gap: 0.75rem; margin-bottom: 1rem; padding: 0.75rem; background: var(--bg-secondary); border-radius: 0.5rem; font-size: 0.8rem; }
         .tier-legend span { display: flex; align-items: center; gap: 0.25rem; }
         footer { text-align: center; padding: 1.5rem; color: var(--text-secondary); font-size: 0.8rem; border-top: 1px solid var(--bg-tertiary); margin-top: 2rem; }
+        footer .icon-credit { font-size: 0.7rem; margin-top: 0.5rem; opacity: 0.7; }
+        footer .icon-credit a { color: var(--text-secondary); }
+        .social-icons { display: inline-flex; gap: 0.2rem; margin-left: 0.25rem; vertical-align: middle; }
+        .social-icon { display: inline-flex; align-items: center; cursor: pointer; opacity: 0.7; transition: opacity 0.2s; }
+        .social-icon:hover { opacity: 1; }
+        .social-icon img { width: 14px; height: 14px; vertical-align: middle; }
         @media print { body { background: white; color: black; } td a, .member-list a { color: #2563eb; } }
     </style>
 </head>
@@ -79,6 +85,10 @@
             <div class="stat-card">
                 <div class="stat-value">42</div>
                 <div class="stat-label">Newcomers + Guests</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value">23</div>
+                <div class="stat-label">With Social Links (32%)</div>
             </div>
         </div>
 
@@ -116,7 +126,7 @@
                     <tbody>
         <tr>
             <td>1</td>
-            <td><strong><a href="https://www.start.gg/user/f958d1b3" target="_blank">HBA | Allidar</a></strong> <span class="badge badge-purple">VET</span></td>
+            <td><strong><a href="https://www.start.gg/user/f958d1b3" target="_blank">HBA | Allidar</a></strong> <span class="badge badge-purple">VET</span> <span class="social-icons"></span></td>
             <td>43</td>
             <td>2019-11-09</td>
             <td>10/10</td>
@@ -124,7 +134,7 @@
         
         <tr>
             <td>2</td>
-            <td><strong><a href="https://www.start.gg/user/27f3fa2c" target="_blank">DesertEagleSeven</a></strong> <span class="badge badge-green">SEMI</span></td>
+            <td><strong><a href="https://www.start.gg/user/27f3fa2c" target="_blank">DesertEagleSeven</a></strong> <span class="badge badge-green">SEMI</span> <span class="social-icons"><a href="https://twitter.com/DesertEagle07" target="_blank" title="@DesertEagle07" class="social-icon"><img src="icons/twitter.png" alt="Twitter"></a></span></td>
             <td>18</td>
             <td>2018-01-26</td>
             <td>9/9</td>
@@ -132,7 +142,7 @@
         
         <tr>
             <td>3</td>
-            <td><strong><a href="https://www.start.gg/user/1c703033" target="_blank">0-2er</a></strong> <span class="badge badge-purple">VET</span></td>
+            <td><strong><a href="https://www.start.gg/user/1c703033" target="_blank">0-2er</a></strong> <span class="badge badge-purple">VET</span> <span class="social-icons"><span class="social-icon" title="nobodyauteur"><img src="icons/discord.png" alt="Discord"></span></span></td>
             <td>20</td>
             <td>2022-11-12</td>
             <td>7/7</td>
@@ -140,7 +150,7 @@
         
         <tr>
             <td>4</td>
-            <td><strong><a href="https://www.start.gg/user/22909d6a" target="_blank">TGC|GL | Kahr-Michael</a></strong> <span class="badge badge-green">SEMI</span></td>
+            <td><strong><a href="https://www.start.gg/user/22909d6a" target="_blank">TGC|GL | Kahr-Michael</a></strong> <span class="badge badge-green">SEMI</span> <span class="social-icons"></span></td>
             <td>13</td>
             <td>2023-01-23</td>
             <td>7/7</td>
@@ -148,7 +158,7 @@
         
         <tr>
             <td>5</td>
-            <td><strong><a href="https://www.start.gg/user/ff2f09c2" target="_blank">leatherspandex</a></strong> <span class="badge badge-orange">INIT</span></td>
+            <td><strong><a href="https://www.start.gg/user/ff2f09c2" target="_blank">leatherspandex</a></strong> <span class="badge badge-orange">INIT</span> <span class="social-icons"><span class="social-icon" title="leatherspandex"><img src="icons/discord.png" alt="Discord"></span></span></td>
             <td>4</td>
             <td>2024-02-16</td>
             <td>8/10</td>
@@ -156,7 +166,7 @@
         
         <tr>
             <td>5</td>
-            <td><strong><a href="https://www.start.gg/user/8d037ded" target="_blank">TGC|GL | LeonLightz</a></strong> <span class="badge badge-green">SEMI</span></td>
+            <td><strong><a href="https://www.start.gg/user/8d037ded" target="_blank">TGC|GL | LeonLightz</a></strong> <span class="badge badge-green">SEMI</span> <span class="social-icons"></span></td>
             <td>11</td>
             <td>2024-05-04</td>
             <td>8/9</td>
@@ -164,7 +174,7 @@
         
         <tr>
             <td>7</td>
-            <td><strong><a href="https://www.start.gg/user/9adf0e85" target="_blank">Alfred OC</a></strong> <span class="badge badge-purple">VET</span></td>
+            <td><strong><a href="https://www.start.gg/user/9adf0e85" target="_blank">Alfred OC</a></strong> <span class="badge badge-purple">VET</span> <span class="social-icons"></span></td>
             <td>24</td>
             <td>2018-04-21</td>
             <td>7/7</td>
@@ -172,7 +182,7 @@
         
         <tr>
             <td>7</td>
-            <td><strong><a href="https://www.start.gg/user/ab055dc3" target="_blank">GHOST</a></strong> <span class="badge badge-blue">REG</span></td>
+            <td><strong><a href="https://www.start.gg/user/ab055dc3" target="_blank">GHOST</a></strong> <span class="badge badge-blue">REG</span> <span class="social-icons"><a href="https://twitter.com/justapangie" target="_blank" title="@justapangie" class="social-icon"><img src="icons/twitter.png" alt="Twitter"></a><a href="https://twitch.tv/boboyj" target="_blank" title="boboyj" class="social-icon"><img src="icons/twitch.png" alt="Twitch"></a><span class="social-icon" title="jpvngie"><img src="icons/discord.png" alt="Discord"></span></span></td>
             <td>5</td>
             <td>2025-06-07</td>
             <td>7/7</td>
@@ -180,7 +190,7 @@
         
         <tr>
             <td>9</td>
-            <td><strong><a href="https://www.start.gg/user/b3bb9132" target="_blank">JustinSantos333</a></strong> <span class="badge badge-green">SEMI</span></td>
+            <td><strong><a href="https://www.start.gg/user/b3bb9132" target="_blank">JustinSantos333</a></strong> <span class="badge badge-green">SEMI</span> <span class="social-icons"></span></td>
             <td>17</td>
             <td>2019-07-13</td>
             <td>5/6</td>
@@ -188,7 +198,7 @@
         
         <tr>
             <td>9</td>
-            <td><strong><a href="https://www.start.gg/user/7878d05b" target="_blank">PARLIT</a></strong> <span class="badge badge-purple">VET</span></td>
+            <td><strong><a href="https://www.start.gg/user/7878d05b" target="_blank">PARLIT</a></strong> <span class="badge badge-purple">VET</span> <span class="social-icons"></span></td>
             <td>26</td>
             <td>2018-04-21</td>
             <td>4/5</td>
@@ -196,7 +206,7 @@
         
         <tr>
             <td>9</td>
-            <td><strong><a href="https://www.start.gg/user/34e86040" target="_blank">GudDChief</a></strong> <span class="badge badge-green">SEMI</span></td>
+            <td><strong><a href="https://www.start.gg/user/34e86040" target="_blank">GudDChief</a></strong> <span class="badge badge-green">SEMI</span> <span class="social-icons"><a href="https://twitter.com/GudDChief" target="_blank" title="@GudDChief" class="social-icon"><img src="icons/twitter.png" alt="Twitter"></a><a href="https://twitch.tv/GudDChief" target="_blank" title="GudDChief" class="social-icon"><img src="icons/twitch.png" alt="Twitch"></a><span class="social-icon" title="guddchief"><img src="icons/discord.png" alt="Discord"></span></span></td>
             <td>11</td>
             <td>2024-03-02</td>
             <td>5/5</td>
@@ -204,7 +214,7 @@
         
         <tr>
             <td>9</td>
-            <td><strong><a href="https://www.start.gg/user/de9a7ebc" target="_blank">XRP | Supreme Being</a></strong> <span class="badge badge-blue">REG</span></td>
+            <td><strong><a href="https://www.start.gg/user/de9a7ebc" target="_blank">XRP | Supreme Being</a></strong> <span class="badge badge-blue">REG</span> <span class="social-icons"></span></td>
             <td>5</td>
             <td>2019-04-27</td>
             <td>5/5</td>
@@ -212,7 +222,7 @@
         
         <tr>
             <td>13</td>
-            <td><strong><a href="https://www.start.gg/user/dc80dbef" target="_blank">2X</a></strong> <span class="badge badge-green">SEMI</span></td>
+            <td><strong><a href="https://www.start.gg/user/dc80dbef" target="_blank">2X</a></strong> <span class="badge badge-green">SEMI</span> <span class="social-icons"><span class="social-icon" title="2xDouble30#8012"><img src="icons/discord.png" alt="Discord"></span></span></td>
             <td>15</td>
             <td>2016-10-22</td>
             <td>6/6</td>
@@ -220,7 +230,7 @@
         
         <tr>
             <td>13</td>
-            <td><strong><a href="https://www.start.gg/user/ab65c5af" target="_blank">dreakupo</a></strong> <span class="badge badge-green">SEMI</span></td>
+            <td><strong><a href="https://www.start.gg/user/ab65c5af" target="_blank">dreakupo</a></strong> <span class="badge badge-green">SEMI</span> <span class="social-icons"><a href="https://twitch.tv/dreakupo" target="_blank" title="dreakupo" class="social-icon"><img src="icons/twitch.png" alt="Twitch"></a></span></td>
             <td>11</td>
             <td>2024-03-02</td>
             <td>5/5</td>
@@ -228,7 +238,7 @@
         
         <tr>
             <td>13</td>
-            <td><strong><a href="https://www.start.gg/user/b7ae85df" target="_blank"><3 | YeeHawMan</a></strong> <span class="badge badge-green">SEMI</span></td>
+            <td><strong><a href="https://www.start.gg/user/b7ae85df" target="_blank"><3 | YeeHawMan</a></strong> <span class="badge badge-green">SEMI</span> <span class="social-icons"><span class="social-icon" title="yeehawman#0190"><img src="icons/discord.png" alt="Discord"></span></span></td>
             <td>16</td>
             <td>2022-05-21</td>
             <td>5/5</td>
@@ -236,7 +246,7 @@
         
         <tr>
             <td>13</td>
-            <td><strong><a href="https://www.start.gg/user/4d50b8ab" target="_blank">IAmDiaRhita</a></strong> <span class="badge badge-orange">INIT</span></td>
+            <td><strong><a href="https://www.start.gg/user/4d50b8ab" target="_blank">IAmDiaRhita</a></strong> <span class="badge badge-orange">INIT</span> <span class="social-icons"></span></td>
             <td>2</td>
             <td>2025-07-26</td>
             <td>6/6</td>
@@ -244,7 +254,7 @@
         
         <tr>
             <td>17</td>
-            <td><strong><a href="https://www.start.gg/user/a08eddc1" target="_blank">Aqua</a></strong> <span class="badge badge-green">SEMI</span></td>
+            <td><strong><a href="https://www.start.gg/user/a08eddc1" target="_blank">Aqua</a></strong> <span class="badge badge-green">SEMI</span> <span class="social-icons"><span class="social-icon" title="Skylight Aqua#0433"><img src="icons/discord.png" alt="Discord"></span></span></td>
             <td>10</td>
             <td>2019-08-17</td>
             <td>5/5</td>
@@ -252,7 +262,7 @@
         
         <tr>
             <td>17</td>
-            <td><strong><a href="https://www.start.gg/user/37a8ec11" target="_blank">vinnysmart</a></strong> <span class="badge badge-purple">VET</span></td>
+            <td><strong><a href="https://www.start.gg/user/37a8ec11" target="_blank">vinnysmart</a></strong> <span class="badge badge-purple">VET</span> <span class="social-icons"><span class="social-icon" title="vinnysmart"><img src="icons/discord.png" alt="Discord"></span></span></td>
             <td>24</td>
             <td>2018-07-07</td>
             <td>4/4</td>
@@ -260,7 +270,7 @@
         
         <tr>
             <td>17</td>
-            <td><strong>Lunapooter</strong> <span class="badge badge-gray">GUEST</span></td>
+            <td><strong>Lunapooter</strong> <span class="badge badge-gray">GUEST</span> <span class="social-icons"></span></td>
             <td>0</td>
             <td>N/A (guest)</td>
             <td>3/4</td>
@@ -268,7 +278,7 @@
         
         <tr>
             <td>17</td>
-            <td><strong><a href="https://www.start.gg/user/2c1dbde8" target="_blank">Sword_Saint99</a></strong> <span class="badge badge-yellow">NEW</span></td>
+            <td><strong><a href="https://www.start.gg/user/2c1dbde8" target="_blank">Sword_Saint99</a></strong> <span class="badge badge-yellow">NEW</span> <span class="social-icons"></span></td>
             <td>0</td>
             <td>2025-09-27</td>
             <td>4/5</td>
@@ -276,7 +286,7 @@
         
         <tr>
             <td>17</td>
-            <td><strong><a href="https://www.start.gg/user/8c6c0b1d" target="_blank">Hogin</a></strong> <span class="badge badge-red">DQ</span><span class="badge badge-green">SEMI</span></td>
+            <td><strong><a href="https://www.start.gg/user/8c6c0b1d" target="_blank">Hogin</a></strong> <span class="badge badge-red">DQ</span><span class="badge badge-green">SEMI</span> <span class="social-icons"><span class="social-icon" title="Hogin#6429"><img src="icons/discord.png" alt="Discord"></span></span></td>
             <td>18</td>
             <td>2022-12-17</td>
             <td>3/4</td>
@@ -284,7 +294,7 @@
         
         <tr>
             <td>17</td>
-            <td><strong><a href="https://www.start.gg/user/c5678572" target="_blank">GengAR</a></strong> <span class="badge badge-yellow">NEW</span></td>
+            <td><strong><a href="https://www.start.gg/user/c5678572" target="_blank">GengAR</a></strong> <span class="badge badge-yellow">NEW</span> <span class="social-icons"></span></td>
             <td>0</td>
             <td>2025-09-27</td>
             <td>5/5</td>
@@ -292,7 +302,7 @@
         
         <tr>
             <td>17</td>
-            <td><strong><a href="https://www.start.gg/user/de75d7ed" target="_blank">GCC | Ra1den</a></strong> <span class="badge badge-orange">INIT</span></td>
+            <td><strong><a href="https://www.start.gg/user/de75d7ed" target="_blank">GCC | Ra1den</a></strong> <span class="badge badge-orange">INIT</span> <span class="social-icons"><span class="social-icon" title="ra1den0004_25785"><img src="icons/discord.png" alt="Discord"></span></span></td>
             <td>2</td>
             <td>2025-08-30</td>
             <td>4/4</td>
@@ -300,7 +310,7 @@
         
         <tr>
             <td>17</td>
-            <td><strong><a href="https://www.start.gg/user/790a8fe1" target="_blank">PseudoDT</a></strong> <span class="badge badge-orange">INIT</span></td>
+            <td><strong><a href="https://www.start.gg/user/790a8fe1" target="_blank">PseudoDT</a></strong> <span class="badge badge-orange">INIT</span> <span class="social-icons"></span></td>
             <td>3</td>
             <td>2025-07-26</td>
             <td>5/5</td>
@@ -308,7 +318,7 @@
         
         <tr>
             <td>25</td>
-            <td><strong><a href="https://www.start.gg/user/52abd6b3" target="_blank">HaMsTeR</a></strong> <span class="badge badge-blue">REG</span></td>
+            <td><strong><a href="https://www.start.gg/user/52abd6b3" target="_blank">HaMsTeR</a></strong> <span class="badge badge-blue">REG</span> <span class="social-icons"></span></td>
             <td>5</td>
             <td>2018-04-21</td>
             <td>4/5</td>
@@ -316,7 +326,7 @@
         
         <tr>
             <td>25</td>
-            <td><strong><a href="https://www.start.gg/user/209ced53" target="_blank">Damnadrian</a></strong> <span class="badge badge-green">SEMI</span></td>
+            <td><strong><a href="https://www.start.gg/user/209ced53" target="_blank">Damnadrian</a></strong> <span class="badge badge-green">SEMI</span> <span class="social-icons"><span class="social-icon" title="damnadrian#0338"><img src="icons/discord.png" alt="Discord"></span></span></td>
             <td>11</td>
             <td>2024-04-06</td>
             <td>4/4</td>
@@ -324,7 +334,7 @@
         
         <tr>
             <td>25</td>
-            <td><strong><a href="https://www.start.gg/user/b188cd1f" target="_blank">KageJin</a></strong> <span class="badge badge-orange">INIT</span></td>
+            <td><strong><a href="https://www.start.gg/user/b188cd1f" target="_blank">KageJin</a></strong> <span class="badge badge-orange">INIT</span> <span class="social-icons"></span></td>
             <td>1</td>
             <td>2025-09-13</td>
             <td>3/4</td>
@@ -332,7 +342,7 @@
         
         <tr>
             <td>25</td>
-            <td><strong>Luluismyname</strong> <span class="badge badge-gray">GUEST</span></td>
+            <td><strong>Luluismyname</strong> <span class="badge badge-gray">GUEST</span> <span class="social-icons"></span></td>
             <td>0</td>
             <td>N/A (guest)</td>
             <td>4/4</td>
@@ -340,7 +350,7 @@
         
         <tr>
             <td>25</td>
-            <td><strong>ysadalawatatlo</strong> <span class="badge badge-gray">GUEST</span></td>
+            <td><strong>ysadalawatatlo</strong> <span class="badge badge-gray">GUEST</span> <span class="social-icons"></span></td>
             <td>0</td>
             <td>N/A (guest)</td>
             <td>4/4</td>
@@ -348,7 +358,7 @@
         
         <tr>
             <td>25</td>
-            <td><strong><a href="https://www.start.gg/user/ebff67a4" target="_blank">Erv</a></strong> <span class="badge badge-orange">INIT</span></td>
+            <td><strong><a href="https://www.start.gg/user/ebff67a4" target="_blank">Erv</a></strong> <span class="badge badge-orange">INIT</span> <span class="social-icons"><span class="social-icon" title="Erv#5871"><img src="icons/discord.png" alt="Discord"></span></span></td>
             <td>4</td>
             <td>2020-09-12</td>
             <td>3/4</td>
@@ -356,7 +366,7 @@
         
         <tr>
             <td>25</td>
-            <td><strong><a href="https://www.start.gg/user/ebcb6cf6" target="_blank">Leverage</a></strong> <span class="badge badge-orange">INIT</span></td>
+            <td><strong><a href="https://www.start.gg/user/ebcb6cf6" target="_blank">Leverage</a></strong> <span class="badge badge-orange">INIT</span> <span class="social-icons"><span class="social-icon" title="Leverage#2765"><img src="icons/discord.png" alt="Discord"></span></span></td>
             <td>1</td>
             <td>2023-01-23</td>
             <td>4/4</td>
@@ -364,7 +374,7 @@
         
         <tr>
             <td>25</td>
-            <td><strong><a href="https://www.start.gg/user/d22cc0b9" target="_blank">Monkee</a></strong> <span class="badge badge-orange">INIT</span></td>
+            <td><strong><a href="https://www.start.gg/user/d22cc0b9" target="_blank">Monkee</a></strong> <span class="badge badge-orange">INIT</span> <span class="social-icons"></span></td>
             <td>2</td>
             <td>2024-09-14</td>
             <td>3/4</td>
@@ -372,7 +382,7 @@
         
         <tr>
             <td>33</td>
-            <td><strong><a href="https://www.start.gg/user/f9594aea" target="_blank">QD | kristina17</a></strong> <span class="badge badge-orange">INIT</span></td>
+            <td><strong><a href="https://www.start.gg/user/f9594aea" target="_blank">QD | kristina17</a></strong> <span class="badge badge-orange">INIT</span> <span class="social-icons"></span></td>
             <td>1</td>
             <td>2025-08-30</td>
             <td>2/4</td>
@@ -380,7 +390,7 @@
         
         <tr>
             <td>33</td>
-            <td><strong><a href="https://www.start.gg/user/d86baef2" target="_blank">KAARRRL</a></strong> <span class="badge badge-yellow">NEW</span></td>
+            <td><strong><a href="https://www.start.gg/user/d86baef2" target="_blank">KAARRRL</a></strong> <span class="badge badge-yellow">NEW</span> <span class="social-icons"></span></td>
             <td>0</td>
             <td>2025-09-27</td>
             <td>4/4</td>
@@ -388,7 +398,7 @@
         
         <tr>
             <td>33</td>
-            <td><strong><a href="https://www.start.gg/user/bdb583b2" target="_blank">Quengster</a></strong> <span class="badge badge-orange">INIT</span></td>
+            <td><strong><a href="https://www.start.gg/user/bdb583b2" target="_blank">Quengster</a></strong> <span class="badge badge-orange">INIT</span> <span class="social-icons"></span></td>
             <td>2</td>
             <td>2025-06-07</td>
             <td>2/4</td>
@@ -396,7 +406,7 @@
         
         <tr>
             <td>33</td>
-            <td><strong><a href="https://www.start.gg/user/fe2221a0" target="_blank">Ducky0901</a></strong> <span class="badge badge-yellow">NEW</span></td>
+            <td><strong><a href="https://www.start.gg/user/fe2221a0" target="_blank">Ducky0901</a></strong> <span class="badge badge-yellow">NEW</span> <span class="social-icons"></span></td>
             <td>0</td>
             <td>2025-09-27</td>
             <td>3/4</td>
@@ -404,7 +414,7 @@
         
         <tr>
             <td>33</td>
-            <td><strong><a href="https://www.start.gg/user/95725421" target="_blank">Elvin</a></strong> <span class="badge badge-yellow">NEW</span></td>
+            <td><strong><a href="https://www.start.gg/user/95725421" target="_blank">Elvin</a></strong> <span class="badge badge-yellow">NEW</span> <span class="social-icons"></span></td>
             <td>0</td>
             <td>2025-09-27</td>
             <td>2/3</td>
@@ -412,7 +422,7 @@
         
         <tr>
             <td>33</td>
-            <td><strong>Waitwaitwait</strong> <span class="badge badge-gray">GUEST</span></td>
+            <td><strong>Waitwaitwait</strong> <span class="badge badge-gray">GUEST</span> <span class="social-icons"></span></td>
             <td>0</td>
             <td>N/A (guest)</td>
             <td>2/4</td>
@@ -420,7 +430,7 @@
         
         <tr>
             <td>33</td>
-            <td><strong><a href="https://www.start.gg/user/d6d4f49b" target="_blank">LMAO | vh7rtue</a></strong> <span class="badge badge-red">DQ</span><span class="badge badge-yellow">NEW</span></td>
+            <td><strong><a href="https://www.start.gg/user/d6d4f49b" target="_blank">LMAO | vh7rtue</a></strong> <span class="badge badge-red">DQ</span><span class="badge badge-yellow">NEW</span> <span class="social-icons"></span></td>
             <td>0</td>
             <td>2025-09-27</td>
             <td>1/3</td>
@@ -428,7 +438,7 @@
         
         <tr>
             <td>33</td>
-            <td><strong><a href="https://www.start.gg/user/d36ba2d4" target="_blank">Guam671 | Guam671963</a></strong> <span class="badge badge-orange">INIT</span></td>
+            <td><strong><a href="https://www.start.gg/user/d36ba2d4" target="_blank">Guam671 | Guam671963</a></strong> <span class="badge badge-orange">INIT</span> <span class="social-icons"></span></td>
             <td>1</td>
             <td>2025-06-07</td>
             <td>3/3</td>
@@ -436,7 +446,7 @@
         
         <tr>
             <td>33</td>
-            <td><strong><a href="https://www.start.gg/user/c2259830" target="_blank">NEO</a></strong> <span class="badge badge-red">DQ</span><span class="badge badge-yellow">NEW</span></td>
+            <td><strong><a href="https://www.start.gg/user/c2259830" target="_blank">NEO</a></strong> <span class="badge badge-red">DQ</span><span class="badge badge-yellow">NEW</span> <span class="social-icons"></span></td>
             <td>0</td>
             <td>2025-09-27</td>
             <td>1/3</td>
@@ -444,7 +454,7 @@
         
         <tr>
             <td>33</td>
-            <td><strong><a href="https://www.start.gg/user/2d42d54c" target="_blank">Elgin</a></strong> <span class="badge badge-purple">VET</span></td>
+            <td><strong><a href="https://www.start.gg/user/2d42d54c" target="_blank">Elgin</a></strong> <span class="badge badge-purple">VET</span> <span class="social-icons"><span class="social-icon" title="darkboi#8465"><img src="icons/discord.png" alt="Discord"></span></span></td>
             <td>24</td>
             <td>2022-05-21</td>
             <td>2/3</td>
@@ -452,7 +462,7 @@
         
         <tr>
             <td>33</td>
-            <td><strong><a href="https://www.start.gg/user/ce7f9a49" target="_blank">IITenixII</a></strong> <span class="badge badge-yellow">NEW</span></td>
+            <td><strong><a href="https://www.start.gg/user/ce7f9a49" target="_blank">IITenixII</a></strong> <span class="badge badge-yellow">NEW</span> <span class="social-icons"></span></td>
             <td>0</td>
             <td>2025-09-27</td>
             <td>3/3</td>
@@ -460,7 +470,7 @@
         
         <tr>
             <td>33</td>
-            <td><strong><a href="https://www.start.gg/user/f2fa814c" target="_blank">carriannitis</a></strong> <span class="badge badge-blue">REG</span></td>
+            <td><strong><a href="https://www.start.gg/user/f2fa814c" target="_blank">carriannitis</a></strong> <span class="badge badge-blue">REG</span> <span class="social-icons"></span></td>
             <td>7</td>
             <td>2022-06-11</td>
             <td>2/3</td>
@@ -468,7 +478,7 @@
         
         <tr>
             <td>33</td>
-            <td><strong><a href="https://www.start.gg/user/a2a2bda6" target="_blank">Coach Cab | AshMarie</a></strong> <span class="badge badge-yellow">NEW</span></td>
+            <td><strong><a href="https://www.start.gg/user/a2a2bda6" target="_blank">Coach Cab | AshMarie</a></strong> <span class="badge badge-yellow">NEW</span> <span class="social-icons"></span></td>
             <td>0</td>
             <td>2025-09-27</td>
             <td>2/3</td>
@@ -476,7 +486,7 @@
         
         <tr>
             <td>33</td>
-            <td><strong><a href="https://www.start.gg/user/f72e2aa4" target="_blank">Coach Cab | Aolgcougar1</a></strong> <span class="badge badge-yellow">NEW</span></td>
+            <td><strong><a href="https://www.start.gg/user/f72e2aa4" target="_blank">Coach Cab | Aolgcougar1</a></strong> <span class="badge badge-yellow">NEW</span> <span class="social-icons"></span></td>
             <td>0</td>
             <td>2025-09-27</td>
             <td>2/3</td>
@@ -484,7 +494,7 @@
         
         <tr>
             <td>33</td>
-            <td><strong><a href="https://www.start.gg/user/4f37c623" target="_blank">ShadowPichu</a></strong> <span class="badge badge-orange">INIT</span></td>
+            <td><strong><a href="https://www.start.gg/user/4f37c623" target="_blank">ShadowPichu</a></strong> <span class="badge badge-orange">INIT</span> <span class="social-icons"></span></td>
             <td>2</td>
             <td>2025-08-30</td>
             <td>3/3</td>
@@ -492,7 +502,7 @@
         
         <tr>
             <td>33</td>
-            <td><strong><a href="https://www.start.gg/user/8d508643" target="_blank">misSLYCR</a></strong> <span class="badge badge-orange">INIT</span></td>
+            <td><strong><a href="https://www.start.gg/user/8d508643" target="_blank">misSLYCR</a></strong> <span class="badge badge-orange">INIT</span> <span class="social-icons"></span></td>
             <td>1</td>
             <td>2025-09-13</td>
             <td>3/3</td>
@@ -500,7 +510,7 @@
         
         <tr>
             <td>49</td>
-            <td><strong><a href="https://www.start.gg/user/8b31a4b5" target="_blank">UOG | Karanui</a></strong> <span class="badge badge-blue">REG</span></td>
+            <td><strong><a href="https://www.start.gg/user/8b31a4b5" target="_blank">UOG | Karanui</a></strong> <span class="badge badge-blue">REG</span> <span class="social-icons"><span class="social-icon" title="Kaiyu#0232"><img src="icons/discord.png" alt="Discord"></span></span></td>
             <td>6</td>
             <td>2022-10-22</td>
             <td>3/3</td>
@@ -508,7 +518,7 @@
         
         <tr>
             <td>49</td>
-            <td><strong><a href="https://www.start.gg/user/87808aef" target="_blank">HHH | Collin Cypher</a></strong> <span class="badge badge-yellow">NEW</span></td>
+            <td><strong><a href="https://www.start.gg/user/87808aef" target="_blank">HHH | Collin Cypher</a></strong> <span class="badge badge-yellow">NEW</span> <span class="social-icons"></span></td>
             <td>0</td>
             <td>2025-09-27</td>
             <td>2/3</td>
@@ -516,7 +526,7 @@
         
         <tr>
             <td>49</td>
-            <td><strong>SF | Aikuda</strong> <span class="badge badge-red">DQ</span><span class="badge badge-gray">GUEST</span></td>
+            <td><strong>SF | Aikuda</strong> <span class="badge badge-red">DQ</span><span class="badge badge-gray">GUEST</span> <span class="social-icons"></span></td>
             <td>0</td>
             <td>N/A (guest)</td>
             <td>1/2</td>
@@ -524,7 +534,7 @@
         
         <tr>
             <td>49</td>
-            <td><strong><a href="https://www.start.gg/user/239a228e" target="_blank">Kensanity</a></strong> <span class="badge badge-red">DQ</span><span class="badge badge-purple">VET</span></td>
+            <td><strong><a href="https://www.start.gg/user/239a228e" target="_blank">Kensanity</a></strong> <span class="badge badge-red">DQ</span><span class="badge badge-purple">VET</span> <span class="social-icons"></span></td>
             <td>32</td>
             <td>2018-01-26</td>
             <td>1/2</td>
@@ -532,7 +542,7 @@
         
         <tr>
             <td>49</td>
-            <td><strong><a href="https://www.start.gg/user/d086ffe0" target="_blank">Simon</a></strong> <span class="badge badge-red">DQ</span><span class="badge badge-yellow">NEW</span></td>
+            <td><strong><a href="https://www.start.gg/user/d086ffe0" target="_blank">Simon</a></strong> <span class="badge badge-red">DQ</span><span class="badge badge-yellow">NEW</span> <span class="social-icons"></span></td>
             <td>0</td>
             <td>2025-09-27</td>
             <td>1/2</td>
@@ -540,7 +550,7 @@
         
         <tr>
             <td>49</td>
-            <td><strong>maputofu</strong> <span class="badge badge-gray">GUEST</span></td>
+            <td><strong>maputofu</strong> <span class="badge badge-gray">GUEST</span> <span class="social-icons"></span></td>
             <td>0</td>
             <td>N/A (guest)</td>
             <td>2/2</td>
@@ -548,7 +558,7 @@
         
         <tr>
             <td>49</td>
-            <td><strong><a href="https://www.start.gg/user/7554cace" target="_blank">cjvzza</a></strong> <span class="badge badge-orange">INIT</span></td>
+            <td><strong><a href="https://www.start.gg/user/7554cace" target="_blank">cjvzza</a></strong> <span class="badge badge-orange">INIT</span> <span class="social-icons"></span></td>
             <td>1</td>
             <td>2025-08-30</td>
             <td>3/3</td>
@@ -556,7 +566,7 @@
         
         <tr>
             <td>49</td>
-            <td><strong><a href="https://www.start.gg/user/95a04ff8" target="_blank">Fokai Soulja | sweaterggod</a></strong> <span class="badge badge-red">DQ</span><span class="badge badge-orange">INIT</span></td>
+            <td><strong><a href="https://www.start.gg/user/95a04ff8" target="_blank">Fokai Soulja | sweaterggod</a></strong> <span class="badge badge-red">DQ</span><span class="badge badge-orange">INIT</span> <span class="social-icons"></span></td>
             <td>1</td>
             <td>2022-05-21</td>
             <td>1/2</td>
@@ -564,7 +574,7 @@
         
         <tr>
             <td>49</td>
-            <td><strong><a href="https://www.start.gg/user/59bb3885" target="_blank">JFK | Sigma_dee</a></strong> <span class="badge badge-red">DQ</span><span class="badge badge-yellow">NEW</span></td>
+            <td><strong><a href="https://www.start.gg/user/59bb3885" target="_blank">JFK | Sigma_dee</a></strong> <span class="badge badge-red">DQ</span><span class="badge badge-yellow">NEW</span> <span class="social-icons"></span></td>
             <td>0</td>
             <td>2025-09-27</td>
             <td>1/2</td>
@@ -572,7 +582,7 @@
         
         <tr>
             <td>49</td>
-            <td><strong><a href="https://www.start.gg/user/c5c1b1a4" target="_blank">DooDooFeng</a></strong> <span class="badge badge-red">DQ</span><span class="badge badge-orange">INIT</span></td>
+            <td><strong><a href="https://www.start.gg/user/c5c1b1a4" target="_blank">DooDooFeng</a></strong> <span class="badge badge-red">DQ</span><span class="badge badge-orange">INIT</span> <span class="social-icons"></span></td>
             <td>2</td>
             <td>2025-08-30</td>
             <td>0/2</td>
@@ -580,7 +590,7 @@
         
         <tr>
             <td>49</td>
-            <td><strong><a href="https://www.start.gg/user/6ba2f4f5" target="_blank">Survivalist Master</a></strong> <span class="badge badge-red">DQ</span><span class="badge badge-yellow">NEW</span></td>
+            <td><strong><a href="https://www.start.gg/user/6ba2f4f5" target="_blank">Survivalist Master</a></strong> <span class="badge badge-red">DQ</span><span class="badge badge-yellow">NEW</span> <span class="social-icons"></span></td>
             <td>0</td>
             <td>2025-09-27</td>
             <td>1/2</td>
@@ -588,7 +598,7 @@
         
         <tr>
             <td>49</td>
-            <td><strong><a href="https://www.start.gg/user/97399308" target="_blank">Hitbox Practice</a></strong> <span class="badge badge-red">DQ</span><span class="badge badge-orange">INIT</span></td>
+            <td><strong><a href="https://www.start.gg/user/97399308" target="_blank">Hitbox Practice</a></strong> <span class="badge badge-red">DQ</span><span class="badge badge-orange">INIT</span> <span class="social-icons"></span></td>
             <td>2</td>
             <td>2025-07-26</td>
             <td>0/2</td>
@@ -596,7 +606,7 @@
         
         <tr>
             <td>49</td>
-            <td><strong><a href="https://www.start.gg/user/997333d2" target="_blank">Dōkan</a></strong> <span class="badge badge-red">DQ</span><span class="badge badge-yellow">NEW</span></td>
+            <td><strong><a href="https://www.start.gg/user/997333d2" target="_blank">Dōkan</a></strong> <span class="badge badge-red">DQ</span><span class="badge badge-yellow">NEW</span> <span class="social-icons"></span></td>
             <td>0</td>
             <td>2025-09-27</td>
             <td>1/2</td>
@@ -604,7 +614,7 @@
         
         <tr>
             <td>49</td>
-            <td><strong><a href="https://www.start.gg/user/3f105820" target="_blank">Kamikid</a></strong> <span class="badge badge-red">DQ</span><span class="badge badge-blue">REG</span></td>
+            <td><strong><a href="https://www.start.gg/user/3f105820" target="_blank">Kamikid</a></strong> <span class="badge badge-red">DQ</span><span class="badge badge-blue">REG</span> <span class="social-icons"></span></td>
             <td>6</td>
             <td>2019-09-14</td>
             <td>0/2</td>
@@ -612,7 +622,7 @@
         
         <tr>
             <td>49</td>
-            <td><strong><a href="https://www.start.gg/user/23902203" target="_blank">Jollibeanery</a></strong> <span class="badge badge-red">DQ</span><span class="badge badge-orange">INIT</span></td>
+            <td><strong><a href="https://www.start.gg/user/23902203" target="_blank">Jollibeanery</a></strong> <span class="badge badge-red">DQ</span><span class="badge badge-orange">INIT</span> <span class="social-icons"><span class="social-icon" title="jbs432"><img src="icons/discord.png" alt="Discord"></span></span></td>
             <td>1</td>
             <td>2025-08-30</td>
             <td>1/2</td>
@@ -620,7 +630,7 @@
         
         <tr>
             <td>49</td>
-            <td><strong><a href="https://www.start.gg/user/e1c110ac" target="_blank">Blaazé</a></strong> <span class="badge badge-red">DQ</span><span class="badge badge-purple">VET</span></td>
+            <td><strong><a href="https://www.start.gg/user/e1c110ac" target="_blank">Blaazé</a></strong> <span class="badge badge-red">DQ</span><span class="badge badge-purple">VET</span> <span class="social-icons"><a href="https://twitter.com/Blaze_Jeezus" target="_blank" title="@Blaze_Jeezus" class="social-icon"><img src="icons/twitter.png" alt="Twitter"></a><a href="https://twitch.tv/blazejesus" target="_blank" title="blazejesus" class="social-icon"><img src="icons/twitch.png" alt="Twitch"></a><span class="social-icon" title="blaze_jeezus"><img src="icons/discord.png" alt="Discord"></span></span></td>
             <td>45</td>
             <td>2018-01-26</td>
             <td>1/2</td>
@@ -628,7 +638,7 @@
         
         <tr>
             <td>65</td>
-            <td><strong>antonio</strong> <span class="badge badge-red">DQ</span><span class="badge badge-gray">GUEST</span></td>
+            <td><strong>antonio</strong> <span class="badge badge-red">DQ</span><span class="badge badge-gray">GUEST</span> <span class="social-icons"></span></td>
             <td>0</td>
             <td>N/A (guest)</td>
             <td>1/2</td>
@@ -636,7 +646,7 @@
         
         <tr>
             <td>65</td>
-            <td><strong><a href="https://www.start.gg/user/21872ff5" target="_blank">Shaydo</a></strong> <span class="badge badge-red">DQ</span><span class="badge badge-purple">VET</span></td>
+            <td><strong><a href="https://www.start.gg/user/21872ff5" target="_blank">Shaydo</a></strong> <span class="badge badge-red">DQ</span><span class="badge badge-purple">VET</span> <span class="social-icons"><a href="https://twitch.tv/ShaydoGaming" target="_blank" title="ShaydoGaming" class="social-icon"><img src="icons/twitch.png" alt="Twitch"></a></span></td>
             <td>34</td>
             <td>2018-01-26</td>
             <td>1/2</td>
@@ -644,7 +654,7 @@
         
         <tr>
             <td>65</td>
-            <td><strong><a href="https://www.start.gg/user/21c517d0" target="_blank">CLOWN FISH</a></strong> <span class="badge badge-red">DQ</span><span class="badge badge-orange">INIT</span></td>
+            <td><strong><a href="https://www.start.gg/user/21c517d0" target="_blank">CLOWN FISH</a></strong> <span class="badge badge-red">DQ</span><span class="badge badge-orange">INIT</span> <span class="social-icons"><span class="social-icon" title="SEAWEED BRAIN#4910"><img src="icons/discord.png" alt="Discord"></span></span></td>
             <td>3</td>
             <td>2022-05-21</td>
             <td>0/2</td>
@@ -652,7 +662,7 @@
         
         <tr>
             <td>65</td>
-            <td><strong><a href="https://www.start.gg/user/d723d8ff" target="_blank">MSQ2P | Rjac10</a></strong> <span class="badge badge-red">DQ</span><span class="badge badge-orange">INIT</span></td>
+            <td><strong><a href="https://www.start.gg/user/d723d8ff" target="_blank">MSQ2P | Rjac10</a></strong> <span class="badge badge-red">DQ</span><span class="badge badge-orange">INIT</span> <span class="social-icons"><span class="social-icon" title="rjac6"><img src="icons/discord.png" alt="Discord"></span></span></td>
             <td>1</td>
             <td>2025-08-30</td>
             <td>0/2</td>
@@ -660,7 +670,7 @@
         
         <tr>
             <td>65</td>
-            <td><strong><a href="https://www.start.gg/user/5302997f" target="_blank">Trek90 | ChaosKing807</a></strong> <span class="badge badge-blue">REG</span></td>
+            <td><strong><a href="https://www.start.gg/user/5302997f" target="_blank">Trek90 | ChaosKing807</a></strong> <span class="badge badge-blue">REG</span> <span class="social-icons"><span class="social-icon" title="mensah#7930"><img src="icons/discord.png" alt="Discord"></span></span></td>
             <td>9</td>
             <td>2021-10-03</td>
             <td>2/2</td>
@@ -668,7 +678,7 @@
         
         <tr>
             <td>65</td>
-            <td><strong><a href="https://www.start.gg/user/6639c385" target="_blank">LK | Osiris</a></strong> <span class="badge badge-red">DQ</span><span class="badge badge-blue">REG</span></td>
+            <td><strong><a href="https://www.start.gg/user/6639c385" target="_blank">LK | Osiris</a></strong> <span class="badge badge-red">DQ</span><span class="badge badge-blue">REG</span> <span class="social-icons"></span></td>
             <td>9</td>
             <td>2023-08-26</td>
             <td>0/2</td>
@@ -679,8 +689,9 @@
         </section>
 
         <footer>
-            <p>Report generated: 2026-01-17 22:22:52</p>
+            <p>Report generated: 2026-01-18 00:03:41</p>
             <p>Data source: <a href="https://www.start.gg/tournament/gesf-summer-fall-showdown-2025-september/event/tekken-8-twt-dojo" target="_blank">start.gg</a></p>
+            <p class="icon-credit">Social icons by <a href="https://www.freepik.com" target="_blank">Freepik</a> and <a href="https://www.flaticon.com/authors/pixel-perfect" target="_blank">Pixel Perfect</a> from Flaticon</p>
         </footer>
     </div>
 </body>

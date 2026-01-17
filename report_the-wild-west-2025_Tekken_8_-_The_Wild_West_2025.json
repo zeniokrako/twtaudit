@@ -1,0 +1,51 @@
+{
+  "tournament": "THE WILD WEST 2025",
+  "tournament_slug": "tournament/the-wild-west-2025",
+  "event": "Tekken 8 - The Wild West 2025",
+  "event_id": 1052,
+  "tournament_date": "2025-03-14T21:00:00",
+  "audit_timestamp": "2026-01-18T03:09:40.276410",
+  "total_entrants": 53,
+  "legitimacy_score": 96.22641509433963,
+  "risk_level": "LOW",
+  "stats": {
+    "overall_dq_rate": 3.7735849056603774,
+    "regulars_total": 34,
+    "regulars_dq_rate": 5.88235294117647,
+    "newcomers_total": 18,
+    "newcomers_dq_rate": 0.0
+  },
+  "tier_breakdown": {
+    "frequent_fighter": {
+      "total": 16,
+      "dq_count": 0,
+      "dq_rate": 0.0
+    },
+    "semi_frequent": {
+      "total": 8,
+      "dq_count": 2,
+      "dq_rate": 25.0
+    },
+    "not_newbie": {
+      "total": 10,
+      "dq_count": 0,
+      "dq_rate": 0.0
+    },
+    "initiate": {
+      "total": 13,
+      "dq_count": 0,
+      "dq_rate": 0.0
+    },
+    "brand_new": {
+      "total": 5,
+      "dq_count": 0,
+      "dq_rate": 0.0
+    },
+    "guest": {
+      "total": 1,
+      "dq_count": 0,
+      "dq_rate": 0.0
+    }
+  },
+  "suspicious_clusters": []
+}

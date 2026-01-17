@@ -1,0 +1,51 @@
+{
+  "tournament": "TiP Finale: Rest in Parradise",
+  "tournament_slug": "tournament/tip-finale-rest-in-parradise",
+  "event": "Tekken 8",
+  "event_id": 184,
+  "tournament_date": "2025-11-05T18:00:00",
+  "audit_timestamp": "2026-01-18T00:03:41.812272",
+  "total_entrants": 78,
+  "legitimacy_score": 96.15384615384616,
+  "risk_level": "LOW",
+  "stats": {
+    "overall_dq_rate": 3.8461538461538463,
+    "regulars_total": 60,
+    "regulars_dq_rate": 5.0,
+    "newcomers_total": 18,
+    "newcomers_dq_rate": 0.0
+  },
+  "tier_breakdown": {
+    "frequent_fighter": {
+      "total": 45,
+      "dq_count": 2,
+      "dq_rate": 4.444444444444445
+    },
+    "semi_frequent": {
+      "total": 12,
+      "dq_count": 1,
+      "dq_rate": 8.333333333333332
+    },
+    "not_newbie": {
+      "total": 3,
+      "dq_count": 0,
+      "dq_rate": 0.0
+    },
+    "initiate": {
+      "total": 12,
+      "dq_count": 0,
+      "dq_rate": 0.0
+    },
+    "brand_new": {
+      "total": 6,
+      "dq_count": 0,
+      "dq_rate": 0.0
+    },
+    "guest": {
+      "total": 0,
+      "dq_count": 0,
+      "dq_rate": 0.0
+    }
+  },
+  "suspicious_clusters": []
+}

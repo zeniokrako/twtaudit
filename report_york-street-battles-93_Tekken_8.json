@@ -1,0 +1,51 @@
+{
+  "tournament": "York Street Battles #93",
+  "tournament_slug": "tournament/york-street-battles-93",
+  "event": "Tekken 8",
+  "event_id": 2166,
+  "tournament_date": "2024-03-09T12:30:00",
+  "audit_timestamp": "2026-01-18T03:09:40.575608",
+  "total_entrants": 51,
+  "legitimacy_score": 99.57843137254902,
+  "risk_level": "LOW",
+  "stats": {
+    "overall_dq_rate": 3.9215686274509802,
+    "regulars_total": 25,
+    "regulars_dq_rate": 0.0,
+    "newcomers_total": 26,
+    "newcomers_dq_rate": 7.6923076923076925
+  },
+  "tier_breakdown": {
+    "frequent_fighter": {
+      "total": 13,
+      "dq_count": 0,
+      "dq_rate": 0.0
+    },
+    "semi_frequent": {
+      "total": 7,
+      "dq_count": 0,
+      "dq_rate": 0.0
+    },
+    "not_newbie": {
+      "total": 5,
+      "dq_count": 0,
+      "dq_rate": 0.0
+    },
+    "initiate": {
+      "total": 6,
+      "dq_count": 1,
+      "dq_rate": 16.666666666666664
+    },
+    "brand_new": {
+      "total": 20,
+      "dq_count": 1,
+      "dq_rate": 5.0
+    },
+    "guest": {
+      "total": 0,
+      "dq_count": 0,
+      "dq_rate": 0.0
+    }
+  },
+  "suspicious_clusters": []
+}

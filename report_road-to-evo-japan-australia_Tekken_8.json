@@ -1,0 +1,58 @@
+{
+  "tournament": "Road to EVO Japan - Australia",
+  "tournament_slug": "tournament/road-to-evo-japan-australia",
+  "event": "Tekken 8",
+  "event_id": 2138,
+  "tournament_date": "2024-03-16T09:00:00",
+  "audit_timestamp": "2026-01-18T03:09:40.568580",
+  "total_entrants": 90,
+  "legitimacy_score": 53.33333333333333,
+  "risk_level": "HIGH",
+  "stats": {
+    "overall_dq_rate": 34.44444444444444,
+    "regulars_total": 32,
+    "regulars_dq_rate": 28.125,
+    "newcomers_total": 58,
+    "newcomers_dq_rate": 37.93103448275862
+  },
+  "tier_breakdown": {
+    "frequent_fighter": {
+      "total": 16,
+      "dq_count": 5,
+      "dq_rate": 31.25
+    },
+    "semi_frequent": {
+      "total": 11,
+      "dq_count": 2,
+      "dq_rate": 18.181818181818183
+    },
+    "not_newbie": {
+      "total": 5,
+      "dq_count": 2,
+      "dq_rate": 40.0
+    },
+    "initiate": {
+      "total": 4,
+      "dq_count": 1,
+      "dq_rate": 25.0
+    },
+    "brand_new": {
+      "total": 54,
+      "dq_count": 21,
+      "dq_rate": 38.88888888888889
+    },
+    "guest": {
+      "total": 0,
+      "dq_count": 0,
+      "dq_rate": 0.0
+    }
+  },
+  "suspicious_clusters": [
+    {
+      "pattern": "Prefix: 'joi'",
+      "size": 3,
+      "dq_count": 2,
+      "dq_rate": 66.66666666666666
+    }
+  ]
+}

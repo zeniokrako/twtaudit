@@ -1,0 +1,51 @@
+{
+  "tournament": "Pixel Tekken #200",
+  "tournament_slug": "tournament/pixel-tekken-200-2",
+  "event": "Singles",
+  "event_id": 501,
+  "tournament_date": "2025-12-06T12:00:00",
+  "audit_timestamp": "2026-01-18T03:09:40.076062",
+  "total_entrants": 72,
+  "legitimacy_score": 94.44444444444444,
+  "risk_level": "LOW",
+  "stats": {
+    "overall_dq_rate": 5.555555555555555,
+    "regulars_total": 62,
+    "regulars_dq_rate": 6.451612903225806,
+    "newcomers_total": 9,
+    "newcomers_dq_rate": 0.0
+  },
+  "tier_breakdown": {
+    "frequent_fighter": {
+      "total": 46,
+      "dq_count": 2,
+      "dq_rate": 4.3478260869565215
+    },
+    "semi_frequent": {
+      "total": 12,
+      "dq_count": 2,
+      "dq_rate": 16.666666666666664
+    },
+    "not_newbie": {
+      "total": 4,
+      "dq_count": 0,
+      "dq_rate": 0.0
+    },
+    "initiate": {
+      "total": 7,
+      "dq_count": 0,
+      "dq_rate": 0.0
+    },
+    "brand_new": {
+      "total": 2,
+      "dq_count": 0,
+      "dq_rate": 0.0
+    },
+    "guest": {
+      "total": 1,
+      "dq_count": 0,
+      "dq_rate": 0.0
+    }
+  },
+  "suspicious_clusters": []
+}

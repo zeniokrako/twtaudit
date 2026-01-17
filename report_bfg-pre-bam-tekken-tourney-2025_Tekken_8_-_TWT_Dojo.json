@@ -1,0 +1,51 @@
+{
+  "tournament": "BFG Pre-BAM Tekken Tourney 2025",
+  "tournament_slug": "tournament/bfg-pre-bam-tekken-tourney-2025",
+  "event": "Tekken 8 - TWT Dojo",
+  "event_id": 904,
+  "tournament_date": "2025-05-29T13:00:00",
+  "audit_timestamp": "2026-01-18T03:09:40.218330",
+  "total_entrants": 55,
+  "legitimacy_score": 89.0909090909091,
+  "risk_level": "LOW",
+  "stats": {
+    "overall_dq_rate": 10.909090909090908,
+    "regulars_total": 48,
+    "regulars_dq_rate": 12.5,
+    "newcomers_total": 7,
+    "newcomers_dq_rate": 0.0
+  },
+  "tier_breakdown": {
+    "frequent_fighter": {
+      "total": 36,
+      "dq_count": 5,
+      "dq_rate": 13.88888888888889
+    },
+    "semi_frequent": {
+      "total": 6,
+      "dq_count": 0,
+      "dq_rate": 0.0
+    },
+    "not_newbie": {
+      "total": 6,
+      "dq_count": 1,
+      "dq_rate": 16.666666666666664
+    },
+    "initiate": {
+      "total": 4,
+      "dq_count": 0,
+      "dq_rate": 0.0
+    },
+    "brand_new": {
+      "total": 3,
+      "dq_count": 0,
+      "dq_rate": 0.0
+    },
+    "guest": {
+      "total": 0,
+      "dq_count": 0,
+      "dq_rate": 0.0
+    }
+  },
+  "suspicious_clusters": []
+}

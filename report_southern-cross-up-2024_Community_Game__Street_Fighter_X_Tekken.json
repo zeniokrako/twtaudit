@@ -1,0 +1,51 @@
+{
+  "tournament": "Southern Cross Up 2024",
+  "tournament_slug": "tournament/southern-cross-up-2024",
+  "event": "Community Game: Street Fighter X Tekken",
+  "event_id": 1373,
+  "tournament_date": "2024-10-11T15:00:00",
+  "audit_timestamp": "2026-01-18T03:09:40.390445",
+  "total_entrants": 20,
+  "legitimacy_score": 80.0,
+  "risk_level": "LOW",
+  "stats": {
+    "overall_dq_rate": 20.0,
+    "regulars_total": 16,
+    "regulars_dq_rate": 18.75,
+    "newcomers_total": 4,
+    "newcomers_dq_rate": 25.0
+  },
+  "tier_breakdown": {
+    "frequent_fighter": {
+      "total": 9,
+      "dq_count": 0,
+      "dq_rate": 0.0
+    },
+    "semi_frequent": {
+      "total": 4,
+      "dq_count": 1,
+      "dq_rate": 25.0
+    },
+    "not_newbie": {
+      "total": 3,
+      "dq_count": 2,
+      "dq_rate": 66.66666666666666
+    },
+    "initiate": {
+      "total": 1,
+      "dq_count": 0,
+      "dq_rate": 0.0
+    },
+    "brand_new": {
+      "total": 3,
+      "dq_count": 1,
+      "dq_rate": 33.33333333333333
+    },
+    "guest": {
+      "total": 0,
+      "dq_count": 0,
+      "dq_rate": 0.0
+    }
+  },
+  "suspicious_clusters": []
+}

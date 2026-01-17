@@ -1,0 +1,51 @@
+{
+  "tournament": "CWQLD | Ranbat: Graduation",
+  "tournament_slug": "tournament/cwqld-ranbat-graduation",
+  "event": "Tekken 8",
+  "event_id": 998,
+  "tournament_date": "2025-03-29T10:00:00",
+  "audit_timestamp": "2026-01-18T03:09:40.261861",
+  "total_entrants": 18,
+  "legitimacy_score": 94.44444444444444,
+  "risk_level": "LOW",
+  "stats": {
+    "overall_dq_rate": 5.555555555555555,
+    "regulars_total": 18,
+    "regulars_dq_rate": 5.555555555555555,
+    "newcomers_total": 0,
+    "newcomers_dq_rate": 0.0
+  },
+  "tier_breakdown": {
+    "frequent_fighter": {
+      "total": 11,
+      "dq_count": 0,
+      "dq_rate": 0.0
+    },
+    "semi_frequent": {
+      "total": 4,
+      "dq_count": 0,
+      "dq_rate": 0.0
+    },
+    "not_newbie": {
+      "total": 3,
+      "dq_count": 1,
+      "dq_rate": 33.33333333333333
+    },
+    "initiate": {
+      "total": 0,
+      "dq_count": 0,
+      "dq_rate": 0.0
+    },
+    "brand_new": {
+      "total": 0,
+      "dq_count": 0,
+      "dq_rate": 0.0
+    },
+    "guest": {
+      "total": 0,
+      "dq_count": 0,
+      "dq_rate": 0.0
+    }
+  },
+  "suspicious_clusters": []
+}

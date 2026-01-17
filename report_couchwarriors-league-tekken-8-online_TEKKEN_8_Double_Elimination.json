@@ -1,0 +1,51 @@
+{
+  "tournament": "CouchWarriors League - Tekken 8: Online",
+  "tournament_slug": "tournament/couchwarriors-league-tekken-8-online",
+  "event": "TEKKEN 8 Double Elimination",
+  "event_id": 1902,
+  "tournament_date": "2024-05-22T19:00:00",
+  "audit_timestamp": "2026-01-18T03:09:40.526023",
+  "total_entrants": 29,
+  "legitimacy_score": 84.20062695924766,
+  "risk_level": "LOW",
+  "stats": {
+    "overall_dq_rate": 10.344827586206897,
+    "regulars_total": 15,
+    "regulars_dq_rate": 6.666666666666667,
+    "newcomers_total": 14,
+    "newcomers_dq_rate": 14.285714285714285
+  },
+  "tier_breakdown": {
+    "frequent_fighter": {
+      "total": 7,
+      "dq_count": 0,
+      "dq_rate": 0.0
+    },
+    "semi_frequent": {
+      "total": 4,
+      "dq_count": 0,
+      "dq_rate": 0.0
+    },
+    "not_newbie": {
+      "total": 4,
+      "dq_count": 1,
+      "dq_rate": 25.0
+    },
+    "initiate": {
+      "total": 3,
+      "dq_count": 0,
+      "dq_rate": 0.0
+    },
+    "brand_new": {
+      "total": 11,
+      "dq_count": 2,
+      "dq_rate": 18.181818181818183
+    },
+    "guest": {
+      "total": 0,
+      "dq_count": 0,
+      "dq_rate": 0.0
+    }
+  },
+  "suspicious_clusters": []
+}

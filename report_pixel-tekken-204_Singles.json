@@ -1,0 +1,51 @@
+{
+  "tournament": "Pixel Tekken #204",
+  "tournament_slug": "tournament/pixel-tekken-204",
+  "event": "Singles",
+  "event_id": 470,
+  "tournament_date": "2026-01-07T19:00:00",
+  "audit_timestamp": "2026-01-18T03:09:40.061567",
+  "total_entrants": 19,
+  "legitimacy_score": 99.73684210526316,
+  "risk_level": "LOW",
+  "stats": {
+    "overall_dq_rate": 5.263157894736842,
+    "regulars_total": 18,
+    "regulars_dq_rate": 0.0,
+    "newcomers_total": 1,
+    "newcomers_dq_rate": 100.0
+  },
+  "tier_breakdown": {
+    "frequent_fighter": {
+      "total": 14,
+      "dq_count": 0,
+      "dq_rate": 0.0
+    },
+    "semi_frequent": {
+      "total": 1,
+      "dq_count": 0,
+      "dq_rate": 0.0
+    },
+    "not_newbie": {
+      "total": 3,
+      "dq_count": 0,
+      "dq_rate": 0.0
+    },
+    "initiate": {
+      "total": 1,
+      "dq_count": 1,
+      "dq_rate": 100.0
+    },
+    "brand_new": {
+      "total": 0,
+      "dq_count": 0,
+      "dq_rate": 0.0
+    },
+    "guest": {
+      "total": 0,
+      "dq_count": 0,
+      "dq_rate": 0.0
+    }
+  },
+  "suspicious_clusters": []
+}

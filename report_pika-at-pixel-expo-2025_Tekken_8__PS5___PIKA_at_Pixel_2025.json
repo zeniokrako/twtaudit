@@ -1,0 +1,51 @@
+{
+  "tournament": "PIKA at Pixel Expo 2025",
+  "tournament_slug": "tournament/pika-at-pixel-expo-2025",
+  "event": "Tekken 8 (PS5): PIKA at Pixel 2025",
+  "event_id": 672,
+  "tournament_date": "2025-09-13T12:00:00",
+  "audit_timestamp": "2026-01-18T03:09:40.129672",
+  "total_entrants": 28,
+  "legitimacy_score": 95.51948051948052,
+  "risk_level": "LOW",
+  "stats": {
+    "overall_dq_rate": 3.571428571428571,
+    "regulars_total": 4,
+    "regulars_dq_rate": 0.0,
+    "newcomers_total": 2,
+    "newcomers_dq_rate": 0.0
+  },
+  "tier_breakdown": {
+    "frequent_fighter": {
+      "total": 0,
+      "dq_count": 0,
+      "dq_rate": 0.0
+    },
+    "semi_frequent": {
+      "total": 3,
+      "dq_count": 0,
+      "dq_rate": 0.0
+    },
+    "not_newbie": {
+      "total": 1,
+      "dq_count": 0,
+      "dq_rate": 0.0
+    },
+    "initiate": {
+      "total": 1,
+      "dq_count": 0,
+      "dq_rate": 0.0
+    },
+    "brand_new": {
+      "total": 1,
+      "dq_count": 0,
+      "dq_rate": 0.0
+    },
+    "guest": {
+      "total": 22,
+      "dq_count": 1,
+      "dq_rate": 4.545454545454546
+    }
+  },
+  "suspicious_clusters": []
+}

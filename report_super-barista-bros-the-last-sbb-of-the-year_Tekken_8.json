@@ -1,0 +1,58 @@
+{
+  "tournament": "Super Barista Bros, The Last SBB of The Year",
+  "tournament_slug": "tournament/super-barista-bros-the-last-sbb-of-the-year",
+  "event": "Tekken 8",
+  "event_id": 478,
+  "tournament_date": "2025-12-21T10:00:00",
+  "audit_timestamp": "2026-01-18T03:09:40.063049",
+  "total_entrants": 20,
+  "legitimacy_score": 65.0,
+  "risk_level": "MEDIUM",
+  "stats": {
+    "overall_dq_rate": 35.0,
+    "regulars_total": 14,
+    "regulars_dq_rate": 50.0,
+    "newcomers_total": 6,
+    "newcomers_dq_rate": 0.0
+  },
+  "tier_breakdown": {
+    "frequent_fighter": {
+      "total": 13,
+      "dq_count": 6,
+      "dq_rate": 46.15384615384615
+    },
+    "semi_frequent": {
+      "total": 1,
+      "dq_count": 1,
+      "dq_rate": 100.0
+    },
+    "not_newbie": {
+      "total": 0,
+      "dq_count": 0,
+      "dq_rate": 0.0
+    },
+    "initiate": {
+      "total": 2,
+      "dq_count": 0,
+      "dq_rate": 0.0
+    },
+    "brand_new": {
+      "total": 4,
+      "dq_count": 0,
+      "dq_rate": 0.0
+    },
+    "guest": {
+      "total": 0,
+      "dq_count": 0,
+      "dq_rate": 0.0
+    }
+  },
+  "suspicious_clusters": [
+    {
+      "pattern": "Prefix: 'bl'",
+      "size": 3,
+      "dq_count": 2,
+      "dq_rate": 66.66666666666666
+    }
+  ]
+}

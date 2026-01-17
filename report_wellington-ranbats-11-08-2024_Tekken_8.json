@@ -1,0 +1,51 @@
+{
+  "tournament": "Wellington Ranbats 11/08/2024",
+  "tournament_slug": "tournament/wellington-ranbats-11-08-2024",
+  "event": "Tekken 8",
+  "event_id": 1515,
+  "tournament_date": "2024-08-11T09:00:00",
+  "audit_timestamp": "2026-01-18T03:09:40.440559",
+  "total_entrants": 18,
+  "legitimacy_score": 88.88888888888889,
+  "risk_level": "LOW",
+  "stats": {
+    "overall_dq_rate": 11.11111111111111,
+    "regulars_total": 9,
+    "regulars_dq_rate": 22.22222222222222,
+    "newcomers_total": 9,
+    "newcomers_dq_rate": 0.0
+  },
+  "tier_breakdown": {
+    "frequent_fighter": {
+      "total": 5,
+      "dq_count": 0,
+      "dq_rate": 0.0
+    },
+    "semi_frequent": {
+      "total": 2,
+      "dq_count": 1,
+      "dq_rate": 50.0
+    },
+    "not_newbie": {
+      "total": 2,
+      "dq_count": 1,
+      "dq_rate": 50.0
+    },
+    "initiate": {
+      "total": 2,
+      "dq_count": 0,
+      "dq_rate": 0.0
+    },
+    "brand_new": {
+      "total": 7,
+      "dq_count": 0,
+      "dq_rate": 0.0
+    },
+    "guest": {
+      "total": 0,
+      "dq_count": 0,
+      "dq_rate": 0.0
+    }
+  },
+  "suspicious_clusters": []
+}

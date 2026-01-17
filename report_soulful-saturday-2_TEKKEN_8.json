@@ -1,0 +1,51 @@
+{
+  "tournament": "Soulful Saturday #2",
+  "tournament_slug": "tournament/soulful-saturday-2",
+  "event": "TEKKEN 8",
+  "event_id": 782,
+  "tournament_date": "2025-07-26T12:00:00",
+  "audit_timestamp": "2026-01-18T03:09:40.170477",
+  "total_entrants": 50,
+  "legitimacy_score": 100,
+  "risk_level": "LOW",
+  "stats": {
+    "overall_dq_rate": 2.0,
+    "regulars_total": 26,
+    "regulars_dq_rate": 3.8461538461538463,
+    "newcomers_total": 21,
+    "newcomers_dq_rate": 0.0
+  },
+  "tier_breakdown": {
+    "frequent_fighter": {
+      "total": 15,
+      "dq_count": 1,
+      "dq_rate": 6.666666666666667
+    },
+    "semi_frequent": {
+      "total": 7,
+      "dq_count": 0,
+      "dq_rate": 0.0
+    },
+    "not_newbie": {
+      "total": 4,
+      "dq_count": 0,
+      "dq_rate": 0.0
+    },
+    "initiate": {
+      "total": 8,
+      "dq_count": 0,
+      "dq_rate": 0.0
+    },
+    "brand_new": {
+      "total": 13,
+      "dq_count": 0,
+      "dq_rate": 0.0
+    },
+    "guest": {
+      "total": 3,
+      "dq_count": 0,
+      "dq_rate": 0.0
+    }
+  },
+  "suspicious_clusters": []
+}

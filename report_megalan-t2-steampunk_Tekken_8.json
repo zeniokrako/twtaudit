@@ -1,0 +1,51 @@
+{
+  "tournament": "MegaLAN T2: Steampunk",
+  "tournament_slug": "tournament/megalan-t2-steampunk",
+  "event": "Tekken 8",
+  "event_id": 1803,
+  "tournament_date": "2024-06-08T11:00:00",
+  "audit_timestamp": "2026-01-18T03:09:40.496560",
+  "total_entrants": 22,
+  "legitimacy_score": 92.12121212121212,
+  "risk_level": "LOW",
+  "stats": {
+    "overall_dq_rate": 4.545454545454546,
+    "regulars_total": 9,
+    "regulars_dq_rate": 0.0,
+    "newcomers_total": 13,
+    "newcomers_dq_rate": 7.6923076923076925
+  },
+  "tier_breakdown": {
+    "frequent_fighter": {
+      "total": 6,
+      "dq_count": 0,
+      "dq_rate": 0.0
+    },
+    "semi_frequent": {
+      "total": 2,
+      "dq_count": 0,
+      "dq_rate": 0.0
+    },
+    "not_newbie": {
+      "total": 1,
+      "dq_count": 0,
+      "dq_rate": 0.0
+    },
+    "initiate": {
+      "total": 4,
+      "dq_count": 0,
+      "dq_rate": 0.0
+    },
+    "brand_new": {
+      "total": 9,
+      "dq_count": 1,
+      "dq_rate": 11.11111111111111
+    },
+    "guest": {
+      "total": 0,
+      "dq_count": 0,
+      "dq_rate": 0.0
+    }
+  },
+  "suspicious_clusters": []
+}

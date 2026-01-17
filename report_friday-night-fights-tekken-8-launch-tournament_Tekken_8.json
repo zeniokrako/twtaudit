@@ -1,0 +1,51 @@
+{
+  "tournament": "Friday Night Fights: Tekken 8 Launch Tournament",
+  "tournament_slug": "tournament/friday-night-fights-tekken-8-launch-tournament",
+  "event": "Tekken 8",
+  "event_id": 2307,
+  "tournament_date": "2024-02-02T21:00:00",
+  "audit_timestamp": "2026-01-18T03:11:24.496738",
+  "total_entrants": 48,
+  "legitimacy_score": 100,
+  "risk_level": "LOW",
+  "stats": {
+    "overall_dq_rate": 0.0,
+    "regulars_total": 30,
+    "regulars_dq_rate": 0.0,
+    "newcomers_total": 11,
+    "newcomers_dq_rate": 0.0
+  },
+  "tier_breakdown": {
+    "frequent_fighter": {
+      "total": 14,
+      "dq_count": 0,
+      "dq_rate": 0.0
+    },
+    "semi_frequent": {
+      "total": 12,
+      "dq_count": 0,
+      "dq_rate": 0.0
+    },
+    "not_newbie": {
+      "total": 4,
+      "dq_count": 0,
+      "dq_rate": 0.0
+    },
+    "initiate": {
+      "total": 8,
+      "dq_count": 0,
+      "dq_rate": 0.0
+    },
+    "brand_new": {
+      "total": 3,
+      "dq_count": 0,
+      "dq_rate": 0.0
+    },
+    "guest": {
+      "total": 7,
+      "dq_count": 0,
+      "dq_rate": 0.0
+    }
+  },
+  "suspicious_clusters": []
+}

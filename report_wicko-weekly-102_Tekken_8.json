@@ -1,0 +1,51 @@
+{
+  "tournament": "Wicko Weekly #102",
+  "tournament_slug": "tournament/wicko-weekly-102",
+  "event": "Tekken 8",
+  "event_id": 648,
+  "tournament_date": "2025-09-22T18:30:00",
+  "audit_timestamp": "2026-01-18T03:09:40.121305",
+  "total_entrants": 20,
+  "legitimacy_score": 95.0,
+  "risk_level": "LOW",
+  "stats": {
+    "overall_dq_rate": 5.0,
+    "regulars_total": 13,
+    "regulars_dq_rate": 7.6923076923076925,
+    "newcomers_total": 4,
+    "newcomers_dq_rate": 0.0
+  },
+  "tier_breakdown": {
+    "frequent_fighter": {
+      "total": 12,
+      "dq_count": 1,
+      "dq_rate": 8.333333333333332
+    },
+    "semi_frequent": {
+      "total": 0,
+      "dq_count": 0,
+      "dq_rate": 0.0
+    },
+    "not_newbie": {
+      "total": 1,
+      "dq_count": 0,
+      "dq_rate": 0.0
+    },
+    "initiate": {
+      "total": 4,
+      "dq_count": 0,
+      "dq_rate": 0.0
+    },
+    "brand_new": {
+      "total": 0,
+      "dq_count": 0,
+      "dq_rate": 0.0
+    },
+    "guest": {
+      "total": 3,
+      "dq_count": 0,
+      "dq_rate": 0.0
+    }
+  },
+  "suspicious_clusters": []
+}

@@ -1,0 +1,51 @@
+{
+  "tournament": "Big Cheese 5 - South Australia Smash & FGC Major",
+  "tournament_slug": "tournament/big-cheese-5-south-australia-smash-fgc-major",
+  "event": "Tekken 8",
+  "event_id": 1344,
+  "tournament_date": "2024-10-11T18:30:00",
+  "audit_timestamp": "2026-01-18T03:09:40.384192",
+  "total_entrants": 43,
+  "legitimacy_score": 84.62209302325581,
+  "risk_level": "LOW",
+  "stats": {
+    "overall_dq_rate": 11.627906976744185,
+    "regulars_total": 29,
+    "regulars_dq_rate": 13.793103448275861,
+    "newcomers_total": 14,
+    "newcomers_dq_rate": 7.142857142857142
+  },
+  "tier_breakdown": {
+    "frequent_fighter": {
+      "total": 14,
+      "dq_count": 3,
+      "dq_rate": 21.428571428571427
+    },
+    "semi_frequent": {
+      "total": 12,
+      "dq_count": 1,
+      "dq_rate": 8.333333333333332
+    },
+    "not_newbie": {
+      "total": 3,
+      "dq_count": 0,
+      "dq_rate": 0.0
+    },
+    "initiate": {
+      "total": 6,
+      "dq_count": 0,
+      "dq_rate": 0.0
+    },
+    "brand_new": {
+      "total": 8,
+      "dq_count": 1,
+      "dq_rate": 12.5
+    },
+    "guest": {
+      "total": 0,
+      "dq_count": 0,
+      "dq_rate": 0.0
+    }
+  },
+  "suspicious_clusters": []
+}

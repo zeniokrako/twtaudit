@@ -1,0 +1,51 @@
+{
+  "tournament": "FIST 2024",
+  "tournament_slug": "tournament/fist-2024",
+  "event": "Tekken 8 Singles",
+  "event_id": 1948,
+  "tournament_date": "2024-05-11T10:00:00",
+  "audit_timestamp": "2026-01-18T03:09:40.533866",
+  "total_entrants": 22,
+  "legitimacy_score": 83.03030303030303,
+  "risk_level": "LOW",
+  "stats": {
+    "overall_dq_rate": 13.636363636363635,
+    "regulars_total": 13,
+    "regulars_dq_rate": 15.384615384615385,
+    "newcomers_total": 9,
+    "newcomers_dq_rate": 11.11111111111111
+  },
+  "tier_breakdown": {
+    "frequent_fighter": {
+      "total": 5,
+      "dq_count": 1,
+      "dq_rate": 20.0
+    },
+    "semi_frequent": {
+      "total": 4,
+      "dq_count": 1,
+      "dq_rate": 25.0
+    },
+    "not_newbie": {
+      "total": 4,
+      "dq_count": 0,
+      "dq_rate": 0.0
+    },
+    "initiate": {
+      "total": 0,
+      "dq_count": 0,
+      "dq_rate": 0.0
+    },
+    "brand_new": {
+      "total": 9,
+      "dq_count": 1,
+      "dq_rate": 11.11111111111111
+    },
+    "guest": {
+      "total": 0,
+      "dq_count": 0,
+      "dq_rate": 0.0
+    }
+  },
+  "suspicious_clusters": []
+}

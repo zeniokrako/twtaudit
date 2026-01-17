@@ -1,0 +1,51 @@
+{
+  "tournament": "WellingtonFGC Ranbats and Meetup 30/06/2024",
+  "tournament_slug": "tournament/wellingtonfgc-ranbats-and-meetup-30-06-2024",
+  "event": "Tekken 8",
+  "event_id": 1694,
+  "tournament_date": "2024-06-30T09:01:00",
+  "audit_timestamp": "2026-01-18T03:09:40.479905",
+  "total_entrants": 16,
+  "legitimacy_score": 100,
+  "risk_level": "LOW",
+  "stats": {
+    "overall_dq_rate": 0.0,
+    "regulars_total": 8,
+    "regulars_dq_rate": 0.0,
+    "newcomers_total": 8,
+    "newcomers_dq_rate": 0.0
+  },
+  "tier_breakdown": {
+    "frequent_fighter": {
+      "total": 6,
+      "dq_count": 0,
+      "dq_rate": 0.0
+    },
+    "semi_frequent": {
+      "total": 2,
+      "dq_count": 0,
+      "dq_rate": 0.0
+    },
+    "not_newbie": {
+      "total": 0,
+      "dq_count": 0,
+      "dq_rate": 0.0
+    },
+    "initiate": {
+      "total": 2,
+      "dq_count": 0,
+      "dq_rate": 0.0
+    },
+    "brand_new": {
+      "total": 6,
+      "dq_count": 0,
+      "dq_rate": 0.0
+    },
+    "guest": {
+      "total": 0,
+      "dq_count": 0,
+      "dq_rate": 0.0
+    }
+  },
+  "suspicious_clusters": []
+}

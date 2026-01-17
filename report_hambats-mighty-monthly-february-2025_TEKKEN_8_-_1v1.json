@@ -1,0 +1,51 @@
+{
+  "tournament": "Hambats Mighty Monthly - February 2025",
+  "tournament_slug": "tournament/hambats-mighty-monthly-february-2025",
+  "event": "TEKKEN 8 - 1v1",
+  "event_id": 1108,
+  "tournament_date": "2025-02-15T08:00:00",
+  "audit_timestamp": "2026-01-18T03:09:40.298447",
+  "total_entrants": 17,
+  "legitimacy_score": 94.11764705882354,
+  "risk_level": "LOW",
+  "stats": {
+    "overall_dq_rate": 5.88235294117647,
+    "regulars_total": 8,
+    "regulars_dq_rate": 12.5,
+    "newcomers_total": 4,
+    "newcomers_dq_rate": 0.0
+  },
+  "tier_breakdown": {
+    "frequent_fighter": {
+      "total": 5,
+      "dq_count": 0,
+      "dq_rate": 0.0
+    },
+    "semi_frequent": {
+      "total": 2,
+      "dq_count": 1,
+      "dq_rate": 50.0
+    },
+    "not_newbie": {
+      "total": 1,
+      "dq_count": 0,
+      "dq_rate": 0.0
+    },
+    "initiate": {
+      "total": 2,
+      "dq_count": 0,
+      "dq_rate": 0.0
+    },
+    "brand_new": {
+      "total": 2,
+      "dq_count": 0,
+      "dq_rate": 0.0
+    },
+    "guest": {
+      "total": 5,
+      "dq_count": 0,
+      "dq_rate": 0.0
+    }
+  },
+  "suspicious_clusters": []
+}

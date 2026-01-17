@@ -1,0 +1,51 @@
+{
+  "tournament": "Cheese League September 2025 @ Adelaide Artcade!",
+  "tournament_slug": "tournament/cheese-league-september-2025-adelaide-artcade",
+  "event": "Tekken 8 ($5 Entry)",
+  "event_id": 639,
+  "tournament_date": "2025-09-27T12:30:00",
+  "audit_timestamp": "2026-01-18T03:09:40.116876",
+  "total_entrants": 17,
+  "legitimacy_score": 99.11764705882354,
+  "risk_level": "LOW",
+  "stats": {
+    "overall_dq_rate": 5.88235294117647,
+    "regulars_total": 13,
+    "regulars_dq_rate": 0.0,
+    "newcomers_total": 3,
+    "newcomers_dq_rate": 33.33333333333333
+  },
+  "tier_breakdown": {
+    "frequent_fighter": {
+      "total": 10,
+      "dq_count": 0,
+      "dq_rate": 0.0
+    },
+    "semi_frequent": {
+      "total": 2,
+      "dq_count": 0,
+      "dq_rate": 0.0
+    },
+    "not_newbie": {
+      "total": 1,
+      "dq_count": 0,
+      "dq_rate": 0.0
+    },
+    "initiate": {
+      "total": 1,
+      "dq_count": 0,
+      "dq_rate": 0.0
+    },
+    "brand_new": {
+      "total": 2,
+      "dq_count": 1,
+      "dq_rate": 50.0
+    },
+    "guest": {
+      "total": 1,
+      "dq_count": 0,
+      "dq_rate": 0.0
+    }
+  },
+  "suspicious_clusters": []
+}

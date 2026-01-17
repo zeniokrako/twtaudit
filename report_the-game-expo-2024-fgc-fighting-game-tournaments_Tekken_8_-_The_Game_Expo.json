@@ -1,0 +1,51 @@
+{
+  "tournament": "The Game Expo 2024 FGC (Fighting Game Tournaments)",
+  "tournament_slug": "tournament/the-game-expo-2024-fgc-fighting-game-tournaments",
+  "event": "Tekken 8 - The Game Expo",
+  "event_id": 2103,
+  "tournament_date": "2024-03-23T10:00:00",
+  "audit_timestamp": "2026-01-18T03:09:40.561556",
+  "total_entrants": 61,
+  "legitimacy_score": 71.48852459016393,
+  "risk_level": "MEDIUM",
+  "stats": {
+    "overall_dq_rate": 21.311475409836063,
+    "regulars_total": 24,
+    "regulars_dq_rate": 20.833333333333336,
+    "newcomers_total": 37,
+    "newcomers_dq_rate": 21.62162162162162
+  },
+  "tier_breakdown": {
+    "frequent_fighter": {
+      "total": 17,
+      "dq_count": 4,
+      "dq_rate": 23.52941176470588
+    },
+    "semi_frequent": {
+      "total": 5,
+      "dq_count": 0,
+      "dq_rate": 0.0
+    },
+    "not_newbie": {
+      "total": 2,
+      "dq_count": 1,
+      "dq_rate": 50.0
+    },
+    "initiate": {
+      "total": 12,
+      "dq_count": 2,
+      "dq_rate": 16.666666666666664
+    },
+    "brand_new": {
+      "total": 25,
+      "dq_count": 6,
+      "dq_rate": 24.0
+    },
+    "guest": {
+      "total": 0,
+      "dq_count": 0,
+      "dq_rate": 0.0
+    }
+  },
+  "suspicious_clusters": []
+}

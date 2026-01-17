@@ -1,0 +1,51 @@
+{
+  "tournament": "Sunny Side Up 2",
+  "tournament_slug": "tournament/sunny-side-up-2",
+  "event": "Tekken 8",
+  "event_id": 1575,
+  "tournament_date": "2024-08-02T16:00:00",
+  "audit_timestamp": "2026-01-18T03:09:40.450829",
+  "total_entrants": 70,
+  "legitimacy_score": 94.28571428571429,
+  "risk_level": "LOW",
+  "stats": {
+    "overall_dq_rate": 5.714285714285714,
+    "regulars_total": 47,
+    "regulars_dq_rate": 8.51063829787234,
+    "newcomers_total": 23,
+    "newcomers_dq_rate": 0.0
+  },
+  "tier_breakdown": {
+    "frequent_fighter": {
+      "total": 31,
+      "dq_count": 2,
+      "dq_rate": 6.451612903225806
+    },
+    "semi_frequent": {
+      "total": 7,
+      "dq_count": 1,
+      "dq_rate": 14.285714285714285
+    },
+    "not_newbie": {
+      "total": 9,
+      "dq_count": 1,
+      "dq_rate": 11.11111111111111
+    },
+    "initiate": {
+      "total": 15,
+      "dq_count": 0,
+      "dq_rate": 0.0
+    },
+    "brand_new": {
+      "total": 8,
+      "dq_count": 0,
+      "dq_rate": 0.0
+    },
+    "guest": {
+      "total": 0,
+      "dq_count": 0,
+      "dq_rate": 0.0
+    }
+  },
+  "suspicious_clusters": []
+}

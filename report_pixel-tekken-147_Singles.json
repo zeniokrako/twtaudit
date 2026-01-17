@@ -1,0 +1,51 @@
+{
+  "tournament": "Pixel Tekken #147",
+  "tournament_slug": "tournament/pixel-tekken-147",
+  "event": "Singles",
+  "event_id": 1261,
+  "tournament_date": "2024-11-20T19:00:00",
+  "audit_timestamp": "2026-01-18T03:09:40.353382",
+  "total_entrants": 26,
+  "legitimacy_score": 100,
+  "risk_level": "LOW",
+  "stats": {
+    "overall_dq_rate": 0.0,
+    "regulars_total": 11,
+    "regulars_dq_rate": 0.0,
+    "newcomers_total": 15,
+    "newcomers_dq_rate": 0.0
+  },
+  "tier_breakdown": {
+    "frequent_fighter": {
+      "total": 6,
+      "dq_count": 0,
+      "dq_rate": 0.0
+    },
+    "semi_frequent": {
+      "total": 3,
+      "dq_count": 0,
+      "dq_rate": 0.0
+    },
+    "not_newbie": {
+      "total": 2,
+      "dq_count": 0,
+      "dq_rate": 0.0
+    },
+    "initiate": {
+      "total": 4,
+      "dq_count": 0,
+      "dq_rate": 0.0
+    },
+    "brand_new": {
+      "total": 11,
+      "dq_count": 0,
+      "dq_rate": 0.0
+    },
+    "guest": {
+      "total": 0,
+      "dq_count": 0,
+      "dq_rate": 0.0
+    }
+  },
+  "suspicious_clusters": []
+}

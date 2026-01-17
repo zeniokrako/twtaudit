@@ -1,0 +1,51 @@
+{
+  "tournament": "AUEC Rage Art Rumble 2025 Round 2",
+  "tournament_slug": "tournament/auec-rage-art-rumble-2025-round-2",
+  "event": "Tekken 8",
+  "event_id": 643,
+  "tournament_date": "2025-09-27T10:00:00",
+  "audit_timestamp": "2026-01-18T03:09:40.118488",
+  "total_entrants": 35,
+  "legitimacy_score": 77.14285714285715,
+  "risk_level": "MEDIUM",
+  "stats": {
+    "overall_dq_rate": 14.285714285714285,
+    "regulars_total": 22,
+    "regulars_dq_rate": 9.090909090909092,
+    "newcomers_total": 12,
+    "newcomers_dq_rate": 25.0
+  },
+  "tier_breakdown": {
+    "frequent_fighter": {
+      "total": 15,
+      "dq_count": 1,
+      "dq_rate": 6.666666666666667
+    },
+    "semi_frequent": {
+      "total": 5,
+      "dq_count": 1,
+      "dq_rate": 20.0
+    },
+    "not_newbie": {
+      "total": 2,
+      "dq_count": 0,
+      "dq_rate": 0.0
+    },
+    "initiate": {
+      "total": 5,
+      "dq_count": 1,
+      "dq_rate": 20.0
+    },
+    "brand_new": {
+      "total": 7,
+      "dq_count": 2,
+      "dq_rate": 28.57142857142857
+    },
+    "guest": {
+      "total": 1,
+      "dq_count": 0,
+      "dq_rate": 0.0
+    }
+  },
+  "suspicious_clusters": []
+}

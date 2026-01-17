@@ -51,6 +51,12 @@
         .tier-legend { display: flex; flex-wrap: wrap; gap: 0.75rem; margin-bottom: 1rem; padding: 0.75rem; background: var(--bg-secondary); border-radius: 0.5rem; font-size: 0.8rem; }
         .tier-legend span { display: flex; align-items: center; gap: 0.25rem; }
         footer { text-align: center; padding: 1.5rem; color: var(--text-secondary); font-size: 0.8rem; border-top: 1px solid var(--bg-tertiary); margin-top: 2rem; }
+        footer .icon-credit { font-size: 0.7rem; margin-top: 0.5rem; opacity: 0.7; }
+        footer .icon-credit a { color: var(--text-secondary); }
+        .social-icons { display: inline-flex; gap: 0.2rem; margin-left: 0.25rem; vertical-align: middle; }
+        .social-icon { display: inline-flex; align-items: center; cursor: pointer; opacity: 0.7; transition: opacity 0.2s; }
+        .social-icon:hover { opacity: 1; }
+        .social-icon img { width: 14px; height: 14px; vertical-align: middle; }
         @media print { body { background: white; color: black; } td a, .member-list a { color: #2563eb; } }
     </style>
 </head>
@@ -79,6 +85,10 @@
             <div class="stat-card">
                 <div class="stat-value">3</div>
                 <div class="stat-label">Newcomers + Guests</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value">18</div>
+                <div class="stat-label">With Social Links (90%)</div>
             </div>
         </div>
 
@@ -116,7 +126,7 @@
                     <tbody>
         <tr>
             <td>1</td>
-            <td><strong><a href="https://www.start.gg/user/89bf8c60" target="_blank">Falcons | ATIF</a></strong> <span class="badge badge-purple">VET</span></td>
+            <td><strong><a href="https://www.start.gg/user/89bf8c60" target="_blank">Falcons | ATIF</a></strong> <span class="badge badge-purple">VET</span> <span class="social-icons"><a href="https://twitter.com/AtifButt540" target="_blank" title="@AtifButt540" class="social-icon"><img src="icons/twitter.png" alt="Twitter"></a><a href="https://twitch.tv/tk_atifbutt" target="_blank" title="tk_atifbutt" class="social-icon"><img src="icons/twitch.png" alt="Twitch"></a><span class="social-icon" title="Atifbutt#2820"><img src="icons/discord.png" alt="Discord"></span></span></td>
             <td>27</td>
             <td>2019-08-31</td>
             <td>4/4</td>
@@ -124,7 +134,7 @@
         
         <tr>
             <td>1</td>
-            <td><strong><a href="https://www.start.gg/user/e73d6287" target="_blank">VARREL | Rangchu</a></strong> <span class="badge badge-purple">VET</span></td>
+            <td><strong><a href="https://www.start.gg/user/e73d6287" target="_blank">VARREL | Rangchu</a></strong> <span class="badge badge-purple">VET</span> <span class="social-icons"><a href="https://twitter.com/rangchu123" target="_blank" title="@rangchu123" class="social-icon"><img src="icons/twitter.png" alt="Twitter"></a></span></td>
             <td>33</td>
             <td>2019-11-04</td>
             <td>4/4</td>
@@ -132,7 +142,7 @@
         
         <tr>
             <td>1</td>
-            <td><strong><a href="https://www.start.gg/user/58094236" target="_blank">Ashes | THE JON</a></strong> <span class="badge badge-purple">VET</span></td>
+            <td><strong><a href="https://www.start.gg/user/58094236" target="_blank">Ashes | THE JON</a></strong> <span class="badge badge-purple">VET</span> <span class="social-icons"><a href="https://twitter.com/THEJON07" target="_blank" title="@THEJON07" class="social-icon"><img src="icons/twitter.png" alt="Twitter"></a></span></td>
             <td>35</td>
             <td>2019-08-31</td>
             <td>4/4</td>
@@ -140,7 +150,7 @@
         
         <tr>
             <td>1</td>
-            <td><strong><a href="https://www.start.gg/user/ce8755b0" target="_blank">KDF | CBM</a></strong> <span class="badge badge-purple">VET</span></td>
+            <td><strong><a href="https://www.start.gg/user/ce8755b0" target="_blank">KDF | CBM</a></strong> <span class="badge badge-purple">VET</span> <span class="social-icons"><a href="https://twitter.com/Tekken_CBM" target="_blank" title="@Tekken_CBM" class="social-icon"><img src="icons/twitter.png" alt="Twitter"></a><span class="social-icon" title="cherryberrymango2"><img src="icons/discord.png" alt="Discord"></span></span></td>
             <td>32</td>
             <td>2018-08-04</td>
             <td>4/4</td>
@@ -148,7 +158,7 @@
         
         <tr>
             <td>5</td>
-            <td><strong><a href="https://www.start.gg/user/896588f2" target="_blank">TM | RB | Arslan Ash</a></strong> <span class="badge badge-green">SEMI</span></td>
+            <td><strong><a href="https://www.start.gg/user/896588f2" target="_blank">TM | RB | Arslan Ash</a></strong> <span class="badge badge-green">SEMI</span> <span class="social-icons"><a href="https://twitter.com/ArslanAsh95" target="_blank" title="@ArslanAsh95" class="social-icon"><img src="icons/twitter.png" alt="Twitter"></a></span></td>
             <td>18</td>
             <td>2019-08-03</td>
             <td>4/4</td>
@@ -156,7 +166,7 @@
         
         <tr>
             <td>5</td>
-            <td><strong><a href="https://www.start.gg/user/38603155" target="_blank">Liquid | Shadow 20z</a></strong> <span class="badge badge-yellow">NEW</span></td>
+            <td><strong><a href="https://www.start.gg/user/38603155" target="_blank">Liquid | Shadow 20z</a></strong> <span class="badge badge-yellow">NEW</span> <span class="social-icons"><a href="https://twitter.com/Shadow20z" target="_blank" title="@Shadow20z" class="social-icon"><img src="icons/twitter.png" alt="Twitter"></a><a href="https://twitch.tv/Vshadow20z" target="_blank" title="Vshadow20z" class="social-icon"><img src="icons/twitch.png" alt="Twitch"></a></span></td>
             <td>0</td>
             <td>2024-11-06</td>
             <td>4/4</td>
@@ -164,7 +174,7 @@
         
         <tr>
             <td>5</td>
-            <td><strong>Dragons | Raef</strong> <span class="badge badge-gray">GUEST</span></td>
+            <td><strong>Dragons | Raef</strong> <span class="badge badge-gray">GUEST</span> <span class="social-icons"></span></td>
             <td>0</td>
             <td>N/A (guest)</td>
             <td>4/4</td>
@@ -172,7 +182,7 @@
         
         <tr>
             <td>5</td>
-            <td><strong><a href="https://www.start.gg/user/e5e30df1" target="_blank">Navi | kkokkoma</a></strong> <span class="badge badge-purple">VET</span></td>
+            <td><strong><a href="https://www.start.gg/user/e5e30df1" target="_blank">Navi | kkokkoma</a></strong> <span class="badge badge-purple">VET</span> <span class="social-icons"><a href="https://twitter.com/kkokkoma_mujoy" target="_blank" title="@kkokkoma_mujoy" class="social-icon"><img src="icons/twitter.png" alt="Twitter"></a><span class="social-icon" title="Mujoy_Kkokkoma#2012"><img src="icons/discord.png" alt="Discord"></span></span></td>
             <td>32</td>
             <td>2017-03-11</td>
             <td>4/4</td>
@@ -180,7 +190,7 @@
         
         <tr>
             <td>9</td>
-            <td><strong><a href="https://www.start.gg/user/83cea9ff" target="_blank">Falcons | Farzeen</a></strong> <span class="badge badge-purple">VET</span></td>
+            <td><strong><a href="https://www.start.gg/user/83cea9ff" target="_blank">Falcons | Farzeen</a></strong> <span class="badge badge-purple">VET</span> <span class="social-icons"><a href="https://twitter.com/Farzeen_tk" target="_blank" title="@Farzeen_tk" class="social-icon"><img src="icons/twitter.png" alt="Twitter"></a><span class="social-icon" title="Fate|Farzeen#7569"><img src="icons/discord.png" alt="Discord"></span></span></td>
             <td>28</td>
             <td>2019-08-31</td>
             <td>4/4</td>
@@ -188,7 +198,7 @@
         
         <tr>
             <td>9</td>
-            <td><strong><a href="https://www.start.gg/user/2dc6f586" target="_blank">ZETA | double</a></strong> <span class="badge badge-purple">VET</span></td>
+            <td><strong><a href="https://www.start.gg/user/2dc6f586" target="_blank">ZETA | double</a></strong> <span class="badge badge-purple">VET</span> <span class="social-icons"><a href="https://twitter.com/double4646" target="_blank" title="@double4646" class="social-icon"><img src="icons/twitter.png" alt="Twitter"></a><a href="https://twitch.tv/double_4646" target="_blank" title="double_4646" class="social-icon"><img src="icons/twitch.png" alt="Twitch"></a><span class="social-icon" title="double double4646#6500"><img src="icons/discord.png" alt="Discord"></span></span></td>
             <td>41</td>
             <td>2019-04-30</td>
             <td>4/4</td>
@@ -196,7 +206,7 @@
         
         <tr>
             <td>9</td>
-            <td><strong><a href="https://www.start.gg/user/c5f50ced" target="_blank">Falcons | JoKa</a></strong> <span class="badge badge-purple">VET</span></td>
+            <td><strong><a href="https://www.start.gg/user/c5f50ced" target="_blank">Falcons | JoKa</a></strong> <span class="badge badge-purple">VET</span> <span class="social-icons"><a href="https://twitter.com/byJoka" target="_blank" title="@byJoka" class="social-icon"><img src="icons/twitter.png" alt="Twitter"></a><a href="https://twitch.tv/xJoKa" target="_blank" title="xJoKa" class="social-icon"><img src="icons/twitch.png" alt="Twitch"></a><span class="social-icon" title="byjoka"><img src="icons/discord.png" alt="Discord"></span></span></td>
             <td>30</td>
             <td>2021-11-11</td>
             <td>4/4</td>
@@ -204,7 +214,7 @@
         
         <tr>
             <td>9</td>
-            <td><strong><a href="https://www.start.gg/user/31918069" target="_blank">DRX | CHANEL</a></strong> <span class="badge badge-purple">VET</span></td>
+            <td><strong><a href="https://www.start.gg/user/31918069" target="_blank">DRX | CHANEL</a></strong> <span class="badge badge-purple">VET</span> <span class="social-icons"><a href="https://twitter.com/tekkenchanel" target="_blank" title="@tekkenchanel" class="social-icon"><img src="icons/twitter.png" alt="Twitter"></a><a href="https://twitch.tv/drx_chanel" target="_blank" title="drx_chanel" class="social-icon"><img src="icons/twitch.png" alt="Twitch"></a><span class="social-icon" title="DRX_CHANEL#0652"><img src="icons/discord.png" alt="Discord"></span></span></td>
             <td>38</td>
             <td>2018-03-16</td>
             <td>4/4</td>
@@ -212,7 +222,7 @@
         
         <tr>
             <td>13</td>
-            <td><strong><a href="https://www.start.gg/user/18a938e6" target="_blank">KDF | ULSAN</a></strong> <span class="badge badge-purple">VET</span></td>
+            <td><strong><a href="https://www.start.gg/user/18a938e6" target="_blank">KDF | ULSAN</a></strong> <span class="badge badge-purple">VET</span> <span class="social-icons"><a href="https://twitter.com/tekkenUlsan" target="_blank" title="@tekkenUlsan" class="social-icon"><img src="icons/twitter.png" alt="Twitter"></a><span class="social-icon" title="철권울산#5476"><img src="icons/discord.png" alt="Discord"></span></span></td>
             <td>35</td>
             <td>2022-09-03</td>
             <td>4/4</td>
@@ -220,7 +230,7 @@
         
         <tr>
             <td>13</td>
-            <td><strong><a href="https://www.start.gg/user/d9029d46" target="_blank">NAVI | AK</a></strong> <span class="badge badge-purple">VET</span></td>
+            <td><strong><a href="https://www.start.gg/user/d9029d46" target="_blank">NAVI | AK</a></strong> <span class="badge badge-purple">VET</span> <span class="social-icons"><a href="https://twitter.com/NAVI_AK_" target="_blank" title="@NAVI_AK_" class="social-icon"><img src="icons/twitter.png" alt="Twitter"></a></span></td>
             <td>24</td>
             <td>2021-04-07</td>
             <td>4/4</td>
@@ -228,7 +238,7 @@
         
         <tr>
             <td>13</td>
-            <td><strong><a href="https://www.start.gg/user/82814565" target="_blank">KDF | Mulgold</a></strong> <span class="badge badge-purple">VET</span></td>
+            <td><strong><a href="https://www.start.gg/user/82814565" target="_blank">KDF | Mulgold</a></strong> <span class="badge badge-purple">VET</span> <span class="social-icons"><span class="social-icon" title="mulgol"><img src="icons/discord.png" alt="Discord"></span></span></td>
             <td>26</td>
             <td>2018-01-26</td>
             <td>4/4</td>
@@ -236,7 +246,7 @@
         
         <tr>
             <td>13</td>
-            <td><strong><a href="https://www.start.gg/user/6b987b34" target="_blank">FATE | Jodd</a></strong> <span class="badge badge-purple">VET</span></td>
+            <td><strong><a href="https://www.start.gg/user/6b987b34" target="_blank">FATE | Jodd</a></strong> <span class="badge badge-purple">VET</span> <span class="social-icons"><a href="https://twitter.com/Jodd28" target="_blank" title="@Jodd28" class="social-icon"><img src="icons/twitter.png" alt="Twitter"></a><a href="https://twitch.tv/Jodd" target="_blank" title="Jodd" class="social-icon"><img src="icons/twitch.png" alt="Twitch"></a><span class="social-icon" title="jodd28"><img src="icons/discord.png" alt="Discord"></span></span></td>
             <td>27</td>
             <td>2022-11-12</td>
             <td>4/4</td>
@@ -244,7 +254,7 @@
         
         <tr>
             <td>17</td>
-            <td><strong><a href="https://www.start.gg/user/e404094e" target="_blank">TeamYAMASA | NOBI</a></strong> <span class="badge badge-purple">VET</span></td>
+            <td><strong><a href="https://www.start.gg/user/e404094e" target="_blank">TeamYAMASA | NOBI</a></strong> <span class="badge badge-purple">VET</span> <span class="social-icons"><a href="https://twitter.com/daichinobi" target="_blank" title="@daichinobi" class="social-icon"><img src="icons/twitter.png" alt="Twitter"></a><a href="https://twitch.tv/daichinobi" target="_blank" title="daichinobi" class="social-icon"><img src="icons/twitch.png" alt="Twitch"></a><span class="social-icon" title="TeamYAMASA NOBI#1175"><img src="icons/discord.png" alt="Discord"></span></span></td>
             <td>40</td>
             <td>2017-07-15</td>
             <td>4/4</td>
@@ -252,7 +262,7 @@
         
         <tr>
             <td>17</td>
-            <td><strong>DRX | LowHigh</strong> <span class="badge badge-gray">GUEST</span></td>
+            <td><strong>DRX | LowHigh</strong> <span class="badge badge-gray">GUEST</span> <span class="social-icons"></span></td>
             <td>0</td>
             <td>N/A (guest)</td>
             <td>4/4</td>
@@ -260,7 +270,7 @@
         
         <tr>
             <td>17</td>
-            <td><strong><a href="https://www.start.gg/user/024b2f36" target="_blank">THY | chikurin</a></strong> <span class="badge badge-purple">VET</span></td>
+            <td><strong><a href="https://www.start.gg/user/024b2f36" target="_blank">THY | chikurin</a></strong> <span class="badge badge-purple">VET</span> <span class="social-icons"><a href="https://twitter.com/chikurintut" target="_blank" title="@chikurintut" class="social-icon"><img src="icons/twitter.png" alt="Twitter"></a></span></td>
             <td>37</td>
             <td>2019-07-13</td>
             <td>4/4</td>
@@ -268,7 +278,7 @@
         
         <tr>
             <td>17</td>
-            <td><strong><a href="https://www.start.gg/user/28015e5d" target="_blank">ALL leemishima</a></strong> <span class="badge badge-purple">VET</span></td>
+            <td><strong><a href="https://www.start.gg/user/28015e5d" target="_blank">ALL leemishima</a></strong> <span class="badge badge-purple">VET</span> <span class="social-icons"><a href="https://twitter.com/leemishima666" target="_blank" title="@leemishima666" class="social-icon"><img src="icons/twitter.png" alt="Twitter"></a><a href="https://twitch.tv/leemishima" target="_blank" title="leemishima" class="social-icon"><img src="icons/twitch.png" alt="Twitch"></a><span class="social-icon" title="leemishima"><img src="icons/discord.png" alt="Discord"></span></span></td>
             <td>31</td>
             <td>2021-10-10</td>
             <td>4/4</td>
@@ -279,8 +289,9 @@
         </section>
 
         <footer>
-            <p>Report generated: 2026-01-17 22:22:52</p>
+            <p>Report generated: 2026-01-18 00:03:41</p>
             <p>Data source: <a href="https://www.start.gg/tournament/tekken-world-tour-2024-global-finals-top-16/event/tekken-world-tour-2024-global-leaderboard-groups-stage" target="_blank">start.gg</a></p>
+            <p class="icon-credit">Social icons by <a href="https://www.freepik.com" target="_blank">Freepik</a> and <a href="https://www.flaticon.com/authors/pixel-perfect" target="_blank">Pixel Perfect</a> from Flaticon</p>
         </footer>
     </div>
 </body>

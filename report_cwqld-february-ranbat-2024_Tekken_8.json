@@ -1,0 +1,51 @@
+{
+  "tournament": "CWQLD | February Ranbat 2024",
+  "tournament_slug": "tournament/cwqld-february-ranbat-2024",
+  "event": "Tekken 8",
+  "event_id": 2240,
+  "tournament_date": "2024-02-24T11:00:00",
+  "audit_timestamp": "2026-01-18T03:09:40.588001",
+  "total_entrants": 26,
+  "legitimacy_score": 92.3076923076923,
+  "risk_level": "LOW",
+  "stats": {
+    "overall_dq_rate": 7.6923076923076925,
+    "regulars_total": 16,
+    "regulars_dq_rate": 6.25,
+    "newcomers_total": 8,
+    "newcomers_dq_rate": 12.5
+  },
+  "tier_breakdown": {
+    "frequent_fighter": {
+      "total": 9,
+      "dq_count": 1,
+      "dq_rate": 11.11111111111111
+    },
+    "semi_frequent": {
+      "total": 4,
+      "dq_count": 0,
+      "dq_rate": 0.0
+    },
+    "not_newbie": {
+      "total": 3,
+      "dq_count": 0,
+      "dq_rate": 0.0
+    },
+    "initiate": {
+      "total": 8,
+      "dq_count": 1,
+      "dq_rate": 12.5
+    },
+    "brand_new": {
+      "total": 0,
+      "dq_count": 0,
+      "dq_rate": 0.0
+    },
+    "guest": {
+      "total": 2,
+      "dq_count": 0,
+      "dq_rate": 0.0
+    }
+  },
+  "suspicious_clusters": []
+}

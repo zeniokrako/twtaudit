@@ -1,0 +1,51 @@
+{
+  "tournament": "Hambats Mighty Monthly January 2024",
+  "tournament_slug": "tournament/hambats-mighty-monthly-january-2024",
+  "event": "Tekken 8 - 1v1",
+  "event_id": 2342,
+  "tournament_date": "2024-01-27T08:00:00",
+  "audit_timestamp": "2026-01-18T03:11:24.506519",
+  "total_entrants": 27,
+  "legitimacy_score": 100,
+  "risk_level": "LOW",
+  "stats": {
+    "overall_dq_rate": 0.0,
+    "regulars_total": 15,
+    "regulars_dq_rate": 0.0,
+    "newcomers_total": 10,
+    "newcomers_dq_rate": 0.0
+  },
+  "tier_breakdown": {
+    "frequent_fighter": {
+      "total": 9,
+      "dq_count": 0,
+      "dq_rate": 0.0
+    },
+    "semi_frequent": {
+      "total": 4,
+      "dq_count": 0,
+      "dq_rate": 0.0
+    },
+    "not_newbie": {
+      "total": 2,
+      "dq_count": 0,
+      "dq_rate": 0.0
+    },
+    "initiate": {
+      "total": 5,
+      "dq_count": 0,
+      "dq_rate": 0.0
+    },
+    "brand_new": {
+      "total": 5,
+      "dq_count": 0,
+      "dq_rate": 0.0
+    },
+    "guest": {
+      "total": 2,
+      "dq_count": 0,
+      "dq_rate": 0.0
+    }
+  },
+  "suspicious_clusters": []
+}

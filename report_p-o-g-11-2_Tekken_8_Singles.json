@@ -1,0 +1,51 @@
+{
+  "tournament": "P.O.G.#11",
+  "tournament_slug": "tournament/p-o-g-11-2",
+  "event": "Tekken 8 Singles",
+  "event_id": 1468,
+  "tournament_date": "2024-09-07T11:00:00",
+  "audit_timestamp": "2026-01-18T03:09:40.421432",
+  "total_entrants": 20,
+  "legitimacy_score": 76.42857142857143,
+  "risk_level": "MEDIUM",
+  "stats": {
+    "overall_dq_rate": 15.0,
+    "regulars_total": 9,
+    "regulars_dq_rate": 11.11111111111111,
+    "newcomers_total": 7,
+    "newcomers_dq_rate": 28.57142857142857
+  },
+  "tier_breakdown": {
+    "frequent_fighter": {
+      "total": 6,
+      "dq_count": 1,
+      "dq_rate": 16.666666666666664
+    },
+    "semi_frequent": {
+      "total": 2,
+      "dq_count": 0,
+      "dq_rate": 0.0
+    },
+    "not_newbie": {
+      "total": 1,
+      "dq_count": 0,
+      "dq_rate": 0.0
+    },
+    "initiate": {
+      "total": 0,
+      "dq_count": 0,
+      "dq_rate": 0.0
+    },
+    "brand_new": {
+      "total": 7,
+      "dq_count": 2,
+      "dq_rate": 28.57142857142857
+    },
+    "guest": {
+      "total": 4,
+      "dq_count": 0,
+      "dq_rate": 0.0
+    }
+  },
+  "suspicious_clusters": []
+}

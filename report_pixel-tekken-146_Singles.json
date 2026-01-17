@@ -1,0 +1,51 @@
+{
+  "tournament": "Pixel Tekken #146",
+  "tournament_slug": "tournament/pixel-tekken-146",
+  "event": "Singles",
+  "event_id": 1270,
+  "tournament_date": "2024-11-14T14:00:00",
+  "audit_timestamp": "2026-01-18T03:09:40.360711",
+  "total_entrants": 24,
+  "legitimacy_score": 95.83333333333333,
+  "risk_level": "LOW",
+  "stats": {
+    "overall_dq_rate": 4.166666666666666,
+    "regulars_total": 13,
+    "regulars_dq_rate": 7.6923076923076925,
+    "newcomers_total": 11,
+    "newcomers_dq_rate": 0.0
+  },
+  "tier_breakdown": {
+    "frequent_fighter": {
+      "total": 7,
+      "dq_count": 0,
+      "dq_rate": 0.0
+    },
+    "semi_frequent": {
+      "total": 1,
+      "dq_count": 0,
+      "dq_rate": 0.0
+    },
+    "not_newbie": {
+      "total": 5,
+      "dq_count": 1,
+      "dq_rate": 20.0
+    },
+    "initiate": {
+      "total": 2,
+      "dq_count": 0,
+      "dq_rate": 0.0
+    },
+    "brand_new": {
+      "total": 9,
+      "dq_count": 0,
+      "dq_rate": 0.0
+    },
+    "guest": {
+      "total": 0,
+      "dq_count": 0,
+      "dq_rate": 0.0
+    }
+  },
+  "suspicious_clusters": []
+}

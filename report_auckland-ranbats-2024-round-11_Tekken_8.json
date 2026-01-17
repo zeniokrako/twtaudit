@@ -1,0 +1,51 @@
+{
+  "tournament": "Auckland Ranbats 2024 Round 11",
+  "tournament_slug": "tournament/auckland-ranbats-2024-round-11",
+  "event": "Tekken 8",
+  "event_id": 1550,
+  "tournament_date": "2024-08-03T10:00:00",
+  "audit_timestamp": "2026-01-18T03:09:40.447571",
+  "total_entrants": 25,
+  "legitimacy_score": 88.0,
+  "risk_level": "LOW",
+  "stats": {
+    "overall_dq_rate": 12.0,
+    "regulars_total": 15,
+    "regulars_dq_rate": 13.333333333333334,
+    "newcomers_total": 8,
+    "newcomers_dq_rate": 12.5
+  },
+  "tier_breakdown": {
+    "frequent_fighter": {
+      "total": 8,
+      "dq_count": 1,
+      "dq_rate": 12.5
+    },
+    "semi_frequent": {
+      "total": 5,
+      "dq_count": 0,
+      "dq_rate": 0.0
+    },
+    "not_newbie": {
+      "total": 2,
+      "dq_count": 1,
+      "dq_rate": 50.0
+    },
+    "initiate": {
+      "total": 5,
+      "dq_count": 0,
+      "dq_rate": 0.0
+    },
+    "brand_new": {
+      "total": 3,
+      "dq_count": 1,
+      "dq_rate": 33.33333333333333
+    },
+    "guest": {
+      "total": 2,
+      "dq_count": 0,
+      "dq_rate": 0.0
+    }
+  },
+  "suspicious_clusters": []
+}

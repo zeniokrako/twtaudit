@@ -1,0 +1,51 @@
+{
+  "tournament": "The Iron Crown XXIV",
+  "tournament_slug": "tournament/the-iron-crown-xxiv",
+  "event": "Tekken 8 - The Iron Crown XXIV",
+  "event_id": 1649,
+  "tournament_date": "2024-07-14T14:00:00",
+  "audit_timestamp": "2026-01-18T03:09:40.468158",
+  "total_entrants": 36,
+  "legitimacy_score": 83.33333333333334,
+  "risk_level": "LOW",
+  "stats": {
+    "overall_dq_rate": 16.666666666666664,
+    "regulars_total": 19,
+    "regulars_dq_rate": 10.526315789473683,
+    "newcomers_total": 16,
+    "newcomers_dq_rate": 25.0
+  },
+  "tier_breakdown": {
+    "frequent_fighter": {
+      "total": 9,
+      "dq_count": 1,
+      "dq_rate": 11.11111111111111
+    },
+    "semi_frequent": {
+      "total": 4,
+      "dq_count": 1,
+      "dq_rate": 25.0
+    },
+    "not_newbie": {
+      "total": 6,
+      "dq_count": 0,
+      "dq_rate": 0.0
+    },
+    "initiate": {
+      "total": 13,
+      "dq_count": 4,
+      "dq_rate": 30.76923076923077
+    },
+    "brand_new": {
+      "total": 3,
+      "dq_count": 0,
+      "dq_rate": 0.0
+    },
+    "guest": {
+      "total": 1,
+      "dq_count": 0,
+      "dq_rate": 0.0
+    }
+  },
+  "suspicious_clusters": []
+}

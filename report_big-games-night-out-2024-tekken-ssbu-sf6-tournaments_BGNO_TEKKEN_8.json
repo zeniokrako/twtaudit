@@ -1,0 +1,51 @@
+{
+  "tournament": "Big Games Night Out 2024 - Tekken, SSBU & SF6 Tournaments",
+  "tournament_slug": "tournament/big-games-night-out-2024-tekken-ssbu-sf6-tournaments",
+  "event": "BGNO TEKKEN 8",
+  "event_id": 1387,
+  "tournament_date": "2024-10-09T18:00:00",
+  "audit_timestamp": "2026-01-18T03:09:40.392267",
+  "total_entrants": 32,
+  "legitimacy_score": 91.60714285714286,
+  "risk_level": "LOW",
+  "stats": {
+    "overall_dq_rate": 6.25,
+    "regulars_total": 10,
+    "regulars_dq_rate": 0.0,
+    "newcomers_total": 22,
+    "newcomers_dq_rate": 9.090909090909092
+  },
+  "tier_breakdown": {
+    "frequent_fighter": {
+      "total": 3,
+      "dq_count": 0,
+      "dq_rate": 0.0
+    },
+    "semi_frequent": {
+      "total": 5,
+      "dq_count": 0,
+      "dq_rate": 0.0
+    },
+    "not_newbie": {
+      "total": 2,
+      "dq_count": 0,
+      "dq_rate": 0.0
+    },
+    "initiate": {
+      "total": 8,
+      "dq_count": 1,
+      "dq_rate": 12.5
+    },
+    "brand_new": {
+      "total": 14,
+      "dq_count": 1,
+      "dq_rate": 7.142857142857142
+    },
+    "guest": {
+      "total": 0,
+      "dq_count": 0,
+      "dq_rate": 0.0
+    }
+  },
+  "suspicious_clusters": []
+}

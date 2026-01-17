@@ -1,0 +1,51 @@
+{
+  "tournament": "The Warm Up",
+  "tournament_slug": "tournament/the-warm-up-8",
+  "event": "Tekken 8",
+  "event_id": 925,
+  "tournament_date": "2025-05-17T10:00:00",
+  "audit_timestamp": "2026-01-18T03:09:40.233462",
+  "total_entrants": 50,
+  "legitimacy_score": 78.0,
+  "risk_level": "MEDIUM",
+  "stats": {
+    "overall_dq_rate": 22.0,
+    "regulars_total": 39,
+    "regulars_dq_rate": 20.51282051282051,
+    "newcomers_total": 11,
+    "newcomers_dq_rate": 27.27272727272727
+  },
+  "tier_breakdown": {
+    "frequent_fighter": {
+      "total": 26,
+      "dq_count": 6,
+      "dq_rate": 23.076923076923077
+    },
+    "semi_frequent": {
+      "total": 5,
+      "dq_count": 0,
+      "dq_rate": 0.0
+    },
+    "not_newbie": {
+      "total": 8,
+      "dq_count": 2,
+      "dq_rate": 25.0
+    },
+    "initiate": {
+      "total": 4,
+      "dq_count": 3,
+      "dq_rate": 75.0
+    },
+    "brand_new": {
+      "total": 7,
+      "dq_count": 0,
+      "dq_rate": 0.0
+    },
+    "guest": {
+      "total": 0,
+      "dq_count": 0,
+      "dq_rate": 0.0
+    }
+  },
+  "suspicious_clusters": []
+}

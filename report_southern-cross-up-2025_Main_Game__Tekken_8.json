@@ -1,0 +1,51 @@
+{
+  "tournament": "Southern Cross Up 2025",
+  "tournament_slug": "tournament/southern-cross-up-2025",
+  "event": "Main Game: Tekken 8",
+  "event_id": 599,
+  "tournament_date": "2025-10-03T14:00:00",
+  "audit_timestamp": "2026-01-18T03:09:40.109285",
+  "total_entrants": 54,
+  "legitimacy_score": 90.74074074074073,
+  "risk_level": "LOW",
+  "stats": {
+    "overall_dq_rate": 9.25925925925926,
+    "regulars_total": 47,
+    "regulars_dq_rate": 8.51063829787234,
+    "newcomers_total": 7,
+    "newcomers_dq_rate": 14.285714285714285
+  },
+  "tier_breakdown": {
+    "frequent_fighter": {
+      "total": 40,
+      "dq_count": 4,
+      "dq_rate": 10.0
+    },
+    "semi_frequent": {
+      "total": 7,
+      "dq_count": 0,
+      "dq_rate": 0.0
+    },
+    "not_newbie": {
+      "total": 0,
+      "dq_count": 0,
+      "dq_rate": 0.0
+    },
+    "initiate": {
+      "total": 6,
+      "dq_count": 1,
+      "dq_rate": 16.666666666666664
+    },
+    "brand_new": {
+      "total": 1,
+      "dq_count": 0,
+      "dq_rate": 0.0
+    },
+    "guest": {
+      "total": 0,
+      "dq_count": 0,
+      "dq_rate": 0.0
+    }
+  },
+  "suspicious_clusters": []
+}

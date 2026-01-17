@@ -1,0 +1,51 @@
+{
+  "tournament": "Sets by the Sea 2",
+  "tournament_slug": "tournament/sets-by-the-sea-2",
+  "event": "Tekken 8",
+  "event_id": 2302,
+  "tournament_date": "2024-02-03T10:00:00",
+  "audit_timestamp": "2026-01-18T03:11:24.493621",
+  "total_entrants": 19,
+  "legitimacy_score": 81.71052631578948,
+  "risk_level": "LOW",
+  "stats": {
+    "overall_dq_rate": 15.789473684210526,
+    "regulars_total": 7,
+    "regulars_dq_rate": 28.57142857142857,
+    "newcomers_total": 12,
+    "newcomers_dq_rate": 8.333333333333332
+  },
+  "tier_breakdown": {
+    "frequent_fighter": {
+      "total": 4,
+      "dq_count": 0,
+      "dq_rate": 0.0
+    },
+    "semi_frequent": {
+      "total": 2,
+      "dq_count": 1,
+      "dq_rate": 50.0
+    },
+    "not_newbie": {
+      "total": 1,
+      "dq_count": 1,
+      "dq_rate": 100.0
+    },
+    "initiate": {
+      "total": 0,
+      "dq_count": 0,
+      "dq_rate": 0.0
+    },
+    "brand_new": {
+      "total": 12,
+      "dq_count": 1,
+      "dq_rate": 8.333333333333332
+    },
+    "guest": {
+      "total": 0,
+      "dq_count": 0,
+      "dq_rate": 0.0
+    }
+  },
+  "suspicious_clusters": []
+}

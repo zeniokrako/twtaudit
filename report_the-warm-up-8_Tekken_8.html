@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tournament Data Report - The Warm Up</title>
+    <style>
+        :root { --bg-primary: #0f172a; --bg-secondary: #1e293b; --bg-tertiary: #334155;
+                 --text-primary: #f1f5f9; --text-secondary: #94a3b8; --accent: #3b82f6;
+                 --red: #ef4444; --yellow: #eab308; --green: #22c55e; --orange: #f97316;
+                 --purple: #a855f7; --blue: #3b82f6; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+                background: var(--bg-primary); color: var(--text-primary); line-height: 1.6; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 2rem; }
+        header { text-align: center; margin-bottom: 2rem; padding-bottom: 1.5rem; border-bottom: 1px solid var(--bg-tertiary); }
+        header h1 { font-size: 2rem; margin-bottom: 0.25rem; }
+        header .subtitle { color: var(--text-secondary); }
+        header .meta { margin-top: 0.5rem; color: var(--text-secondary); font-size: 0.875rem; }
+        header .event-link { margin-top: 0.75rem; }
+        header .event-link a { color: var(--accent); text-decoration: none; font-size: 0.9rem; }
+        header .event-link a:hover { text-decoration: underline; }
+        .stats-section { display: flex; justify-content: center; gap: 1.5rem; margin-bottom: 2rem; flex-wrap: wrap; }
+        .stat-card { background: var(--bg-secondary); border-radius: 0.75rem; padding: 1.5rem; text-align: center; min-width: 140px; }
+        .stat-value { font-size: 2rem; font-weight: bold; line-height: 1; }
+        .stat-label { color: var(--text-secondary); margin-top: 0.25rem; font-size: 0.8rem; }
+        section { margin-bottom: 2rem; }
+        section h2 { font-size: 1.25rem; margin-bottom: 1rem; padding-bottom: 0.5rem; border-bottom: 2px solid var(--accent); }
+        table { width: 100%; border-collapse: collapse; background: var(--bg-secondary); border-radius: 0.5rem; overflow: hidden; font-size: 0.875rem; }
+        th, td { padding: 0.6rem 0.8rem; text-align: left; border-bottom: 1px solid var(--bg-tertiary); }
+        th { background: var(--bg-tertiary); font-weight: 600; font-size: 0.75rem; text-transform: uppercase; }
+        tr:hover { background: var(--bg-tertiary); }
+        td a { color: var(--accent); text-decoration: none; }
+        td a:hover { text-decoration: underline; }
+        .badge { display: inline-block; padding: 0.1rem 0.4rem; border-radius: 9999px; font-size: 0.65rem; font-weight: bold; text-transform: uppercase; margin-left: 0.25rem; }
+        .badge-red { background: rgba(239,68,68,0.2); color: var(--red); }
+        .badge-yellow { background: rgba(234,179,8,0.2); color: var(--yellow); }
+        .badge-orange { background: rgba(249,115,22,0.2); color: var(--orange); }
+        .badge-green { background: rgba(34,197,94,0.2); color: var(--green); }
+        .badge-blue { background: rgba(59,130,246,0.2); color: var(--blue); }
+        .badge-purple { background: rgba(168,85,247,0.2); color: var(--purple); }
+        .badge-gray { background: rgba(148,163,184,0.2); color: var(--text-secondary); }
+        .cluster-card { background: var(--bg-secondary); border-radius: 0.5rem; padding: 1rem; margin-bottom: 0.75rem; border-left: 3px solid var(--text-secondary); }
+        .cluster-card.suspicious { border-left-color: var(--orange); }
+        .cluster-card h4 { margin-bottom: 0.5rem; font-size: 0.95rem; }
+        .cluster-stats { display: flex; gap: 1rem; margin-bottom: 0.5rem; color: var(--text-secondary); font-size: 0.8rem; }
+        .member-list { list-style: none; display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 0.15rem; font-size: 0.8rem; }
+        .member-list a { color: var(--accent); text-decoration: none; }
+        .member-list a:hover { text-decoration: underline; }
+        .table-container { overflow-x: auto; border-radius: 0.5rem; }
+        .tier-legend { display: flex; flex-wrap: wrap; gap: 0.75rem; margin-bottom: 1rem; padding: 0.75rem; background: var(--bg-secondary); border-radius: 0.5rem; font-size: 0.8rem; }
+        .tier-legend span { display: flex; align-items: center; gap: 0.25rem; }
+        footer { text-align: center; padding: 1.5rem; color: var(--text-secondary); font-size: 0.8rem; border-top: 1px solid var(--bg-tertiary); margin-top: 2rem; }
+        footer .icon-credit { font-size: 0.7rem; margin-top: 0.5rem; opacity: 0.7; }
+        footer .icon-credit a { color: var(--text-secondary); }
+        .social-icons { display: inline-flex; gap: 0.2rem; margin-left: 0.25rem; vertical-align: middle; }
+        .social-icon { display: inline-flex; align-items: center; cursor: pointer; opacity: 0.7; transition: opacity 0.2s; }
+        .social-icon:hover { opacity: 1; }
+        .social-icon img { width: 14px; height: 14px; vertical-align: middle; }
+        @media print { body { background: white; color: black; } td a, .member-list a { color: #2563eb; } }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Tournament Entrant Data Report</h1>
+            <div class="subtitle">The Warm Up - Tekken 8</div>
+            <div class="meta">Auckland, NZ | May 17, 2025</div>
+            <div class="event-link"><a href="https://www.start.gg/tournament/the-warm-up-8/event/tekken-8" target="_blank">View Event on start.gg &#8599;</a></div>
+        </header>
+
+        <div class="stats-section">
+            <div class="stat-card">
+                <div class="stat-value">50</div>
+                <div class="stat-label">Total Entrants</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value">11</div>
+                <div class="stat-label">Total DQ'd (22.0%)</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value">39</div>
+                <div class="stat-label">Regulars (5+ prior)</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value">11</div>
+                <div class="stat-label">Newcomers + Guests</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value">34</div>
+                <div class="stat-label">With Social Links (68%)</div>
+            </div>
+        </div>
+
+        <section>
+            <h2>DQ Breakdown by Player Tier</h2>
+            <p style="color:var(--text-secondary);font-size:0.85rem;margin-bottom:0.75rem">
+                Tiers based on number of start.gg events attended <strong>prior</strong> to this tournament.
+            </p>
+            <div class="tier-legend">
+                <span><span class="badge badge-purple">VET</span> Frequent Fighter (20+ prior)</span>
+                <span><span class="badge badge-green">SEMI</span> Semi Frequent (10-19 prior)</span>
+                <span><span class="badge badge-blue">REG</span> Not Newbie (5-9 prior)</span>
+                <span><span class="badge badge-orange">INIT</span> Initiate (1-4 prior)</span>
+                <span><span class="badge badge-yellow">NEW</span> Brand New (0 prior)</span>
+                <span><span class="badge badge-gray">GUEST</span> Guest (no account)</span>
+            </div>
+            <div class="table-container">
+                <table>
+                    <thead><tr><th>Tier</th><th>Total</th><th>DQ'd</th><th>DQ Rate</th></tr></thead>
+                    <tbody><tr><td><strong>Overall</strong></td><td>50</td><td>11</td><td>22.0%</td></tr><tr><td>Frequent Fighter (20+ prior)</td><td>26</td><td>6</td><td>23.1%</td></tr><tr><td>Semi Frequent (10-19 prior)</td><td>5</td><td>0</td><td>0.0%</td></tr><tr><td>Not Newbie (5-9 prior)</td><td>8</td><td>2</td><td>25.0%</td></tr><tr><td>Initiate (1-4 prior)</td><td>4</td><td>3</td><td>75.0%</td></tr><tr><td>Brand New (0 prior)</td><td>7</td><td>0</td><td>0.0%</td></tr></tbody>
+                </table>
+            </div>
+        </section>
+
+        
+
+        <section>
+            <h2>All Entrants</h2>
+            <p style="color:var(--text-secondary);font-size:0.85rem;margin-bottom:0.75rem">
+                "Prior Events" shows tournaments attended <strong>before</strong> this event (not including this one).
+            </p>
+            <div class="table-container">
+                <table>
+                    <thead><tr><th>Place</th><th>Player</th><th>Prior Events</th><th>First Event</th><th>Sets Played</th></tr></thead>
+                    <tbody>
+        <tr>
+            <td>1</td>
+            <td><strong><a href="https://www.start.gg/user/65de69a7" target="_blank">Zarzob</a></strong> <span class="badge badge-purple">VET</span> <span class="social-icons"><a href="https://twitter.com/Zarzob" target="_blank" title="@Zarzob" class="social-icon"><img src="icons/twitter.png" alt="Twitter"></a><span class="social-icon" title="zarzob"><img src="icons/discord.png" alt="Discord"></span></span></td>
+            <td>38</td>
+            <td>2019-03-16</td>
+            <td>6/6</td>
+        </tr>
+        
+        <tr>
+            <td>2</td>
+            <td><strong><a href="https://www.start.gg/user/8125d6a9" target="_blank">Auragasm</a></strong> <span class="badge badge-yellow">NEW</span> <span class="social-icons"><a href="https://twitter.com/Auragasm1" target="_blank" title="@Auragasm1" class="social-icon"><img src="icons/twitter.png" alt="Twitter"></a><a href="https://twitch.tv/Auragasm1" target="_blank" title="Auragasm1" class="social-icon"><img src="icons/twitch.png" alt="Twitch"></a><span class="social-icon" title="auragazm"><img src="icons/discord.png" alt="Discord"></span></span></td>
+            <td>0</td>
+            <td>2024-04-08</td>
+            <td>8/8</td>
+        </tr>
+        
+        <tr>
+            <td>3</td>
+            <td><strong><a href="https://www.start.gg/user/c9c42631" target="_blank">GhostChips</a></strong> <span class="badge badge-purple">VET</span> <span class="social-icons"><a href="https://twitter.com/GhostChips78" target="_blank" title="@GhostChips78" class="social-icon"><img src="icons/twitter.png" alt="Twitter"></a></span></td>
+            <td>33</td>
+            <td>2020-12-12</td>
+            <td>6/6</td>
+        </tr>
+        
+        <tr>
+            <td>4</td>
+            <td><strong><a href="https://www.start.gg/user/73d7540e" target="_blank">xm5</a></strong> <span class="badge badge-green">SEMI</span> <span class="social-icons"><span class="social-icon" title="xm5enthusiast"><img src="icons/discord.png" alt="Discord"></span></span></td>
+            <td>17</td>
+            <td>2024-06-15</td>
+            <td>6/6</td>
+        </tr>
+        
+        <tr>
+            <td>5</td>
+            <td><strong><a href="https://www.start.gg/user/12343acd" target="_blank">Chopsuey004</a></strong> <span class="badge badge-purple">VET</span> <span class="social-icons"></span></td>
+            <td>23</td>
+            <td>2018-09-29</td>
+            <td>6/6</td>
+        </tr>
+        
+        <tr>
+            <td>5</td>
+            <td><strong><a href="https://www.start.gg/user/ac7e8dba" target="_blank">Jordan09</a></strong> <span class="badge badge-blue">REG</span> <span class="social-icons"><span class="social-icon" title="tk_jordan09"><img src="icons/discord.png" alt="Discord"></span></span></td>
+            <td>9</td>
+            <td>2024-04-27</td>
+            <td>6/6</td>
+        </tr>
+        
+        <tr>
+            <td>7</td>
+            <td><strong><a href="https://www.start.gg/user/65e7a79d" target="_blank">Neal</a></strong> <span class="badge badge-purple">VET</span> <span class="social-icons"><a href="https://twitter.com/neaaff" target="_blank" title="@neaaff" class="social-icon"><img src="icons/twitter.png" alt="Twitter"></a></span></td>
+            <td>44</td>
+            <td>2018-04-13</td>
+            <td>4/5</td>
+        </tr>
+        
+        <tr>
+            <td>7</td>
+            <td><strong><a href="https://www.start.gg/user/a2006eec" target="_blank">Drax</a></strong> <span class="badge badge-yellow">NEW</span> <span class="social-icons"><a href="https://twitter.com/Drax_8" target="_blank" title="@Drax_8" class="social-icon"><img src="icons/twitter.png" alt="Twitter"></a><span class="social-icon" title="drax7842"><img src="icons/discord.png" alt="Discord"></span></span></td>
+            <td>0</td>
+            <td>2024-08-26</td>
+            <td>4/5</td>
+        </tr>
+        
+        <tr>
+            <td>9</td>
+            <td><strong><a href="https://www.start.gg/user/1850e1eb" target="_blank">r0 | RIAN</a></strong> <span class="badge badge-purple">VET</span> <span class="social-icons"><span class="social-icon" title="rian7999"><img src="icons/discord.png" alt="Discord"></span></span></td>
+            <td>28</td>
+            <td>2019-11-16</td>
+            <td>5/6</td>
+        </tr>
+        
+        <tr>
+            <td>9</td>
+            <td><strong><a href="https://www.start.gg/user/6e0abbdf" target="_blank">Tbowskies</a></strong> <span class="badge badge-purple">VET</span> <span class="social-icons"><a href="https://twitter.com/tbowskies" target="_blank" title="@tbowskies" class="social-icon"><img src="icons/twitter.png" alt="Twitter"></a><span class="social-icon" title="tbowskies"><img src="icons/discord.png" alt="Discord"></span></span></td>
+            <td>36</td>
+            <td>2021-09-16</td>
+            <td>6/6</td>
+        </tr>
+        
+        <tr>
+            <td>9</td>
+            <td><strong><a href="https://www.start.gg/user/4133589d" target="_blank">ethan</a></strong> <span class="badge badge-green">SEMI</span> <span class="social-icons"><span class="social-icon" title="hueyta"><img src="icons/discord.png" alt="Discord"></span></span></td>
+            <td>14</td>
+            <td>2025-01-13</td>
+            <td>6/7</td>
+        </tr>
+        
+        <tr>
+            <td>9</td>
+            <td><strong><a href="https://www.start.gg/user/df847603" target="_blank">AUEC | watshisname</a></strong> <span class="badge badge-green">SEMI</span> <span class="social-icons"><span class="social-icon" title="watshisname_"><img src="icons/discord.png" alt="Discord"></span></span></td>
+            <td>11</td>
+            <td>2024-06-15</td>
+            <td>5/6</td>
+        </tr>
+        
+        <tr>
+            <td>13</td>
+            <td><strong><a href="https://www.start.gg/user/de232aaf" target="_blank">DjSushi</a></strong> <span class="badge badge-blue">REG</span> <span class="social-icons"><span class="social-icon" title="dj_sushi"><img src="icons/discord.png" alt="Discord"></span></span></td>
+            <td>7</td>
+            <td>2021-08-15</td>
+            <td>4/6</td>
+        </tr>
+        
+        <tr>
+            <td>13</td>
+            <td><strong><a href="https://www.start.gg/user/0d1d0638" target="_blank">Tekken Refugee | Naki</a></strong> <span class="badge badge-green">SEMI</span> <span class="social-icons"><a href="https://twitter.com/The_Naki_" target="_blank" title="@The_Naki_" class="social-icon"><img src="icons/twitter.png" alt="Twitter"></a><span class="social-icon" title="nakitk"><img src="icons/discord.png" alt="Discord"></span></span></td>
+            <td>10</td>
+            <td>2021-05-29</td>
+            <td>4/4</td>
+        </tr>
+        
+        <tr>
+            <td>13</td>
+            <td><strong><a href="https://www.start.gg/user/c4f6828c" target="_blank">Joji</a></strong> <span class="badge badge-blue">REG</span> <span class="social-icons"><span class="social-icon" title="jojiii_"><img src="icons/discord.png" alt="Discord"></span></span></td>
+            <td>8</td>
+            <td>2023-10-06</td>
+            <td>4/4</td>
+        </tr>
+        
+        <tr>
+            <td>13</td>
+            <td><strong><a href="https://www.start.gg/user/73e8d816" target="_blank">Ratatouille</a></strong> <span class="badge badge-purple">VET</span> <span class="social-icons"><span class="social-icon" title="ai_vs"><img src="icons/discord.png" alt="Discord"></span></span></td>
+            <td>41</td>
+            <td>2020-03-14</td>
+            <td>6/6</td>
+        </tr>
+        
+        <tr>
+            <td>17</td>
+            <td><strong><a href="https://www.start.gg/user/e9a695b7" target="_blank">BACK3</a></strong> <span class="badge badge-blue">REG</span> <span class="social-icons"><a href="https://twitter.com/xiii_everything" target="_blank" title="@xiii_everything" class="social-icon"><img src="icons/twitter.png" alt="Twitter"></a><a href="https://twitch.tv/xiii_everything" target="_blank" title="xiii_everything" class="social-icon"><img src="icons/twitch.png" alt="Twitch"></a></span></td>
+            <td>8</td>
+            <td>2020-03-27</td>
+            <td>3/3</td>
+        </tr>
+        
+        <tr>
+            <td>17</td>
+            <td><strong><a href="https://www.start.gg/user/94002458" target="_blank">GamersEdge | Choppa</a></strong> <span class="badge badge-purple">VET</span> <span class="social-icons"></span></td>
+            <td>37</td>
+            <td>2019-03-16</td>
+            <td>4/4</td>
+        </tr>
+        
+        <tr>
+            <td>17</td>
+            <td><strong><a href="https://www.start.gg/user/633ac019" target="_blank">ゼロワーク | Zer0Warc</a></strong> <span class="badge badge-purple">VET</span> <span class="social-icons"><a href="https://twitter.com/Zer0Warc" target="_blank" title="@Zer0Warc" class="social-icon"><img src="icons/twitter.png" alt="Twitter"></a><a href="https://twitch.tv/Zer0Warc" target="_blank" title="Zer0Warc" class="social-icon"><img src="icons/twitch.png" alt="Twitch"></a></span></td>
+            <td>40</td>
+            <td>2018-09-21</td>
+            <td>2/4</td>
+        </tr>
+        
+        <tr>
+            <td>17</td>
+            <td><strong><a href="https://www.start.gg/user/da02c6eb" target="_blank">Virtual Bacon</a></strong> <span class="badge badge-purple">VET</span> <span class="social-icons"><a href="https://twitter.com/VRTLbacon" target="_blank" title="@VRTLbacon" class="social-icon"><img src="icons/twitter.png" alt="Twitter"></a></span></td>
+            <td>38</td>
+            <td>2019-06-08</td>
+            <td>4/4</td>
+        </tr>
+        
+        <tr>
+            <td>17</td>
+            <td><strong><a href="https://www.start.gg/user/7c98cc6b" target="_blank">Reno</a></strong> <span class="badge badge-purple">VET</span> <span class="social-icons"><a href="https://twitter.com/Reno_is_free" target="_blank" title="@Reno_is_free" class="social-icon"><img src="icons/twitter.png" alt="Twitter"></a></span></td>
+            <td>36</td>
+            <td>2019-05-17</td>
+            <td>5/5</td>
+        </tr>
+        
+        <tr>
+            <td>17</td>
+            <td><strong><a href="https://www.start.gg/user/c2287ec7" target="_blank">Herm</a></strong> <span class="badge badge-yellow">NEW</span> <span class="social-icons"></span></td>
+            <td>0</td>
+            <td>2025-05-17</td>
+            <td>5/5</td>
+        </tr>
+        
+        <tr>
+            <td>17</td>
+            <td><strong><a href="https://www.start.gg/user/8d1acb80" target="_blank">GCE | Luggnuts</a></strong> <span class="badge badge-purple">VET</span> <span class="social-icons"><span class="social-icon" title="luggnuts"><img src="icons/discord.png" alt="Discord"></span></span></td>
+            <td>37</td>
+            <td>2019-07-06</td>
+            <td>3/5</td>
+        </tr>
+        
+        <tr>
+            <td>17</td>
+            <td><strong><a href="https://www.start.gg/user/9f4f21ef" target="_blank">Optimus_Dave</a></strong> <span class="badge badge-purple">VET</span> <span class="social-icons"><a href="https://twitch.tv/Optimus_Dave" target="_blank" title="Optimus_Dave" class="social-icon"><img src="icons/twitch.png" alt="Twitch"></a></span></td>
+            <td>44</td>
+            <td>2016-06-24</td>
+            <td>3/4</td>
+        </tr>
+        
+        <tr>
+            <td>25</td>
+            <td><strong><a href="https://www.start.gg/user/986c4711" target="_blank">McGuppins</a></strong> <span class="badge badge-yellow">NEW</span> <span class="social-icons"></span></td>
+            <td>0</td>
+            <td>2025-05-17</td>
+            <td>2/4</td>
+        </tr>
+        
+        <tr>
+            <td>25</td>
+            <td><strong><a href="https://www.start.gg/user/8ae853e5" target="_blank">Hroc</a></strong> <span class="badge badge-orange">INIT</span> <span class="social-icons"></span></td>
+            <td>1</td>
+            <td>2020-04-24</td>
+            <td>2/3</td>
+        </tr>
+        
+        <tr>
+            <td>25</td>
+            <td><strong><a href="https://www.start.gg/user/164955c3" target="_blank">yur</a></strong> <span class="badge badge-purple">VET</span> <span class="social-icons"><span class="social-icon" title=".afraid."><img src="icons/discord.png" alt="Discord"></span></span></td>
+            <td>28</td>
+            <td>2024-05-18</td>
+            <td>3/4</td>
+        </tr>
+        
+        <tr>
+            <td>25</td>
+            <td><strong><a href="https://www.start.gg/user/4aa9dd92" target="_blank">OnceInABlueMoon</a></strong> <span class="badge badge-yellow">NEW</span> <span class="social-icons"><span class="social-icon" title="that_guy1701"><img src="icons/discord.png" alt="Discord"></span></span></td>
+            <td>0</td>
+            <td>2025-05-17</td>
+            <td>2/3</td>
+        </tr>
+        
+        <tr>
+            <td>25</td>
+            <td><strong><a href="https://www.start.gg/user/6e6c7085" target="_blank">AUEC | yang</a></strong> <span class="badge badge-green">SEMI</span> <span class="social-icons"><a href="https://twitter.com/ealeemophd" target="_blank" title="@ealeemophd" class="social-icon"><img src="icons/twitter.png" alt="Twitter"></a><a href="https://twitch.tv/ealeemophd" target="_blank" title="ealeemophd" class="social-icon"><img src="icons/twitch.png" alt="Twitch"></a><span class="social-icon" title="ealeemophd"><img src="icons/discord.png" alt="Discord"></span></span></td>
+            <td>16</td>
+            <td>2024-06-15</td>
+            <td>2/3</td>
+        </tr>
+        
+        <tr>
+            <td>25</td>
+            <td><strong><a href="https://www.start.gg/user/76551222" target="_blank">Tak</a></strong> <span class="badge badge-purple">VET</span> <span class="social-icons"></span></td>
+            <td>39</td>
+            <td>2021-06-26</td>
+            <td>3/4</td>
+        </tr>
+        
+        <tr>
+            <td>25</td>
+            <td><strong><a href="https://www.start.gg/user/29ce0f13" target="_blank">justinwenzy</a></strong> <span class="badge badge-purple">VET</span> <span class="social-icons"><a href="https://twitter.com/justinwenzy" target="_blank" title="@justinwenzy" class="social-icon"><img src="icons/twitter.png" alt="Twitter"></a><a href="https://twitch.tv/justinwenzy" target="_blank" title="justinwenzy" class="social-icon"><img src="icons/twitch.png" alt="Twitch"></a><span class="social-icon" title="justinwenzy"><img src="icons/discord.png" alt="Discord"></span></span></td>
+            <td>34</td>
+            <td>2021-10-29</td>
+            <td>4/4</td>
+        </tr>
+        
+        <tr>
+            <td>25</td>
+            <td><strong><a href="https://www.start.gg/user/7ab7ef39" target="_blank">145cmOrLower | dog</a></strong> <span class="badge badge-purple">VET</span> <span class="social-icons"><span class="social-icon" title="dog#6257"><img src="icons/discord.png" alt="Discord"></span></span></td>
+            <td>39</td>
+            <td>2021-04-03</td>
+            <td>3/4</td>
+        </tr>
+        
+        <tr>
+            <td>33</td>
+            <td><strong><a href="https://www.start.gg/user/772e910a" target="_blank">Dollth.ing</a></strong> <span class="badge badge-yellow">NEW</span> <span class="social-icons"></span></td>
+            <td>0</td>
+            <td>2025-05-17</td>
+            <td>3/3</td>
+        </tr>
+        
+        <tr>
+            <td>33</td>
+            <td><strong><a href="https://www.start.gg/user/71ce8da6" target="_blank">Tingcos</a></strong> <span class="badge badge-purple">VET</span> <span class="social-icons"></span></td>
+            <td>43</td>
+            <td>2017-05-12</td>
+            <td>2/2</td>
+        </tr>
+        
+        <tr>
+            <td>33</td>
+            <td><strong><a href="https://www.start.gg/user/0b45b3e3" target="_blank">Eazy | Eazy</a></strong> <span class="badge badge-blue">REG</span> <span class="social-icons"><a href="https://twitch.tv/Eazy_5olbadguy22" target="_blank" title="Eazy_5olbadguy22" class="social-icon"><img src="icons/twitch.png" alt="Twitch"></a><span class="social-icon" title="eazy3_solbadguy"><img src="icons/discord.png" alt="Discord"></span></span></td>
+            <td>5</td>
+            <td>2023-10-06</td>
+            <td>2/2</td>
+        </tr>
+        
+        <tr>
+            <td>33</td>
+            <td><strong><a href="https://www.start.gg/user/3d5b8f4f" target="_blank">mimya</a></strong> <span class="badge badge-red">DQ</span><span class="badge badge-purple">VET</span> <span class="social-icons"><a href="https://twitter.com/meltymim" target="_blank" title="@meltymim" class="social-icon"><img src="icons/twitter.png" alt="Twitter"></a><a href="https://twitch.tv/meltymim" target="_blank" title="meltymim" class="social-icon"><img src="icons/twitch.png" alt="Twitch"></a><span class="social-icon" title="meltymim"><img src="icons/discord.png" alt="Discord"></span></span></td>
+            <td>23</td>
+            <td>2024-03-17</td>
+            <td>0/2</td>
+        </tr>
+        
+        <tr>
+            <td>33</td>
+            <td><strong><a href="https://www.start.gg/user/516261b7" target="_blank">Okio</a></strong> <span class="badge badge-red">DQ</span><span class="badge badge-orange">INIT</span> <span class="social-icons"></span></td>
+            <td>2</td>
+            <td>2025-04-19</td>
+            <td>0/2</td>
+        </tr>
+        
+        <tr>
+            <td>33</td>
+            <td><strong><a href="https://www.start.gg/user/53632faa" target="_blank">faded</a></strong> <span class="badge badge-red">DQ</span><span class="badge badge-orange">INIT</span> <span class="social-icons"></span></td>
+            <td>3</td>
+            <td>2022-07-08</td>
+            <td>0/2</td>
+        </tr>
+        
+        <tr>
+            <td>33</td>
+            <td><strong><a href="https://www.start.gg/user/45ba564a" target="_blank">MH | Husband20YearLiveSickDie</a></strong> <span class="badge badge-red">DQ</span><span class="badge badge-purple">VET</span> <span class="social-icons"><span class="social-icon" title="husband20yearlivesickdie"><img src="icons/discord.png" alt="Discord"></span></span></td>
+            <td>29</td>
+            <td>2021-09-26</td>
+            <td>0/2</td>
+        </tr>
+        
+        <tr>
+            <td>33</td>
+            <td><strong><a href="https://www.start.gg/user/92324e3b" target="_blank">Dragnor</a></strong> <span class="badge badge-blue">REG</span> <span class="social-icons"><span class="social-icon" title=".deee"><img src="icons/discord.png" alt="Discord"></span></span></td>
+            <td>8</td>
+            <td>2021-12-18</td>
+            <td>3/3</td>
+        </tr>
+        
+        <tr>
+            <td>33</td>
+            <td><strong><a href="https://www.start.gg/user/a75e1ac7" target="_blank">Ignis Fates</a></strong> <span class="badge badge-red">DQ</span><span class="badge badge-purple">VET</span> <span class="social-icons"></span></td>
+            <td>42</td>
+            <td>2018-02-26</td>
+            <td>0/2</td>
+        </tr>
+        
+        <tr>
+            <td>33</td>
+            <td><strong><a href="https://www.start.gg/user/cbe1c6c1" target="_blank">Jimsehy</a></strong> <span class="badge badge-red">DQ</span><span class="badge badge-blue">REG</span> <span class="social-icons"><span class="social-icon" title="jimsehy"><img src="icons/discord.png" alt="Discord"></span></span></td>
+            <td>8</td>
+            <td>2021-12-18</td>
+            <td>0/3</td>
+        </tr>
+        
+        <tr>
+            <td>33</td>
+            <td><strong><a href="https://www.start.gg/user/6f915e0a" target="_blank">RhinBo</a></strong> <span class="badge badge-purple">VET</span> <span class="social-icons"><span class="social-icon" title="rhinbo"><img src="icons/discord.png" alt="Discord"></span></span></td>
+            <td>23</td>
+            <td>2023-11-11</td>
+            <td>2/2</td>
+        </tr>
+        
+        <tr>
+            <td>33</td>
+            <td><strong><a href="https://www.start.gg/user/9826cfb8" target="_blank">Milky</a></strong> <span class="badge badge-red">DQ</span><span class="badge badge-purple">VET</span> <span class="social-icons"></span></td>
+            <td>33</td>
+            <td>2019-03-23</td>
+            <td>0/3</td>
+        </tr>
+        
+        <tr>
+            <td>33</td>
+            <td><strong><a href="https://www.start.gg/user/f81aa08a" target="_blank">Aps</a></strong> <span class="badge badge-red">DQ</span><span class="badge badge-purple">VET</span> <span class="social-icons"></span></td>
+            <td>39</td>
+            <td>2020-10-09</td>
+            <td>0/2</td>
+        </tr>
+        
+        <tr>
+            <td>33</td>
+            <td><strong><a href="https://www.start.gg/user/b50ab9e0" target="_blank">13S | ReplacementBlue</a></strong> <span class="badge badge-red">DQ</span><span class="badge badge-purple">VET</span> <span class="social-icons"><span class="social-icon" title="replacementblue"><img src="icons/discord.png" alt="Discord"></span></span></td>
+            <td>32</td>
+            <td>2023-08-26</td>
+            <td>0/2</td>
+        </tr>
+        
+        <tr>
+            <td>33</td>
+            <td><strong><a href="https://www.start.gg/user/a151d716" target="_blank">Peter</a></strong> <span class="badge badge-red">DQ</span><span class="badge badge-orange">INIT</span> <span class="social-icons"></span></td>
+            <td>1</td>
+            <td>2025-05-10</td>
+            <td>0/2</td>
+        </tr>
+        
+        <tr>
+            <td>33</td>
+            <td><strong><a href="https://www.start.gg/user/474c4fc8" target="_blank">NZAOS | Hentai Goddess</a></strong> <span class="badge badge-purple">VET</span> <span class="social-icons"><a href="https://twitter.com/YoHentaiGoddess" target="_blank" title="@YoHentaiGoddess" class="social-icon"><img src="icons/twitter.png" alt="Twitter"></a></span></td>
+            <td>38</td>
+            <td>2019-03-16</td>
+            <td>2/2</td>
+        </tr>
+        
+        <tr>
+            <td>49</td>
+            <td><strong><a href="https://www.start.gg/user/1e8799f9" target="_blank">Putsneak</a></strong> <span class="badge badge-yellow">NEW</span> <span class="social-icons"></span></td>
+            <td>0</td>
+            <td>2025-05-17</td>
+            <td>2/2</td>
+        </tr>
+        
+        <tr>
+            <td>49</td>
+            <td><strong><a href="https://www.start.gg/user/2609f177" target="_blank">Sky Cherry</a></strong> <span class="badge badge-red">DQ</span><span class="badge badge-blue">REG</span> <span class="social-icons"></span></td>
+            <td>5</td>
+            <td>2024-10-11</td>
+            <td>0/2</td>
+        </tr>
+        </tbody>
+                </table>
+            </div>
+        </section>
+
+        <footer>
+            <p>Report generated: 2026-01-18 03:09:40</p>
+            <p>Data source: <a href="https://www.start.gg/tournament/the-warm-up-8/event/tekken-8" target="_blank">start.gg</a></p>
+            <p class="icon-credit">Social icons by <a href="https://www.freepik.com" target="_blank">Freepik</a> and <a href="https://www.flaticon.com/authors/pixel-perfect" target="_blank">Pixel Perfect</a> from Flaticon</p>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,58 @@
+{
+  "tournament": "BAM 14: Battle Arena Melbourne 2024",
+  "tournament_slug": "tournament/bam-14-battle-arena-melbourne-2024",
+  "event": "TEKKEN 8 [BAM 2024] - TEKKEN WORLD TOUR MASTER EVENT | ESPORTS WORLD CUP QUALIFIER",
+  "event_id": 1864,
+  "tournament_date": "2024-05-31T16:00:00",
+  "audit_timestamp": "2026-01-18T03:09:40.510104",
+  "total_entrants": 262,
+  "legitimacy_score": 74.97164667393676,
+  "risk_level": "MEDIUM",
+  "stats": {
+    "overall_dq_rate": 14.885496183206106,
+    "regulars_total": 148,
+    "regulars_dq_rate": 12.837837837837837,
+    "newcomers_total": 114,
+    "newcomers_dq_rate": 17.543859649122805
+  },
+  "tier_breakdown": {
+    "frequent_fighter": {
+      "total": 78,
+      "dq_count": 7,
+      "dq_rate": 8.974358974358974
+    },
+    "semi_frequent": {
+      "total": 35,
+      "dq_count": 5,
+      "dq_rate": 14.285714285714285
+    },
+    "not_newbie": {
+      "total": 35,
+      "dq_count": 7,
+      "dq_rate": 20.0
+    },
+    "initiate": {
+      "total": 44,
+      "dq_count": 8,
+      "dq_rate": 18.181818181818183
+    },
+    "brand_new": {
+      "total": 70,
+      "dq_count": 12,
+      "dq_rate": 17.142857142857142
+    },
+    "guest": {
+      "total": 0,
+      "dq_count": 0,
+      "dq_rate": 0.0
+    }
+  },
+  "suspicious_clusters": [
+    {
+      "pattern": "Prefix: 'goonz'",
+      "size": 4,
+      "dq_count": 3,
+      "dq_rate": 75.0
+    }
+  ]
+}

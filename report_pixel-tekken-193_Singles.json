@@ -1,0 +1,51 @@
+{
+  "tournament": "Pixel Tekken #193",
+  "tournament_slug": "tournament/pixel-tekken-193",
+  "event": "Singles",
+  "event_id": 575,
+  "tournament_date": "2025-10-15T19:00:00",
+  "audit_timestamp": "2026-01-18T03:09:40.102427",
+  "total_entrants": 20,
+  "legitimacy_score": 100,
+  "risk_level": "LOW",
+  "stats": {
+    "overall_dq_rate": 0.0,
+    "regulars_total": 15,
+    "regulars_dq_rate": 0.0,
+    "newcomers_total": 5,
+    "newcomers_dq_rate": 0.0
+  },
+  "tier_breakdown": {
+    "frequent_fighter": {
+      "total": 10,
+      "dq_count": 0,
+      "dq_rate": 0.0
+    },
+    "semi_frequent": {
+      "total": 3,
+      "dq_count": 0,
+      "dq_rate": 0.0
+    },
+    "not_newbie": {
+      "total": 2,
+      "dq_count": 0,
+      "dq_rate": 0.0
+    },
+    "initiate": {
+      "total": 3,
+      "dq_count": 0,
+      "dq_rate": 0.0
+    },
+    "brand_new": {
+      "total": 2,
+      "dq_count": 0,
+      "dq_rate": 0.0
+    },
+    "guest": {
+      "total": 0,
+      "dq_count": 0,
+      "dq_rate": 0.0
+    }
+  },
+  "suspicious_clusters": []
+}

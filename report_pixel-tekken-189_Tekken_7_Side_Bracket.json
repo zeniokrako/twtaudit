@@ -1,0 +1,51 @@
+{
+  "tournament": "Pixel Tekken #189",
+  "tournament_slug": "tournament/pixel-tekken-189",
+  "event": "Tekken 7 Side Bracket",
+  "event_id": 664,
+  "tournament_date": "2025-09-17T19:00:00",
+  "audit_timestamp": "2026-01-18T03:09:40.123972",
+  "total_entrants": 21,
+  "legitimacy_score": 70.0,
+  "risk_level": "MEDIUM",
+  "stats": {
+    "overall_dq_rate": 38.095238095238095,
+    "regulars_total": 16,
+    "regulars_dq_rate": 31.25,
+    "newcomers_total": 4,
+    "newcomers_dq_rate": 75.0
+  },
+  "tier_breakdown": {
+    "frequent_fighter": {
+      "total": 13,
+      "dq_count": 5,
+      "dq_rate": 38.46153846153847
+    },
+    "semi_frequent": {
+      "total": 2,
+      "dq_count": 0,
+      "dq_rate": 0.0
+    },
+    "not_newbie": {
+      "total": 1,
+      "dq_count": 0,
+      "dq_rate": 0.0
+    },
+    "initiate": {
+      "total": 2,
+      "dq_count": 2,
+      "dq_rate": 100.0
+    },
+    "brand_new": {
+      "total": 2,
+      "dq_count": 1,
+      "dq_rate": 50.0
+    },
+    "guest": {
+      "total": 1,
+      "dq_count": 0,
+      "dq_rate": 0.0
+    }
+  },
+  "suspicious_clusters": []
+}

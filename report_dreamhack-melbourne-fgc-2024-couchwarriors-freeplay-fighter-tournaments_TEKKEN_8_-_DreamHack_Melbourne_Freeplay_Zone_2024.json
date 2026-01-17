@@ -1,0 +1,51 @@
+{
+  "tournament": "Dreamhack Melbourne FGC 2024: CouchWarriors Freeplay Fighter Tournaments",
+  "tournament_slug": "tournament/dreamhack-melbourne-fgc-2024-couchwarriors-freeplay-fighter-tournaments",
+  "event": "TEKKEN 8 - DreamHack Melbourne Freeplay Zone 2024",
+  "event_id": 2000,
+  "tournament_date": "2024-04-26T12:00:00",
+  "audit_timestamp": "2026-01-18T03:09:40.542178",
+  "total_entrants": 21,
+  "legitimacy_score": 76.19047619047619,
+  "risk_level": "MEDIUM",
+  "stats": {
+    "overall_dq_rate": 23.809523809523807,
+    "regulars_total": 11,
+    "regulars_dq_rate": 27.27272727272727,
+    "newcomers_total": 7,
+    "newcomers_dq_rate": 14.285714285714285
+  },
+  "tier_breakdown": {
+    "frequent_fighter": {
+      "total": 7,
+      "dq_count": 1,
+      "dq_rate": 14.285714285714285
+    },
+    "semi_frequent": {
+      "total": 3,
+      "dq_count": 2,
+      "dq_rate": 66.66666666666666
+    },
+    "not_newbie": {
+      "total": 1,
+      "dq_count": 0,
+      "dq_rate": 0.0
+    },
+    "initiate": {
+      "total": 2,
+      "dq_count": 0,
+      "dq_rate": 0.0
+    },
+    "brand_new": {
+      "total": 5,
+      "dq_count": 1,
+      "dq_rate": 20.0
+    },
+    "guest": {
+      "total": 3,
+      "dq_count": 1,
+      "dq_rate": 33.33333333333333
+    }
+  },
+  "suspicious_clusters": []
+}

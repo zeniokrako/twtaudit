@@ -1,0 +1,51 @@
+{
+  "tournament": "GESF Summer/Fall Showdown 2025 September",
+  "tournament_slug": "tournament/gesf-summer-fall-showdown-2025-september",
+  "event": "Tekken 8 - TWT Dojo",
+  "event_id": 7,
+  "tournament_date": "2025-09-27T12:00:00",
+  "audit_timestamp": "2026-01-17T21:46:01.472916",
+  "total_entrants": 70,
+  "legitimacy_score": 53.714285714285715,
+  "risk_level": "HIGH",
+  "stats": {
+    "overall_dq_rate": 28.57142857142857,
+    "regulars_total": 28,
+    "regulars_dq_rate": 21.428571428571427,
+    "newcomers_total": 35,
+    "newcomers_dq_rate": 34.285714285714285
+  },
+  "tier_breakdown": {
+    "frequent_fighter": {
+      "total": 9,
+      "dq_count": 3,
+      "dq_rate": 33.33333333333333
+    },
+    "semi_frequent": {
+      "total": 11,
+      "dq_count": 1,
+      "dq_rate": 9.090909090909092
+    },
+    "not_newbie": {
+      "total": 8,
+      "dq_count": 2,
+      "dq_rate": 25.0
+    },
+    "initiate": {
+      "total": 20,
+      "dq_count": 6,
+      "dq_rate": 30.0
+    },
+    "brand_new": {
+      "total": 15,
+      "dq_count": 6,
+      "dq_rate": 40.0
+    },
+    "guest": {
+      "total": 7,
+      "dq_count": 2,
+      "dq_rate": 28.57142857142857
+    }
+  },
+  "suspicious_clusters": []
+}

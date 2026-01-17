@@ -1,0 +1,70 @@
+{
+  "tournament": "SM Cyberzone Challenger Series at SM City North EDSA",
+  "tournament_slug": "tournament/sm-cyberzone-challenger-series-at-sm-city-north-edsa",
+  "event": "Tekken 8",
+  "event_id": 36,
+  "tournament_date": "2025-08-02T12:00:00",
+  "audit_timestamp": "2026-01-17T21:46:01.494819",
+  "total_entrants": 186,
+  "legitimacy_score": 37.91666666666667,
+  "risk_level": "CRITICAL",
+  "stats": {
+    "overall_dq_rate": 36.02150537634409,
+    "regulars_total": 74,
+    "regulars_dq_rate": 22.972972972972975,
+    "newcomers_total": 112,
+    "newcomers_dq_rate": 44.642857142857146
+  },
+  "tier_breakdown": {
+    "frequent_fighter": {
+      "total": 16,
+      "dq_count": 3,
+      "dq_rate": 18.75
+    },
+    "semi_frequent": {
+      "total": 29,
+      "dq_count": 7,
+      "dq_rate": 24.137931034482758
+    },
+    "not_newbie": {
+      "total": 29,
+      "dq_count": 7,
+      "dq_rate": 24.137931034482758
+    },
+    "initiate": {
+      "total": 40,
+      "dq_count": 9,
+      "dq_rate": 22.5
+    },
+    "brand_new": {
+      "total": 72,
+      "dq_count": 41,
+      "dq_rate": 56.94444444444444
+    },
+    "guest": {
+      "total": 0,
+      "dq_count": 0,
+      "dq_rate": 0.0
+    }
+  },
+  "suspicious_clusters": [
+    {
+      "pattern": "Prefix: 'tz'",
+      "size": 4,
+      "dq_count": 3,
+      "dq_rate": 75.0
+    },
+    {
+      "pattern": "Prefix: 'bsc'",
+      "size": 3,
+      "dq_count": 2,
+      "dq_rate": 66.66666666666666
+    },
+    {
+      "pattern": "Prefix: 'bat'",
+      "size": 4,
+      "dq_count": 3,
+      "dq_rate": 75.0
+    }
+  ]
+}

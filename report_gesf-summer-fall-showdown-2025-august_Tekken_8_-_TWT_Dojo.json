@@ -1,0 +1,64 @@
+{
+  "tournament": "GESF Summer/Fall Showdown 2025 August",
+  "tournament_slug": "tournament/gesf-summer-fall-showdown-2025-august",
+  "event": "Tekken 8 - TWT Dojo",
+  "event_id": 1,
+  "tournament_date": "2025-08-30T12:00:00",
+  "audit_timestamp": "2026-01-17T21:46:01.470552",
+  "total_entrants": 104,
+  "legitimacy_score": 35.55555555555556,
+  "risk_level": "CRITICAL",
+  "stats": {
+    "overall_dq_rate": 50.0,
+    "regulars_total": 39,
+    "regulars_dq_rate": 25.64102564102564,
+    "newcomers_total": 56,
+    "newcomers_dq_rate": 71.42857142857143
+  },
+  "tier_breakdown": {
+    "frequent_fighter": {
+      "total": 17,
+      "dq_count": 4,
+      "dq_rate": 23.52941176470588
+    },
+    "semi_frequent": {
+      "total": 11,
+      "dq_count": 2,
+      "dq_rate": 18.181818181818183
+    },
+    "not_newbie": {
+      "total": 11,
+      "dq_count": 4,
+      "dq_rate": 36.36363636363637
+    },
+    "initiate": {
+      "total": 13,
+      "dq_count": 6,
+      "dq_rate": 46.15384615384615
+    },
+    "brand_new": {
+      "total": 43,
+      "dq_count": 34,
+      "dq_rate": 79.06976744186046
+    },
+    "guest": {
+      "total": 9,
+      "dq_count": 2,
+      "dq_rate": 22.22222222222222
+    }
+  },
+  "suspicious_clusters": [
+    {
+      "pattern": "Prefix: 'msqp'",
+      "size": 9,
+      "dq_count": 9,
+      "dq_rate": 100.0
+    },
+    {
+      "pattern": "Prefix: 'mrsqp'",
+      "size": 4,
+      "dq_count": 4,
+      "dq_rate": 100.0
+    }
+  ]
+}

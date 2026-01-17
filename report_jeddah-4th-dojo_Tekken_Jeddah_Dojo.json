@@ -1,0 +1,51 @@
+{
+  "tournament": "Jeddah 4th Dojo",
+  "tournament_slug": "tournament/jeddah-4th-dojo",
+  "event": "Tekken Jeddah Dojo",
+  "event_id": 31,
+  "tournament_date": "2025-11-05T02:00:00",
+  "audit_timestamp": "2026-01-17T21:46:01.477993",
+  "total_entrants": 96,
+  "legitimacy_score": 100,
+  "risk_level": "LOW",
+  "stats": {
+    "overall_dq_rate": 0.0,
+    "regulars_total": 19,
+    "regulars_dq_rate": 0.0,
+    "newcomers_total": 77,
+    "newcomers_dq_rate": 0.0
+  },
+  "tier_breakdown": {
+    "frequent_fighter": {
+      "total": 6,
+      "dq_count": 0,
+      "dq_rate": 0.0
+    },
+    "semi_frequent": {
+      "total": 6,
+      "dq_count": 0,
+      "dq_rate": 0.0
+    },
+    "not_newbie": {
+      "total": 7,
+      "dq_count": 0,
+      "dq_rate": 0.0
+    },
+    "initiate": {
+      "total": 17,
+      "dq_count": 0,
+      "dq_rate": 0.0
+    },
+    "brand_new": {
+      "total": 60,
+      "dq_count": 0,
+      "dq_rate": 0.0
+    },
+    "guest": {
+      "total": 0,
+      "dq_count": 0,
+      "dq_rate": 0.0
+    }
+  },
+  "suspicious_clusters": []
+}

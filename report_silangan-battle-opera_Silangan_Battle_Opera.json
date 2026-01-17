@@ -1,0 +1,51 @@
+{
+  "tournament": "Silangan Battle Opera",
+  "tournament_slug": "tournament/silangan-battle-opera",
+  "event": "Silangan Battle Opera",
+  "event_id": 35,
+  "tournament_date": "2025-06-07T14:00:00",
+  "audit_timestamp": "2026-01-17T21:46:01.490225",
+  "total_entrants": 138,
+  "legitimacy_score": 72.1086956521739,
+  "risk_level": "MEDIUM",
+  "stats": {
+    "overall_dq_rate": 17.391304347826086,
+    "regulars_total": 74,
+    "regulars_dq_rate": 9.45945945945946,
+    "newcomers_total": 64,
+    "newcomers_dq_rate": 26.5625
+  },
+  "tier_breakdown": {
+    "frequent_fighter": {
+      "total": 20,
+      "dq_count": 4,
+      "dq_rate": 20.0
+    },
+    "semi_frequent": {
+      "total": 18,
+      "dq_count": 0,
+      "dq_rate": 0.0
+    },
+    "not_newbie": {
+      "total": 36,
+      "dq_count": 3,
+      "dq_rate": 8.333333333333332
+    },
+    "initiate": {
+      "total": 44,
+      "dq_count": 10,
+      "dq_rate": 22.727272727272727
+    },
+    "brand_new": {
+      "total": 20,
+      "dq_count": 7,
+      "dq_rate": 35.0
+    },
+    "guest": {
+      "total": 0,
+      "dq_count": 0,
+      "dq_rate": 0.0
+    }
+  },
+  "suspicious_clusters": []
+}

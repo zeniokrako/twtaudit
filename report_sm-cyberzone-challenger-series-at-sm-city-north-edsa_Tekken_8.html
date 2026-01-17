@@ -1,0 +1,1711 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tournament Data Report - SM Cyberzone Challenger Series at SM City North EDSA</title>
+    <style>
+        :root { --bg-primary: #0f172a; --bg-secondary: #1e293b; --bg-tertiary: #334155;
+                 --text-primary: #f1f5f9; --text-secondary: #94a3b8; --accent: #3b82f6;
+                 --red: #ef4444; --yellow: #eab308; --green: #22c55e; --orange: #f97316;
+                 --purple: #a855f7; --blue: #3b82f6; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+                background: var(--bg-primary); color: var(--text-primary); line-height: 1.6; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 2rem; }
+        header { text-align: center; margin-bottom: 2rem; padding-bottom: 1.5rem; border-bottom: 1px solid var(--bg-tertiary); }
+        header h1 { font-size: 2rem; margin-bottom: 0.25rem; }
+        header .subtitle { color: var(--text-secondary); }
+        header .meta { margin-top: 0.5rem; color: var(--text-secondary); font-size: 0.875rem; }
+        header .event-link { margin-top: 0.75rem; }
+        header .event-link a { color: var(--accent); text-decoration: none; font-size: 0.9rem; }
+        header .event-link a:hover { text-decoration: underline; }
+        .stats-section { display: flex; justify-content: center; gap: 1.5rem; margin-bottom: 2rem; flex-wrap: wrap; }
+        .stat-card { background: var(--bg-secondary); border-radius: 0.75rem; padding: 1.5rem; text-align: center; min-width: 140px; }
+        .stat-value { font-size: 2rem; font-weight: bold; line-height: 1; }
+        .stat-label { color: var(--text-secondary); margin-top: 0.25rem; font-size: 0.8rem; }
+        section { margin-bottom: 2rem; }
+        section h2 { font-size: 1.25rem; margin-bottom: 1rem; padding-bottom: 0.5rem; border-bottom: 2px solid var(--accent); }
+        table { width: 100%; border-collapse: collapse; background: var(--bg-secondary); border-radius: 0.5rem; overflow: hidden; font-size: 0.875rem; }
+        th, td { padding: 0.6rem 0.8rem; text-align: left; border-bottom: 1px solid var(--bg-tertiary); }
+        th { background: var(--bg-tertiary); font-weight: 600; font-size: 0.75rem; text-transform: uppercase; }
+        tr:hover { background: var(--bg-tertiary); }
+        td a { color: var(--accent); text-decoration: none; }
+        td a:hover { text-decoration: underline; }
+        .badge { display: inline-block; padding: 0.1rem 0.4rem; border-radius: 9999px; font-size: 0.65rem; font-weight: bold; text-transform: uppercase; margin-left: 0.25rem; }
+        .badge-red { background: rgba(239,68,68,0.2); color: var(--red); }
+        .badge-yellow { background: rgba(234,179,8,0.2); color: var(--yellow); }
+        .badge-orange { background: rgba(249,115,22,0.2); color: var(--orange); }
+        .badge-green { background: rgba(34,197,94,0.2); color: var(--green); }
+        .badge-blue { background: rgba(59,130,246,0.2); color: var(--blue); }
+        .badge-purple { background: rgba(168,85,247,0.2); color: var(--purple); }
+        .badge-gray { background: rgba(148,163,184,0.2); color: var(--text-secondary); }
+        .cluster-card { background: var(--bg-secondary); border-radius: 0.5rem; padding: 1rem; margin-bottom: 0.75rem; border-left: 3px solid var(--text-secondary); }
+        .cluster-card.suspicious { border-left-color: var(--orange); }
+        .cluster-card.team { border-left-color: var(--accent); }
+        .cluster-card h4 { margin-bottom: 0.5rem; font-size: 0.95rem; }
+        .cluster-stats { display: flex; gap: 1rem; margin-bottom: 0.5rem; color: var(--text-secondary); font-size: 0.8rem; }
+        .member-list { list-style: none; display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 0.15rem; font-size: 0.8rem; }
+        .member-list a { color: var(--accent); text-decoration: none; }
+        .member-list a:hover { text-decoration: underline; }
+        .table-container { overflow-x: auto; border-radius: 0.5rem; }
+        .tier-legend { display: flex; flex-wrap: wrap; gap: 0.75rem; margin-bottom: 1rem; padding: 0.75rem; background: var(--bg-secondary); border-radius: 0.5rem; font-size: 0.8rem; }
+        .tier-legend span { display: flex; align-items: center; gap: 0.25rem; }
+        footer { text-align: center; padding: 1.5rem; color: var(--text-secondary); font-size: 0.8rem; border-top: 1px solid var(--bg-tertiary); margin-top: 2rem; }
+        @media print { body { background: white; color: black; } td a, .member-list a { color: #2563eb; } }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Tournament Entrant Data Report</h1>
+            <div class="subtitle">SM Cyberzone Challenger Series at SM City North EDSA - Tekken 8</div>
+            <div class="meta">Quezon City, PH | August 02, 2025</div>
+            <div class="event-link"><a href="https://www.start.gg/tournament/sm-cyberzone-challenger-series-at-sm-city-north-edsa/event/tekken-8" target="_blank">View Event on start.gg &#8599;</a></div>
+        </header>
+
+        <div class="stats-section">
+            <div class="stat-card">
+                <div class="stat-value">186</div>
+                <div class="stat-label">Total Entrants</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value">67</div>
+                <div class="stat-label">Total DQ'd (36.0%)</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value">74</div>
+                <div class="stat-label">Regulars (5+ prior)</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value">112</div>
+                <div class="stat-label">Newcomers + Guests</div>
+            </div>
+        </div>
+
+        <section>
+            <h2>DQ Breakdown by Player Tier</h2>
+            <p style="color:var(--text-secondary);font-size:0.85rem;margin-bottom:0.75rem">
+                Tiers based on number of start.gg events attended <strong>prior</strong> to this tournament.
+            </p>
+            <div class="tier-legend">
+                <span><span class="badge badge-purple">VET</span> Frequent Fighter (20+ prior)</span>
+                <span><span class="badge badge-green">SEMI</span> Semi Frequent (10-19 prior)</span>
+                <span><span class="badge badge-blue">REG</span> Not Newbie (5-9 prior)</span>
+                <span><span class="badge badge-orange">INIT</span> Initiate (1-4 prior)</span>
+                <span><span class="badge badge-yellow">NEW</span> Brand New (0 prior)</span>
+                <span><span class="badge badge-gray">GUEST</span> Guest (no account)</span>
+            </div>
+            <div class="table-container">
+                <table>
+                    <thead><tr><th>Tier</th><th>Total</th><th>DQ'd</th><th>DQ Rate</th></tr></thead>
+                    <tbody><tr><td><strong>Overall</strong></td><td>186</td><td>67</td><td>36.0%</td></tr><tr><td>Frequent Fighter (20+ prior)</td><td>16</td><td>3</td><td>18.8%</td></tr><tr><td>Semi Frequent (10-19 prior)</td><td>29</td><td>7</td><td>24.1%</td></tr><tr><td>Not Newbie (5-9 prior)</td><td>29</td><td>7</td><td>24.1%</td></tr><tr><td>Initiate (1-4 prior)</td><td>40</td><td>9</td><td>22.5%</td></tr><tr><td>Brand New (0 prior)</td><td>72</td><td>41</td><td>56.9%</td></tr></tbody>
+                </table>
+            </div>
+        </section>
+
+        <section><h2>High-DQ Prefix Clusters</h2><p style='color:var(--text-secondary);font-size:0.85rem;margin-bottom:0.75rem'>Groups of players sharing a prefix with elevated DQ rates.</p>
+            <div class="cluster-card suspicious">
+                <h4>Prefix: 'tz'</h4>
+                <div class="cluster-stats">
+                    <span><strong>4</strong> players</span>
+                    <span><strong>3</strong> DQ'd (75%)</span>
+                    <span>Avg prior events: <strong>7.5</strong></span>
+                </div>
+                <ul class="member-list"><li><a href="https://www.start.gg/user/fabda79b" target="_blank">9TZ | Kronjuvel</a>  (12 prior events)</li><li><a href="https://www.start.gg/user/f76e7647" target="_blank">9TZ | Mr. KS</a> <span class="badge badge-red">DQ</span> (8 prior events)</li><li><a href="https://www.start.gg/user/3e564c9e" target="_blank">9tz | DragonkingTKN</a> <span class="badge badge-red">DQ</span> (10 prior events)</li><li><a href="https://www.start.gg/user/f6d7f8d7" target="_blank">9tz | DMT</a> <span class="badge badge-red">DQ</span> (0 prior events)</li></ul>
+            </div>
+            
+            <div class="cluster-card suspicious">
+                <h4>Prefix: 'bat'</h4>
+                <div class="cluster-stats">
+                    <span><strong>4</strong> players</span>
+                    <span><strong>3</strong> DQ'd (75%)</span>
+                    <span>Avg prior events: <strong>0.0</strong></span>
+                </div>
+                <ul class="member-list"><li><a href="https://www.start.gg/user/6916a7ed" target="_blank">BAT | Kaiju</a>  (0 prior events)</li><li><a href="https://www.start.gg/user/3fd31448" target="_blank">BAT | Vyte</a> <span class="badge badge-red">DQ</span> (0 prior events)</li><li><a href="https://www.start.gg/user/5aeb2f7e" target="_blank">BAT | Liyam</a> <span class="badge badge-red">DQ</span> (0 prior events)</li><li><a href="https://www.start.gg/user/be29c217" target="_blank">BAT | Vorjarnon</a> <span class="badge badge-red">DQ</span> (0 prior events)</li></ul>
+            </div>
+            
+            <div class="cluster-card suspicious">
+                <h4>Prefix: 'bsc'</h4>
+                <div class="cluster-stats">
+                    <span><strong>3</strong> players</span>
+                    <span><strong>2</strong> DQ'd (67%)</span>
+                    <span>Avg prior events: <strong>4.3</strong></span>
+                </div>
+                <ul class="member-list"><li><a href="https://www.start.gg/user/fc428d3d" target="_blank">BSC | imba2k</a> <span class="badge badge-red">DQ</span> (4 prior events)</li><li><a href="https://www.start.gg/user/6681a97e" target="_blank">BSC | SpammerHorn</a>  (0 prior events)</li><li><a href="https://www.start.gg/user/feb6691a" target="_blank">BSC | Vessel</a> <span class="badge badge-red">DQ</span> (9 prior events)</li></ul>
+            </div>
+            </section>
+
+        <section><h2>Team/Clan Prefix Groups</h2><p style='color:var(--text-secondary);font-size:0.85rem;margin-bottom:0.75rem'>Groups of players sharing a prefix with normal DQ patterns.</p>
+            <div class="cluster-card team">
+                <h4>Prefix: 'vb'</h4>
+                <div class="cluster-stats">
+                    <span><strong>7</strong> players</span>
+                    <span><strong>1</strong> DQ'd (14%)</span>
+                </div>
+                <ul class="member-list"><li><a href="https://www.start.gg/user/aa93f64d" target="_blank">VB | Juker</a> </li><li><a href="https://www.start.gg/user/4369e27c" target="_blank">VB | Brittles</a> </li><li><a href="https://www.start.gg/user/af3357f5" target="_blank">VB | Kuya King</a> </li><li><a href="https://www.start.gg/user/e3b4de82" target="_blank">VB | Anifaz</a> </li><li><a href="https://www.start.gg/user/46203892" target="_blank">VB | Eevee</a> </li><li><a href="https://www.start.gg/user/3ab0a45c" target="_blank">VB | Knave</a> </li><li><a href="https://www.start.gg/user/87842627" target="_blank">VB | Chano-Kun</a> <span class="badge badge-red">DQ</span></li></ul>
+            </div>
+            
+            <div class="cluster-card team">
+                <h4>Prefix: 'ke'</h4>
+                <div class="cluster-stats">
+                    <span><strong>5</strong> players</span>
+                    <span><strong>0</strong> DQ'd (0%)</span>
+                </div>
+                <ul class="member-list"><li><a href="https://www.start.gg/user/c5dc500f" target="_blank">KE | SneepSnorp</a> </li><li><a href="https://www.start.gg/user/ececc9ce" target="_blank">KE | Pishuu</a> </li><li><a href="https://www.start.gg/user/a01fa99a" target="_blank">KE | kem</a> </li><li><a href="https://www.start.gg/user/2bc63e7d" target="_blank">KE | ChunChunMaru</a> </li><li><a href="https://www.start.gg/user/d7909d60" target="_blank">KE | Koko</a> </li></ul>
+            </div>
+            
+            <div class="cluster-card team">
+                <h4>Prefix: 'drp'</h4>
+                <div class="cluster-stats">
+                    <span><strong>4</strong> players</span>
+                    <span><strong>1</strong> DQ'd (25%)</span>
+                </div>
+                <ul class="member-list"><li><a href="https://www.start.gg/user/e752a685" target="_blank">DRP | Verus</a> </li><li><a href="https://www.start.gg/user/a90baf61" target="_blank">DRP | L</a> </li><li><a href="https://www.start.gg/user/d005650c" target="_blank">DRP | Kaiko</a> <span class="badge badge-red">DQ</span></li><li><a href="https://www.start.gg/user/044eade9" target="_blank">DRP | danisoya</a> </li></ul>
+            </div>
+            
+            <div class="cluster-card team">
+                <h4>Prefix: 'nfr'</h4>
+                <div class="cluster-stats">
+                    <span><strong>4</strong> players</span>
+                    <span><strong>1</strong> DQ'd (25%)</span>
+                </div>
+                <ul class="member-list"><li><a href="https://www.start.gg/user/dead36fb" target="_blank">NFR | Blacklight</a> </li><li><a href="https://www.start.gg/user/27cf80cc" target="_blank">NFR | Astraeus</a> </li><li><a href="https://www.start.gg/user/771ba5ba" target="_blank">NFR | Naevis</a> </li><li><a href="https://www.start.gg/user/5660620c" target="_blank">NFR | Naevis</a> <span class="badge badge-red">DQ</span></li></ul>
+            </div>
+            
+            <div class="cluster-card team">
+                <h4>Prefix: 'tdc'</h4>
+                <div class="cluster-stats">
+                    <span><strong>4</strong> players</span>
+                    <span><strong>2</strong> DQ'd (50%)</span>
+                </div>
+                <ul class="member-list"><li><a href="https://www.start.gg/user/8c204c77" target="_blank">TDC | Xyza</a> </li><li><a href="https://www.start.gg/user/acbfa74e" target="_blank">TDC | PEARL</a> </li><li><a href="https://www.start.gg/user/975a7528" target="_blank">TDC | Kookiepitz</a> <span class="badge badge-red">DQ</span></li><li><a href="https://www.start.gg/user/cf3884f7" target="_blank">TDC | TDC_faspitch</a> <span class="badge badge-red">DQ</span></li></ul>
+            </div>
+            
+            <div class="cluster-card team">
+                <h4>Prefix: 'is'</h4>
+                <div class="cluster-stats">
+                    <span><strong>4</strong> players</span>
+                    <span><strong>2</strong> DQ'd (50%)</span>
+                </div>
+                <ul class="member-list"><li><a href="https://www.start.gg/user/2568de40" target="_blank">IS | HAYRA</a> <span class="badge badge-red">DQ</span></li><li><a href="https://www.start.gg/user/4479af82" target="_blank">IS | BloodyM.</a> </li><li><a href="https://www.start.gg/user/e1ee3e3b" target="_blank">IS | Kento</a> <span class="badge badge-red">DQ</span></li><li><a href="https://www.start.gg/user/87f39d45" target="_blank">IS | GODSPEEDS</a> </li></ul>
+            </div>
+            
+            <div class="cluster-card team">
+                <h4>Prefix: 'mad'</h4>
+                <div class="cluster-stats">
+                    <span><strong>3</strong> players</span>
+                    <span><strong>1</strong> DQ'd (33%)</span>
+                </div>
+                <ul class="member-list"><li><a href="https://www.start.gg/user/ac8004c0" target="_blank">MAD | Daryl9k</a> </li><li><a href="https://www.start.gg/user/665e2d7c" target="_blank">MAD | TheReal9k</a> </li><li><a href="https://www.start.gg/user/8ba00fd0" target="_blank">MAD | Kurty</a> <span class="badge badge-red">DQ</span></li></ul>
+            </div>
+            </section>
+
+        <section>
+            <h2>All Entrants</h2>
+            <p style="color:var(--text-secondary);font-size:0.85rem;margin-bottom:0.75rem">
+                "Prior Events" shows tournaments attended <strong>before</strong> this event (not including this one).
+            </p>
+            <div class="table-container">
+                <table>
+                    <thead><tr><th>Place</th><th>Player</th><th>Prior Events</th><th>First Event</th><th>Sets Played</th></tr></thead>
+                    <tbody>
+        <tr>
+            <td>1</td>
+            <td><strong><a href="https://www.start.gg/user/62133d5a" target="_blank">INV | RGN</a></strong> <span class="badge badge-purple">VET</span></td>
+            <td>36</td>
+            <td>2019-05-04</td>
+            <td>14/14</td>
+        </tr>
+        
+        <tr>
+            <td>2</td>
+            <td><strong><a href="https://www.start.gg/user/4e3fe926" target="_blank">PBE AGG | Adrian</a></strong> <span class="badge badge-purple">VET</span></td>
+            <td>38</td>
+            <td>2019-04-27</td>
+            <td>9/9</td>
+        </tr>
+        
+        <tr>
+            <td>3</td>
+            <td><strong><a href="https://www.start.gg/user/255ba6f3" target="_blank">eightmethods | Gold_Standard</a></strong> <span class="badge badge-purple">VET</span></td>
+            <td>42</td>
+            <td>2019-04-27</td>
+            <td>8/8</td>
+        </tr>
+        
+        <tr>
+            <td>4</td>
+            <td><strong><a href="https://www.start.gg/user/6a172593" target="_blank">20V | Siops</a></strong> <span class="badge badge-red">DQ</span><span class="badge badge-green">SEMI</span></td>
+            <td>16</td>
+            <td>2023-09-02</td>
+            <td>12/13</td>
+        </tr>
+        
+        <tr>
+            <td>5</td>
+            <td><strong><a href="https://www.start.gg/user/31e8ab02" target="_blank">9tz | DML | Mika Salamancarts</a></strong> <span class="badge badge-green">SEMI</span></td>
+            <td>10</td>
+            <td>2020-12-12</td>
+            <td>7/7</td>
+        </tr>
+        
+        <tr>
+            <td>5</td>
+            <td><strong><a href="https://www.start.gg/user/a0cb580c" target="_blank">eightmethods | Melos</a></strong> <span class="badge badge-green">SEMI</span></td>
+            <td>16</td>
+            <td>2019-05-04</td>
+            <td>7/7</td>
+        </tr>
+        
+        <tr>
+            <td>7</td>
+            <td><strong><a href="https://www.start.gg/user/312894e3" target="_blank">DLT | Zaskieee</a></strong> <span class="badge badge-blue">REG</span></td>
+            <td>9</td>
+            <td>2019-09-28</td>
+            <td>8/8</td>
+        </tr>
+        
+        <tr>
+            <td>7</td>
+            <td><strong><a href="https://www.start.gg/user/9d45c4de" target="_blank"><East-Sports> | HAPON</a></strong> <span class="badge badge-purple">VET</span></td>
+            <td>33</td>
+            <td>2019-04-27</td>
+            <td>7/7</td>
+        </tr>
+        
+        <tr>
+            <td>9</td>
+            <td><strong><a href="https://www.start.gg/user/021a57ce" target="_blank">RJT 20V | Seishiro</a></strong> <span class="badge badge-blue">REG</span></td>
+            <td>5</td>
+            <td>2024-04-20</td>
+            <td>5/6</td>
+        </tr>
+        
+        <tr>
+            <td>9</td>
+            <td><strong><a href="https://www.start.gg/user/4c671f52" target="_blank">DLT | Reveluv</a></strong> <span class="badge badge-blue">REG</span></td>
+            <td>7</td>
+            <td>2024-04-20</td>
+            <td>6/6</td>
+        </tr>
+        
+        <tr>
+            <td>9</td>
+            <td><strong><a href="https://www.start.gg/user/2f538134" target="_blank">20V | Zato</a></strong> <span class="badge badge-blue">REG</span></td>
+            <td>9</td>
+            <td>2024-04-20</td>
+            <td>6/6</td>
+        </tr>
+        
+        <tr>
+            <td>9</td>
+            <td><strong><a href="https://www.start.gg/user/9c08641f" target="_blank">tsiyon静香</a></strong> <span class="badge badge-orange">INIT</span></td>
+            <td>4</td>
+            <td>2023-08-05</td>
+            <td>9/11</td>
+        </tr>
+        
+        <tr>
+            <td>13</td>
+            <td><strong><a href="https://www.start.gg/user/9d67d381" target="_blank">AGG 20V | bakalnation</a></strong> <span class="badge badge-purple">VET</span></td>
+            <td>42</td>
+            <td>2019-04-27</td>
+            <td>7/7</td>
+        </tr>
+        
+        <tr>
+            <td>13</td>
+            <td><strong><a href="https://www.start.gg/user/fabda79b" target="_blank">9TZ | Kronjuvel</a></strong> <span class="badge badge-green">SEMI</span></td>
+            <td>12</td>
+            <td>2022-08-20</td>
+            <td>7/7</td>
+        </tr>
+        
+        <tr>
+            <td>13</td>
+            <td><strong><a href="https://www.start.gg/user/aa93f64d" target="_blank">VB | Juker</a></strong> <span class="badge badge-purple">VET</span></td>
+            <td>39</td>
+            <td>2019-09-28</td>
+            <td>6/6</td>
+        </tr>
+        
+        <tr>
+            <td>13</td>
+            <td><strong><a href="https://www.start.gg/user/f4c535fb" target="_blank">LJ Lee</a></strong> <span class="badge badge-red">DQ</span><span class="badge badge-green">SEMI</span></td>
+            <td>15</td>
+            <td>2019-04-27</td>
+            <td>5/6</td>
+        </tr>
+        
+        <tr>
+            <td>17</td>
+            <td><strong><a href="https://www.start.gg/user/e04298f8" target="_blank">AAE | VB | | Chepler</a></strong> <span class="badge badge-green">SEMI</span></td>
+            <td>16</td>
+            <td>2019-06-15</td>
+            <td>6/6</td>
+        </tr>
+        
+        <tr>
+            <td>17</td>
+            <td><strong><a href="https://www.start.gg/user/20d1c6d4" target="_blank">CGPH | Power</a></strong> <span class="badge badge-green">SEMI</span></td>
+            <td>12</td>
+            <td>2022-09-17</td>
+            <td>5/5</td>
+        </tr>
+        
+        <tr>
+            <td>17</td>
+            <td><strong><a href="https://www.start.gg/user/e752a685" target="_blank">DRP | Verus</a></strong> <span class="badge badge-blue">REG</span></td>
+            <td>9</td>
+            <td>2024-09-15</td>
+            <td>5/5</td>
+        </tr>
+        
+        <tr>
+            <td>17</td>
+            <td><strong><a href="https://www.start.gg/user/2220b3c2" target="_blank">LK | AAE | PlayMaker</a></strong> <span class="badge badge-green">SEMI</span></td>
+            <td>11</td>
+            <td>2024-04-20</td>
+            <td>5/5</td>
+        </tr>
+        
+        <tr>
+            <td>17</td>
+            <td><strong><a href="https://www.start.gg/user/04991c1f" target="_blank"><East-Sports> Netsuretsu</a></strong> <span class="badge badge-orange">INIT</span></td>
+            <td>3</td>
+            <td>2024-11-23</td>
+            <td>6/6</td>
+        </tr>
+        
+        <tr>
+            <td>17</td>
+            <td><strong><a href="https://www.start.gg/user/6b816147" target="_blank">MB's | CompthuN</a></strong> <span class="badge badge-orange">INIT</span></td>
+            <td>4</td>
+            <td>2023-09-30</td>
+            <td>7/7</td>
+        </tr>
+        
+        <tr>
+            <td>17</td>
+            <td><strong><a href="https://www.start.gg/user/bafdadce" target="_blank">AGG | TDC | CallMeNoob</a></strong> <span class="badge badge-orange">INIT</span></td>
+            <td>1</td>
+            <td>2025-06-07</td>
+            <td>6/6</td>
+        </tr>
+        
+        <tr>
+            <td>17</td>
+            <td><strong><a href="https://www.start.gg/user/fa318509" target="_blank">Jeffy97</a></strong> <span class="badge badge-blue">REG</span></td>
+            <td>8</td>
+            <td>2022-08-20</td>
+            <td>5/6</td>
+        </tr>
+        
+        <tr>
+            <td>25</td>
+            <td><strong><a href="https://www.start.gg/user/62f75b45" target="_blank">JMD | Pao Isláw</a></strong> <span class="badge badge-purple">VET</span></td>
+            <td>32</td>
+            <td>2017-08-20</td>
+            <td>5/5</td>
+        </tr>
+        
+        <tr>
+            <td>25</td>
+            <td><strong><a href="https://www.start.gg/user/0c294cb1" target="_blank">GOFC | LK | Kitasan Black</a></strong> <span class="badge badge-green">SEMI</span></td>
+            <td>11</td>
+            <td>2024-04-20</td>
+            <td>5/5</td>
+        </tr>
+        
+        <tr>
+            <td>25</td>
+            <td><strong><a href="https://www.start.gg/user/ac8004c0" target="_blank">MAD | Daryl9k</a></strong> <span class="badge badge-blue">REG</span></td>
+            <td>8</td>
+            <td>2024-04-20</td>
+            <td>6/6</td>
+        </tr>
+        
+        <tr>
+            <td>25</td>
+            <td><strong><a href="https://www.start.gg/user/a90baf61" target="_blank">DRP | L</a></strong> <span class="badge badge-green">SEMI</span></td>
+            <td>14</td>
+            <td>2019-04-27</td>
+            <td>5/5</td>
+        </tr>
+        
+        <tr>
+            <td>25</td>
+            <td><strong><a href="https://www.start.gg/user/b2e9731e" target="_blank">Yoshiyuki</a></strong> <span class="badge badge-green">SEMI</span></td>
+            <td>17</td>
+            <td>2023-09-30</td>
+            <td>5/6</td>
+        </tr>
+        
+        <tr>
+            <td>25</td>
+            <td><strong><a href="https://www.start.gg/user/8b438840" target="_blank">Ace | HG</a></strong> <span class="badge badge-purple">VET</span></td>
+            <td>34</td>
+            <td>2019-04-27</td>
+            <td>6/6</td>
+        </tr>
+        
+        <tr>
+            <td>25</td>
+            <td><strong><a href="https://www.start.gg/user/e44f2d3e" target="_blank">KIVA</a></strong> <span class="badge badge-yellow">NEW</span></td>
+            <td>0</td>
+            <td>2025-08-02</td>
+            <td>7/8</td>
+        </tr>
+        
+        <tr>
+            <td>25</td>
+            <td><strong><a href="https://www.start.gg/user/6439cc44" target="_blank">NSS | ZENITH | Disc Jammer</a></strong> <span class="badge badge-orange">INIT</span></td>
+            <td>1</td>
+            <td>2022-09-17</td>
+            <td>5/7</td>
+        </tr>
+        
+        <tr>
+            <td>33</td>
+            <td><strong><a href="https://www.start.gg/user/8891d104" target="_blank">R4R3side | TunKJr904</a></strong> <span class="badge badge-purple">VET</span></td>
+            <td>33</td>
+            <td>2022-01-16</td>
+            <td>5/5</td>
+        </tr>
+        
+        <tr>
+            <td>33</td>
+            <td><strong><a href="https://www.start.gg/user/b9b1de8d" target="_blank">GOFC | MAD | matzilla</a></strong> <span class="badge badge-blue">REG</span></td>
+            <td>5</td>
+            <td>2019-07-28</td>
+            <td>4/4</td>
+        </tr>
+        
+        <tr>
+            <td>33</td>
+            <td><strong><a href="https://www.start.gg/user/4369e27c" target="_blank">VB | Brittles</a></strong> <span class="badge badge-green">SEMI</span></td>
+            <td>10</td>
+            <td>2019-05-11</td>
+            <td>5/5</td>
+        </tr>
+        
+        <tr>
+            <td>33</td>
+            <td><strong><a href="https://www.start.gg/user/afd0ebd3" target="_blank">Kurea</a></strong> <span class="badge badge-yellow">NEW</span></td>
+            <td>0</td>
+            <td>2025-08-02</td>
+            <td>5/5</td>
+        </tr>
+        
+        <tr>
+            <td>33</td>
+            <td><strong><a href="https://www.start.gg/user/af3357f5" target="_blank">VB | Kuya King</a></strong> <span class="badge badge-blue">REG</span></td>
+            <td>6</td>
+            <td>2021-10-23</td>
+            <td>4/4</td>
+        </tr>
+        
+        <tr>
+            <td>33</td>
+            <td><strong><a href="https://www.start.gg/user/cf320b75" target="_blank">CGPH | Kris</a></strong> <span class="badge badge-blue">REG</span></td>
+            <td>6</td>
+            <td>2024-09-01</td>
+            <td>4/4</td>
+        </tr>
+        
+        <tr>
+            <td>33</td>
+            <td><strong><a href="https://www.start.gg/user/dead36fb" target="_blank">NFR | Blacklight</a></strong> <span class="badge badge-orange">INIT</span></td>
+            <td>4</td>
+            <td>2025-05-17</td>
+            <td>5/5</td>
+        </tr>
+        
+        <tr>
+            <td>33</td>
+            <td><strong><a href="https://www.start.gg/user/f482fe6e" target="_blank">R4R3side | TunK904</a></strong> <span class="badge badge-purple">VET</span></td>
+            <td>38</td>
+            <td>2018-06-30</td>
+            <td>4/4</td>
+        </tr>
+        
+        <tr>
+            <td>33</td>
+            <td><strong><a href="https://www.start.gg/user/983c57aa" target="_blank">9Tz | CAST | BrotherDeimos</a></strong> <span class="badge badge-purple">VET</span></td>
+            <td>20</td>
+            <td>2019-04-27</td>
+            <td>3/4</td>
+        </tr>
+        
+        <tr>
+            <td>33</td>
+            <td><strong><a href="https://www.start.gg/user/8c204c77" target="_blank">TDC | Xyza</a></strong> <span class="badge badge-orange">INIT</span></td>
+            <td>2</td>
+            <td>2025-01-18</td>
+            <td>4/5</td>
+        </tr>
+        
+        <tr>
+            <td>33</td>
+            <td><strong><a href="https://www.start.gg/user/5acf1a83" target="_blank">GOFC | Gold Ship</a></strong> <span class="badge badge-green">SEMI</span></td>
+            <td>15</td>
+            <td>2022-08-20</td>
+            <td>5/5</td>
+        </tr>
+        
+        <tr>
+            <td>33</td>
+            <td><strong><a href="https://www.start.gg/user/c3d01db4" target="_blank">Determinado</a></strong> <span class="badge badge-orange">INIT</span></td>
+            <td>3</td>
+            <td>2019-05-11</td>
+            <td>5/5</td>
+        </tr>
+        
+        <tr>
+            <td>33</td>
+            <td><strong><a href="https://www.start.gg/user/7cd31a03" target="_blank">TNS | Karu</a></strong> <span class="badge badge-green">SEMI</span></td>
+            <td>10</td>
+            <td>2020-12-12</td>
+            <td>6/7</td>
+        </tr>
+        
+        <tr>
+            <td>33</td>
+            <td><strong><a href="https://www.start.gg/user/a0444ddb" target="_blank">JJBA | King Crimson</a></strong> <span class="badge badge-orange">INIT</span></td>
+            <td>1</td>
+            <td>2025-07-25</td>
+            <td>5/5</td>
+        </tr>
+        
+        <tr>
+            <td>33</td>
+            <td><strong><a href="https://www.start.gg/user/27cf80cc" target="_blank">NFR | Astraeus</a></strong> <span class="badge badge-green">SEMI</span></td>
+            <td>11</td>
+            <td>2023-08-05</td>
+            <td>4/5</td>
+        </tr>
+        
+        <tr>
+            <td>33</td>
+            <td><strong><a href="https://www.start.gg/user/7b3b9336" target="_blank">Ctrus</a></strong> <span class="badge badge-blue">REG</span></td>
+            <td>7</td>
+            <td>2021-08-05</td>
+            <td>5/6</td>
+        </tr>
+        
+        <tr>
+            <td>49</td>
+            <td><strong><a href="https://www.start.gg/user/e3b4de82" target="_blank">VB | Anifaz</a></strong> <span class="badge badge-green">SEMI</span></td>
+            <td>14</td>
+            <td>2020-12-12</td>
+            <td>4/4</td>
+        </tr>
+        
+        <tr>
+            <td>49</td>
+            <td><strong><a href="https://www.start.gg/user/2a7134da" target="_blank">DNE | Nobs</a></strong> <span class="badge badge-green">SEMI</span></td>
+            <td>18</td>
+            <td>2019-06-15</td>
+            <td>4/4</td>
+        </tr>
+        
+        <tr>
+            <td>49</td>
+            <td><strong><a href="https://www.start.gg/user/0e13ac03" target="_blank">SHL | Ban</a></strong> <span class="badge badge-blue">REG</span></td>
+            <td>6</td>
+            <td>2025-05-17</td>
+            <td>4/4</td>
+        </tr>
+        
+        <tr>
+            <td>49</td>
+            <td><strong><a href="https://www.start.gg/user/ea183bd3" target="_blank">20V | Chalz</a></strong> <span class="badge badge-green">SEMI</span></td>
+            <td>16</td>
+            <td>2019-08-26</td>
+            <td>4/4</td>
+        </tr>
+        
+        <tr>
+            <td>49</td>
+            <td><strong><a href="https://www.start.gg/user/9bd5126e" target="_blank">AGG | VB | harichuu</a></strong> <span class="badge badge-green">SEMI</span></td>
+            <td>11</td>
+            <td>2024-04-20</td>
+            <td>4/4</td>
+        </tr>
+        
+        <tr>
+            <td>49</td>
+            <td><strong><a href="https://www.start.gg/user/46203892" target="_blank">VB | Eevee</a></strong> <span class="badge badge-orange">INIT</span></td>
+            <td>3</td>
+            <td>2021-01-16</td>
+            <td>3/5</td>
+        </tr>
+        
+        <tr>
+            <td>49</td>
+            <td><strong><a href="https://www.start.gg/user/d005650c" target="_blank">DRP | Kaiko</a></strong> <span class="badge badge-red">DQ</span><span class="badge badge-green">SEMI</span></td>
+            <td>12</td>
+            <td>2018-06-16</td>
+            <td>3/5</td>
+        </tr>
+        
+        <tr>
+            <td>49</td>
+            <td><strong><a href="https://www.start.gg/user/846bc5e2" target="_blank">Zen| AAE | Plazmon</a></strong> <span class="badge badge-yellow">NEW</span></td>
+            <td>0</td>
+            <td>2025-08-02</td>
+            <td>3/4</td>
+        </tr>
+        
+        <tr>
+            <td>49</td>
+            <td><strong><a href="https://www.start.gg/user/da867919" target="_blank">ACE | Mirai</a></strong> <span class="badge badge-blue">REG</span></td>
+            <td>8</td>
+            <td>2019-05-11</td>
+            <td>6/6</td>
+        </tr>
+        
+        <tr>
+            <td>49</td>
+            <td><strong><a href="https://www.start.gg/user/5fafacfa" target="_blank">AGG | Iseen</a></strong> <span class="badge badge-orange">INIT</span></td>
+            <td>2</td>
+            <td>2024-03-23</td>
+            <td>5/5</td>
+        </tr>
+        
+        <tr>
+            <td>49</td>
+            <td><strong><a href="https://www.start.gg/user/f76e7647" target="_blank">9TZ | Mr. KS</a></strong> <span class="badge badge-red">DQ</span><span class="badge badge-blue">REG</span></td>
+            <td>8</td>
+            <td>2019-06-15</td>
+            <td>4/6</td>
+        </tr>
+        
+        <tr>
+            <td>49</td>
+            <td><strong><a href="https://www.start.gg/user/4114fe4e" target="_blank">BSC| | Onodera</a></strong> <span class="badge badge-red">DQ</span><span class="badge badge-yellow">NEW</span></td>
+            <td>0</td>
+            <td>2025-08-02</td>
+            <td>3/5</td>
+        </tr>
+        
+        <tr>
+            <td>49</td>
+            <td><strong><a href="https://www.start.gg/user/493702fd" target="_blank">Waffles</a></strong> <span class="badge badge-purple">VET</span></td>
+            <td>21</td>
+            <td>2019-05-11</td>
+            <td>3/5</td>
+        </tr>
+        
+        <tr>
+            <td>49</td>
+            <td><strong><a href="https://www.start.gg/user/eac7e292" target="_blank">AAE | NFR | | Kyro</a></strong> <span class="badge badge-green">SEMI</span></td>
+            <td>12</td>
+            <td>2024-04-20</td>
+            <td>4/5</td>
+        </tr>
+        
+        <tr>
+            <td>49</td>
+            <td><strong><a href="https://www.start.gg/user/d83a2a3a" target="_blank">NUFV | BSC | Apollo</a></strong> <span class="badge badge-orange">INIT</span></td>
+            <td>3</td>
+            <td>2024-07-27</td>
+            <td>3/6</td>
+        </tr>
+        
+        <tr>
+            <td>49</td>
+            <td><strong><a href="https://www.start.gg/user/08cd6c28" target="_blank">GOFC | Oguri Cap</a></strong> <span class="badge badge-orange">INIT</span></td>
+            <td>4</td>
+            <td>2024-07-27</td>
+            <td>4/6</td>
+        </tr>
+        
+        <tr>
+            <td>65</td>
+            <td><strong><a href="https://www.start.gg/user/3e564c9e" target="_blank">9tz | DragonkingTKN</a></strong> <span class="badge badge-red">DQ</span><span class="badge badge-green">SEMI</span></td>
+            <td>10</td>
+            <td>2017-08-20</td>
+            <td>0/3</td>
+        </tr>
+        
+        <tr>
+            <td>65</td>
+            <td><strong><a href="https://www.start.gg/user/3ab0a45c" target="_blank">VB | Knave</a></strong> <span class="badge badge-green">SEMI</span></td>
+            <td>10</td>
+            <td>2023-08-05</td>
+            <td>3/3</td>
+        </tr>
+        
+        <tr>
+            <td>65</td>
+            <td><strong><a href="https://www.start.gg/user/98eedc04" target="_blank">AAE | SenGouku</a></strong> <span class="badge badge-green">SEMI</span></td>
+            <td>11</td>
+            <td>2023-08-05</td>
+            <td>2/3</td>
+        </tr>
+        
+        <tr>
+            <td>65</td>
+            <td><strong><a href="https://www.start.gg/user/c015a4fe" target="_blank">24c | AAE | LK | Gyeoul</a></strong> <span class="badge badge-orange">INIT</span></td>
+            <td>4</td>
+            <td>2024-04-20</td>
+            <td>3/3</td>
+        </tr>
+        
+        <tr>
+            <td>65</td>
+            <td><strong><a href="https://www.start.gg/user/d6c79add" target="_blank">ZEN | JAYDEE</a></strong> <span class="badge badge-orange">INIT</span></td>
+            <td>1</td>
+            <td>2025-07-25</td>
+            <td>3/3</td>
+        </tr>
+        
+        <tr>
+            <td>65</td>
+            <td><strong><a href="https://www.start.gg/user/40debf0c" target="_blank">VA | MagiCyan</a></strong> <span class="badge badge-red">DQ</span><span class="badge badge-blue">REG</span></td>
+            <td>6</td>
+            <td>2025-02-28</td>
+            <td>0/3</td>
+        </tr>
+        
+        <tr>
+            <td>65</td>
+            <td><strong><a href="https://www.start.gg/user/b48ec595" target="_blank">AGG | Pylon | masterirvine29</a></strong> <span class="badge badge-blue">REG</span></td>
+            <td>7</td>
+            <td>2023-09-02</td>
+            <td>4/4</td>
+        </tr>
+        
+        <tr>
+            <td>65</td>
+            <td><strong><a href="https://www.start.gg/user/acbfa74e" target="_blank">TDC | PEARL</a></strong> <span class="badge badge-orange">INIT</span></td>
+            <td>2</td>
+            <td>2024-11-23</td>
+            <td>3/3</td>
+        </tr>
+        
+        <tr>
+            <td>65</td>
+            <td><strong><a href="https://www.start.gg/user/59ba308c" target="_blank">24c | AAE | SitooPsy</a></strong> <span class="badge badge-blue">REG</span></td>
+            <td>7</td>
+            <td>2024-07-27</td>
+            <td>3/3</td>
+        </tr>
+        
+        <tr>
+            <td>65</td>
+            <td><strong><a href="https://www.start.gg/user/f23d2c28" target="_blank">MTP | GD</a></strong> <span class="badge badge-orange">INIT</span></td>
+            <td>1</td>
+            <td>2019-06-15</td>
+            <td>4/4</td>
+        </tr>
+        
+        <tr>
+            <td>65</td>
+            <td><strong><a href="https://www.start.gg/user/25dfedcd" target="_blank">BTP | probinSEANO</a></strong> <span class="badge badge-orange">INIT</span></td>
+            <td>4</td>
+            <td>2022-09-17</td>
+            <td>3/3</td>
+        </tr>
+        
+        <tr>
+            <td>65</td>
+            <td><strong><a href="https://www.start.gg/user/3487481f" target="_blank">AAE | LK | Flaco</a></strong> <span class="badge badge-blue">REG</span></td>
+            <td>8</td>
+            <td>2023-08-05</td>
+            <td>2/4</td>
+        </tr>
+        
+        <tr>
+            <td>65</td>
+            <td><strong><a href="https://www.start.gg/user/b5da948c" target="_blank">clyde</a></strong> <span class="badge badge-blue">REG</span></td>
+            <td>5</td>
+            <td>2024-06-22</td>
+            <td>5/5</td>
+        </tr>
+        
+        <tr>
+            <td>65</td>
+            <td><strong><a href="https://www.start.gg/user/fc428d3d" target="_blank">BSC | imba2k</a></strong> <span class="badge badge-red">DQ</span><span class="badge badge-orange">INIT</span></td>
+            <td>4</td>
+            <td>2024-04-20</td>
+            <td>2/4</td>
+        </tr>
+        
+        <tr>
+            <td>65</td>
+            <td><strong><a href="https://www.start.gg/user/6a91de07" target="_blank">Tunori</a></strong> <span class="badge badge-orange">INIT</span></td>
+            <td>2</td>
+            <td>2023-09-02</td>
+            <td>3/5</td>
+        </tr>
+        
+        <tr>
+            <td>65</td>
+            <td><strong><a href="https://www.start.gg/user/af609ad8" target="_blank">LK | Kuri</a></strong> <span class="badge badge-orange">INIT</span></td>
+            <td>3</td>
+            <td>2024-11-23</td>
+            <td>4/5</td>
+        </tr>
+        
+        <tr>
+            <td>65</td>
+            <td><strong><a href="https://www.start.gg/user/665e2d7c" target="_blank">MAD | TheReal9k</a></strong> <span class="badge badge-orange">INIT</span></td>
+            <td>2</td>
+            <td>2023-08-05</td>
+            <td>2/3</td>
+        </tr>
+        
+        <tr>
+            <td>65</td>
+            <td><strong><a href="https://www.start.gg/user/25fcfa32" target="_blank">TMC | Ryújii</a></strong> <span class="badge badge-orange">INIT</span></td>
+            <td>1</td>
+            <td>2024-09-15</td>
+            <td>4/5</td>
+        </tr>
+        
+        <tr>
+            <td>65</td>
+            <td><strong><a href="https://www.start.gg/user/f6d9105e" target="_blank">TNS | SVG</a></strong> <span class="badge badge-red">DQ</span><span class="badge badge-purple">VET</span></td>
+            <td>21</td>
+            <td>2019-06-15</td>
+            <td>2/4</td>
+        </tr>
+        
+        <tr>
+            <td>65</td>
+            <td><strong><a href="https://www.start.gg/user/475af593" target="_blank">NUFV | Porishu</a></strong> <span class="badge badge-yellow">NEW</span></td>
+            <td>0</td>
+            <td>2025-08-02</td>
+            <td>2/4</td>
+        </tr>
+        
+        <tr>
+            <td>65</td>
+            <td><strong><a href="https://www.start.gg/user/2568de40" target="_blank">IS | HAYRA</a></strong> <span class="badge badge-red">DQ</span><span class="badge badge-yellow">NEW</span></td>
+            <td>0</td>
+            <td>2025-08-02</td>
+            <td>3/5</td>
+        </tr>
+        
+        <tr>
+            <td>65</td>
+            <td><strong><a href="https://www.start.gg/user/bd93cccb" target="_blank">EYSU</a></strong> <span class="badge badge-blue">REG</span></td>
+            <td>8</td>
+            <td>2019-05-11</td>
+            <td>4/5</td>
+        </tr>
+        
+        <tr>
+            <td>65</td>
+            <td><strong><a href="https://www.start.gg/user/8a6ac9f5" target="_blank">Jigsaw</a></strong> <span class="badge badge-yellow">NEW</span></td>
+            <td>0</td>
+            <td>2025-08-02</td>
+            <td>3/5</td>
+        </tr>
+        
+        <tr>
+            <td>65</td>
+            <td><strong><a href="https://www.start.gg/user/d83d076d" target="_blank">LK | Itzamedio</a></strong> <span class="badge badge-orange">INIT</span></td>
+            <td>2</td>
+            <td>2024-03-23</td>
+            <td>4/5</td>
+        </tr>
+        
+        <tr>
+            <td>65</td>
+            <td><strong><a href="https://www.start.gg/user/9acdd6a6" target="_blank">Ren</a></strong> <span class="badge badge-yellow">NEW</span></td>
+            <td>0</td>
+            <td>2025-08-02</td>
+            <td>5/5</td>
+        </tr>
+        
+        <tr>
+            <td>65</td>
+            <td><strong><a href="https://www.start.gg/user/e0517d0b" target="_blank">The Purple Leaf</a></strong> <span class="badge badge-blue">REG</span></td>
+            <td>7</td>
+            <td>2020-12-12</td>
+            <td>3/5</td>
+        </tr>
+        
+        <tr>
+            <td>65</td>
+            <td><strong><a href="https://www.start.gg/user/224ab6c8" target="_blank">Omz</a></strong> <span class="badge badge-yellow">NEW</span></td>
+            <td>0</td>
+            <td>2025-08-02</td>
+            <td>4/4</td>
+        </tr>
+        
+        <tr>
+            <td>65</td>
+            <td><strong><a href="https://www.start.gg/user/4240fda2" target="_blank">KGT BST | Mikasa</a></strong> <span class="badge badge-yellow">NEW</span></td>
+            <td>0</td>
+            <td>2025-08-02</td>
+            <td>2/5</td>
+        </tr>
+        
+        <tr>
+            <td>65</td>
+            <td><strong><a href="https://www.start.gg/user/4ccff7e8" target="_blank">Sean29</a></strong> <span class="badge badge-red">DQ</span><span class="badge badge-yellow">NEW</span></td>
+            <td>0</td>
+            <td>2025-08-02</td>
+            <td>1/4</td>
+        </tr>
+        
+        <tr>
+            <td>65</td>
+            <td><strong><a href="https://www.start.gg/user/6681a97e" target="_blank">BSC | SpammerHorn</a></strong> <span class="badge badge-yellow">NEW</span></td>
+            <td>0</td>
+            <td>2025-08-02</td>
+            <td>3/4</td>
+        </tr>
+        
+        <tr>
+            <td>65</td>
+            <td><strong><a href="https://www.start.gg/user/dc352551" target="_blank">R23</a></strong> <span class="badge badge-orange">INIT</span></td>
+            <td>4</td>
+            <td>2024-09-14</td>
+            <td>4/4</td>
+        </tr>
+        
+        <tr>
+            <td>65</td>
+            <td><strong><a href="https://www.start.gg/user/c5dc500f" target="_blank">KE | SneepSnorp</a></strong> <span class="badge badge-yellow">NEW</span></td>
+            <td>0</td>
+            <td>2025-08-02</td>
+            <td>4/5</td>
+        </tr>
+        
+        <tr>
+            <td>97</td>
+            <td><strong><a href="https://www.start.gg/user/044eade9" target="_blank">DRP | danisoya</a></strong> <span class="badge badge-green">SEMI</span></td>
+            <td>13</td>
+            <td>2023-08-05</td>
+            <td>2/2</td>
+        </tr>
+        
+        <tr>
+            <td>97</td>
+            <td><strong><a href="https://www.start.gg/user/8cb198e8" target="_blank">Arkadia MI | Gen Ohtsuki</a></strong> <span class="badge badge-blue">REG</span></td>
+            <td>6</td>
+            <td>2019-09-28</td>
+            <td>3/3</td>
+        </tr>
+        
+        <tr>
+            <td>97</td>
+            <td><strong><a href="https://www.start.gg/user/8232df54" target="_blank">TSG | shinryuu</a></strong> <span class="badge badge-green">SEMI</span></td>
+            <td>11</td>
+            <td>2019-09-07</td>
+            <td>3/4</td>
+        </tr>
+        
+        <tr>
+            <td>97</td>
+            <td><strong><a href="https://www.start.gg/user/7d03b0bd" target="_blank">BST | RG | Raf</a></strong> <span class="badge badge-red">DQ</span><span class="badge badge-orange">INIT</span></td>
+            <td>2</td>
+            <td>2025-06-21</td>
+            <td>0/3</td>
+        </tr>
+        
+        <tr>
+            <td>97</td>
+            <td><strong><a href="https://www.start.gg/user/838070e2" target="_blank">BTB | Zerks</a></strong> <span class="badge badge-orange">INIT</span></td>
+            <td>1</td>
+            <td>2025-07-05</td>
+            <td>3/4</td>
+        </tr>
+        
+        <tr>
+            <td>97</td>
+            <td><strong><a href="https://www.start.gg/user/ececc9ce" target="_blank">KE | Pishuu</a></strong> <span class="badge badge-yellow">NEW</span></td>
+            <td>0</td>
+            <td>2025-08-02</td>
+            <td>2/3</td>
+        </tr>
+        
+        <tr>
+            <td>97</td>
+            <td><strong><a href="https://www.start.gg/user/9120d574" target="_blank">BST | BRYAN-JET</a></strong> <span class="badge badge-blue">REG</span></td>
+            <td>8</td>
+            <td>2019-05-11</td>
+            <td>3/3</td>
+        </tr>
+        
+        <tr>
+            <td>97</td>
+            <td><strong><a href="https://www.start.gg/user/4692a501" target="_blank">AAE | NFR | CHETS</a></strong> <span class="badge badge-blue">REG</span></td>
+            <td>7</td>
+            <td>2024-04-20</td>
+            <td>3/4</td>
+        </tr>
+        
+        <tr>
+            <td>97</td>
+            <td><strong><a href="https://www.start.gg/user/4ee6dcf5" target="_blank">AGG | VTX | Floydie</a></strong> <span class="badge badge-orange">INIT</span></td>
+            <td>4</td>
+            <td>2024-03-23</td>
+            <td>3/4</td>
+        </tr>
+        
+        <tr>
+            <td>97</td>
+            <td><strong><a href="https://www.start.gg/user/16e7b48b" target="_blank">BAT | | LANE</a></strong> <span class="badge badge-red">DQ</span><span class="badge badge-yellow">NEW</span></td>
+            <td>0</td>
+            <td>2025-08-02</td>
+            <td>0/4</td>
+        </tr>
+        
+        <tr>
+            <td>97</td>
+            <td><strong><a href="https://www.start.gg/user/6916a7ed" target="_blank">BAT | Kaiju</a></strong> <span class="badge badge-yellow">NEW</span></td>
+            <td>0</td>
+            <td>2025-08-02</td>
+            <td>2/4</td>
+        </tr>
+        
+        <tr>
+            <td>97</td>
+            <td><strong><a href="https://www.start.gg/user/3fd31448" target="_blank">BAT | Vyte</a></strong> <span class="badge badge-red">DQ</span><span class="badge badge-yellow">NEW</span></td>
+            <td>0</td>
+            <td>2025-08-02</td>
+            <td>1/4</td>
+        </tr>
+        
+        <tr>
+            <td>97</td>
+            <td><strong><a href="https://www.start.gg/user/0625f3c6" target="_blank">BST | Daddad</a></strong> <span class="badge badge-red">DQ</span><span class="badge badge-yellow">NEW</span></td>
+            <td>0</td>
+            <td>2025-08-02</td>
+            <td>1/4</td>
+        </tr>
+        
+        <tr>
+            <td>97</td>
+            <td><strong><a href="https://www.start.gg/user/a01fa99a" target="_blank">KE | kem</a></strong> <span class="badge badge-yellow">NEW</span></td>
+            <td>0</td>
+            <td>2025-08-02</td>
+            <td>2/3</td>
+        </tr>
+        
+        <tr>
+            <td>97</td>
+            <td><strong><a href="https://www.start.gg/user/6e0426b7" target="_blank">DGE | GrayEyes</a></strong> <span class="badge badge-yellow">NEW</span></td>
+            <td>0</td>
+            <td>2025-08-02</td>
+            <td>2/4</td>
+        </tr>
+        
+        <tr>
+            <td>97</td>
+            <td><strong><a href="https://www.start.gg/user/8634ea8d" target="_blank">cookiemystic</a></strong> <span class="badge badge-red">DQ</span><span class="badge badge-orange">INIT</span></td>
+            <td>2</td>
+            <td>2024-06-22</td>
+            <td>0/3</td>
+        </tr>
+        
+        <tr>
+            <td>97</td>
+            <td><strong><a href="https://www.start.gg/user/51a0e8eb" target="_blank">RockHoward</a></strong> <span class="badge badge-yellow">NEW</span></td>
+            <td>0</td>
+            <td>2025-08-02</td>
+            <td>3/3</td>
+        </tr>
+        
+        <tr>
+            <td>97</td>
+            <td><strong><a href="https://www.start.gg/user/5bf3d4fc" target="_blank">Krhod</a></strong> <span class="badge badge-red">DQ</span><span class="badge badge-yellow">NEW</span></td>
+            <td>0</td>
+            <td>2025-08-02</td>
+            <td>1/3</td>
+        </tr>
+        
+        <tr>
+            <td>97</td>
+            <td><strong><a href="https://www.start.gg/user/a5174d43" target="_blank">XEN</a></strong> <span class="badge badge-red">DQ</span><span class="badge badge-green">SEMI</span></td>
+            <td>11</td>
+            <td>2019-06-15</td>
+            <td>2/4</td>
+        </tr>
+        
+        <tr>
+            <td>97</td>
+            <td><strong><a href="https://www.start.gg/user/30c326aa" target="_blank">GGEN | Zeromioda</a></strong> <span class="badge badge-red">DQ</span><span class="badge badge-yellow">NEW</span></td>
+            <td>0</td>
+            <td>2025-08-02</td>
+            <td>1/3</td>
+        </tr>
+        
+        <tr>
+            <td>97</td>
+            <td><strong><a href="https://www.start.gg/user/3e0ce033" target="_blank">lowchisko</a></strong> <span class="badge badge-red">DQ</span><span class="badge badge-yellow">NEW</span></td>
+            <td>0</td>
+            <td>2025-08-02</td>
+            <td>1/3</td>
+        </tr>
+        
+        <tr>
+            <td>97</td>
+            <td><strong><a href="https://www.start.gg/user/4bd0ca82" target="_blank">Turbowrath</a></strong> <span class="badge badge-yellow">NEW</span></td>
+            <td>0</td>
+            <td>2025-08-02</td>
+            <td>2/3</td>
+        </tr>
+        
+        <tr>
+            <td>97</td>
+            <td><strong><a href="https://www.start.gg/user/44ad2463" target="_blank">Ciri</a></strong> <span class="badge badge-yellow">NEW</span></td>
+            <td>0</td>
+            <td>2025-08-02</td>
+            <td>2/3</td>
+        </tr>
+        
+        <tr>
+            <td>97</td>
+            <td><strong><a href="https://www.start.gg/user/91f125ba" target="_blank">Xzasaji</a></strong> <span class="badge badge-yellow">NEW</span></td>
+            <td>0</td>
+            <td>2025-08-02</td>
+            <td>2/3</td>
+        </tr>
+        
+        <tr>
+            <td>97</td>
+            <td><strong><a href="https://www.start.gg/user/b229e6d3" target="_blank">BREW | Tatin</a></strong> <span class="badge badge-red">DQ</span><span class="badge badge-yellow">NEW</span></td>
+            <td>0</td>
+            <td>2025-08-02</td>
+            <td>0/4</td>
+        </tr>
+        
+        <tr>
+            <td>97</td>
+            <td><strong><a href="https://www.start.gg/user/49edfc0b" target="_blank">Magress</a></strong> <span class="badge badge-yellow">NEW</span></td>
+            <td>0</td>
+            <td>2025-08-02</td>
+            <td>4/4</td>
+        </tr>
+        
+        <tr>
+            <td>97</td>
+            <td><strong><a href="https://www.start.gg/user/74dc684a" target="_blank">Blitz</a></strong> <span class="badge badge-orange">INIT</span></td>
+            <td>2</td>
+            <td>2025-07-19</td>
+            <td>4/4</td>
+        </tr>
+        
+        <tr>
+            <td>97</td>
+            <td><strong><a href="https://www.start.gg/user/35abb2ff" target="_blank">ATP | NSS | 2mi2</a></strong> <span class="badge badge-orange">INIT</span></td>
+            <td>1</td>
+            <td>2025-06-07</td>
+            <td>3/3</td>
+        </tr>
+        
+        <tr>
+            <td>97</td>
+            <td><strong><a href="https://www.start.gg/user/2c7b6a01" target="_blank">Shiny</a></strong> <span class="badge badge-yellow">NEW</span></td>
+            <td>0</td>
+            <td>2025-08-02</td>
+            <td>2/4</td>
+        </tr>
+        
+        <tr>
+            <td>97</td>
+            <td><strong><a href="https://www.start.gg/user/a8d8184f" target="_blank">scyzx</a></strong> <span class="badge badge-yellow">NEW</span></td>
+            <td>0</td>
+            <td>2025-08-02</td>
+            <td>3/3</td>
+        </tr>
+        
+        <tr>
+            <td>97</td>
+            <td><strong><a href="https://www.start.gg/user/9ee0c6c5" target="_blank">TBL | Loki</a></strong> <span class="badge badge-red">DQ</span><span class="badge badge-yellow">NEW</span></td>
+            <td>0</td>
+            <td>2025-08-02</td>
+            <td>1/4</td>
+        </tr>
+        
+        <tr>
+            <td>97</td>
+            <td><strong><a href="https://www.start.gg/user/3316d665" target="_blank">Erjx</a></strong> <span class="badge badge-yellow">NEW</span></td>
+            <td>0</td>
+            <td>2025-08-02</td>
+            <td>3/4</td>
+        </tr>
+        
+        <tr>
+            <td>129</td>
+            <td><strong><a href="https://www.start.gg/user/8b50e300" target="_blank">Hashirou</a></strong> <span class="badge badge-orange">INIT</span></td>
+            <td>4</td>
+            <td>2024-05-07</td>
+            <td>2/2</td>
+        </tr>
+        
+        <tr>
+            <td>129</td>
+            <td><strong><a href="https://www.start.gg/user/9807d1a1" target="_blank">elune</a></strong> <span class="badge badge-red">DQ</span><span class="badge badge-yellow">NEW</span></td>
+            <td>0</td>
+            <td>2025-08-02</td>
+            <td>0/2</td>
+        </tr>
+        
+        <tr>
+            <td>129</td>
+            <td><strong><a href="https://www.start.gg/user/f6d7f8d7" target="_blank">9tz | DMT</a></strong> <span class="badge badge-red">DQ</span><span class="badge badge-yellow">NEW</span></td>
+            <td>0</td>
+            <td>2025-08-02</td>
+            <td>0/2</td>
+        </tr>
+        
+        <tr>
+            <td>129</td>
+            <td><strong><a href="https://www.start.gg/user/87842627" target="_blank">VB | Chano-Kun</a></strong> <span class="badge badge-red">DQ</span><span class="badge badge-green">SEMI</span></td>
+            <td>10</td>
+            <td>2019-04-27</td>
+            <td>0/2</td>
+        </tr>
+        
+        <tr>
+            <td>129</td>
+            <td><strong><a href="https://www.start.gg/user/8c459ee3" target="_blank">DNE | LuckyFighter</a></strong> <span class="badge badge-red">DQ</span><span class="badge badge-purple">VET</span></td>
+            <td>28</td>
+            <td>2019-04-27</td>
+            <td>0/2</td>
+        </tr>
+        
+        <tr>
+            <td>129</td>
+            <td><strong><a href="https://www.start.gg/user/e7b40975" target="_blank">PngetPeroMsaya</a></strong> <span class="badge badge-red">DQ</span><span class="badge badge-yellow">NEW</span></td>
+            <td>0</td>
+            <td>2025-08-02</td>
+            <td>0/2</td>
+        </tr>
+        
+        <tr>
+            <td>129</td>
+            <td><strong><a href="https://www.start.gg/user/0d393f7a" target="_blank">24c | Wax On Wax Off</a></strong> <span class="badge badge-red">DQ</span><span class="badge badge-blue">REG</span></td>
+            <td>6</td>
+            <td>2023-08-05</td>
+            <td>0/2</td>
+        </tr>
+        
+        <tr>
+            <td>129</td>
+            <td><strong><a href="https://www.start.gg/user/975a7528" target="_blank">TDC | Kookiepitz</a></strong> <span class="badge badge-red">DQ</span><span class="badge badge-orange">INIT</span></td>
+            <td>1</td>
+            <td>2025-06-07</td>
+            <td>0/2</td>
+        </tr>
+        
+        <tr>
+            <td>129</td>
+            <td><strong><a href="https://www.start.gg/user/cf3884f7" target="_blank">TDC | TDC_faspitch</a></strong> <span class="badge badge-red">DQ</span><span class="badge badge-green">SEMI</span></td>
+            <td>11</td>
+            <td>2020-12-12</td>
+            <td>0/2</td>
+        </tr>
+        
+        <tr>
+            <td>129</td>
+            <td><strong><a href="https://www.start.gg/user/41e9eca0" target="_blank">DLT | | Toothless</a></strong> <span class="badge badge-red">DQ</span><span class="badge badge-blue">REG</span></td>
+            <td>7</td>
+            <td>2023-08-05</td>
+            <td>0/2</td>
+        </tr>
+        
+        <tr>
+            <td>129</td>
+            <td><strong><a href="https://www.start.gg/user/fc75516a" target="_blank">Kokimonstr</a></strong> <span class="badge badge-purple">VET</span></td>
+            <td>22</td>
+            <td>2017-08-20</td>
+            <td>2/2</td>
+        </tr>
+        
+        <tr>
+            <td>129</td>
+            <td><strong><a href="https://www.start.gg/user/feb6691a" target="_blank">BSC | Vessel</a></strong> <span class="badge badge-red">DQ</span><span class="badge badge-blue">REG</span></td>
+            <td>9</td>
+            <td>2020-12-12</td>
+            <td>0/2</td>
+        </tr>
+        
+        <tr>
+            <td>129</td>
+            <td><strong><a href="https://www.start.gg/user/87458cae" target="_blank">TMC | Indigent</a></strong> <span class="badge badge-red">DQ</span><span class="badge badge-yellow">NEW</span></td>
+            <td>0</td>
+            <td>2025-08-02</td>
+            <td>0/2</td>
+        </tr>
+        
+        <tr>
+            <td>129</td>
+            <td><strong><a href="https://www.start.gg/user/6c27fcd9" target="_blank">FTC | CPGL | Pinklover</a></strong> <span class="badge badge-red">DQ</span><span class="badge badge-orange">INIT</span></td>
+            <td>1</td>
+            <td>2024-07-27</td>
+            <td>0/2</td>
+        </tr>
+        
+        <tr>
+            <td>129</td>
+            <td><strong><a href="https://www.start.gg/user/8ba00fd0" target="_blank">MAD | Kurty</a></strong> <span class="badge badge-red">DQ</span><span class="badge badge-orange">INIT</span></td>
+            <td>4</td>
+            <td>2022-08-20</td>
+            <td>0/2</td>
+        </tr>
+        
+        <tr>
+            <td>129</td>
+            <td><strong><a href="https://www.start.gg/user/e1b12d28" target="_blank">kanveil</a></strong> <span class="badge badge-yellow">NEW</span></td>
+            <td>0</td>
+            <td>2025-08-02</td>
+            <td>2/2</td>
+        </tr>
+        
+        <tr>
+            <td>129</td>
+            <td><strong><a href="https://www.start.gg/user/da8be6fb" target="_blank">KN1GHTSH4D3</a></strong> <span class="badge badge-red">DQ</span><span class="badge badge-yellow">NEW</span></td>
+            <td>0</td>
+            <td>2025-08-02</td>
+            <td>1/2</td>
+        </tr>
+        
+        <tr>
+            <td>129</td>
+            <td><strong><a href="https://www.start.gg/user/668af88c" target="_blank">Furiox</a></strong> <span class="badge badge-red">DQ</span><span class="badge badge-yellow">NEW</span></td>
+            <td>0</td>
+            <td>2025-08-02</td>
+            <td>0/2</td>
+        </tr>
+        
+        <tr>
+            <td>129</td>
+            <td><strong><a href="https://www.start.gg/user/b2cc3768" target="_blank">9Tz | | Babala.tv</a></strong> <span class="badge badge-red">DQ</span><span class="badge badge-blue">REG</span></td>
+            <td>6</td>
+            <td>2024-04-20</td>
+            <td>0/2</td>
+        </tr>
+        
+        <tr>
+            <td>129</td>
+            <td><strong><a href="https://www.start.gg/user/56d0b335" target="_blank">OTP | 24c | EJM</a></strong> <span class="badge badge-red">DQ</span><span class="badge badge-orange">INIT</span></td>
+            <td>4</td>
+            <td>2024-04-20</td>
+            <td>0/2</td>
+        </tr>
+        
+        <tr>
+            <td>129</td>
+            <td><strong><a href="https://www.start.gg/user/5aeb2f7e" target="_blank">BAT | Liyam</a></strong> <span class="badge badge-red">DQ</span><span class="badge badge-yellow">NEW</span></td>
+            <td>0</td>
+            <td>2025-08-02</td>
+            <td>1/3</td>
+        </tr>
+        
+        <tr>
+            <td>129</td>
+            <td><strong><a href="https://www.start.gg/user/be29c217" target="_blank">BAT | Vorjarnon</a></strong> <span class="badge badge-red">DQ</span><span class="badge badge-yellow">NEW</span></td>
+            <td>0</td>
+            <td>2025-08-02</td>
+            <td>0/2</td>
+        </tr>
+        
+        <tr>
+            <td>129</td>
+            <td><strong><a href="https://www.start.gg/user/d8c26a17" target="_blank">TDC RISINGACTAEON</a></strong> <span class="badge badge-orange">INIT</span></td>
+            <td>4</td>
+            <td>2024-04-20</td>
+            <td>2/2</td>
+        </tr>
+        
+        <tr>
+            <td>129</td>
+            <td><strong><a href="https://www.start.gg/user/2bc63e7d" target="_blank">KE | ChunChunMaru</a></strong> <span class="badge badge-yellow">NEW</span></td>
+            <td>0</td>
+            <td>2025-08-02</td>
+            <td>2/3</td>
+        </tr>
+        
+        <tr>
+            <td>129</td>
+            <td><strong><a href="https://www.start.gg/user/d7909d60" target="_blank">KE | Koko</a></strong> <span class="badge badge-yellow">NEW</span></td>
+            <td>0</td>
+            <td>2025-08-02</td>
+            <td>2/3</td>
+        </tr>
+        
+        <tr>
+            <td>129</td>
+            <td><strong><a href="https://www.start.gg/user/4b1f212c" target="_blank">Paralyzed | briggsironclad</a></strong> <span class="badge badge-red">DQ</span><span class="badge badge-orange">INIT</span></td>
+            <td>3</td>
+            <td>2024-06-22</td>
+            <td>0/2</td>
+        </tr>
+        
+        <tr>
+            <td>129</td>
+            <td><strong><a href="https://www.start.gg/user/7dbcc1fc" target="_blank">PH Ella</a></strong> <span class="badge badge-red">DQ</span><span class="badge badge-yellow">NEW</span></td>
+            <td>0</td>
+            <td>2025-08-02</td>
+            <td>1/2</td>
+        </tr>
+        
+        <tr>
+            <td>129</td>
+            <td><strong><a href="https://www.start.gg/user/4479af82" target="_blank">IS | BloodyM.</a></strong> <span class="badge badge-yellow">NEW</span></td>
+            <td>0</td>
+            <td>2025-08-02</td>
+            <td>2/2</td>
+        </tr>
+        
+        <tr>
+            <td>129</td>
+            <td><strong><a href="https://www.start.gg/user/415ec0b2" target="_blank">NUFV | Crypto</a></strong> <span class="badge badge-red">DQ</span><span class="badge badge-yellow">NEW</span></td>
+            <td>0</td>
+            <td>2025-08-02</td>
+            <td>1/2</td>
+        </tr>
+        
+        <tr>
+            <td>129</td>
+            <td><strong><a href="https://www.start.gg/user/e1ee3e3b" target="_blank">IS | Kento</a></strong> <span class="badge badge-red">DQ</span><span class="badge badge-yellow">NEW</span></td>
+            <td>0</td>
+            <td>2025-08-02</td>
+            <td>0/2</td>
+        </tr>
+        
+        <tr>
+            <td>129</td>
+            <td><strong><a href="https://www.start.gg/user/87f39d45" target="_blank">IS | GODSPEEDS</a></strong> <span class="badge badge-yellow">NEW</span></td>
+            <td>0</td>
+            <td>2025-08-02</td>
+            <td>3/3</td>
+        </tr>
+        
+        <tr>
+            <td>129</td>
+            <td><strong><a href="https://www.start.gg/user/3801aac5" target="_blank">Ostinarbi</a></strong> <span class="badge badge-red">DQ</span><span class="badge badge-yellow">NEW</span></td>
+            <td>0</td>
+            <td>2025-08-02</td>
+            <td>0/2</td>
+        </tr>
+        
+        <tr>
+            <td>129</td>
+            <td><strong><a href="https://www.start.gg/user/a31c10a9" target="_blank">Ducky</a></strong> <span class="badge badge-red">DQ</span><span class="badge badge-orange">INIT</span></td>
+            <td>1</td>
+            <td>2023-08-05</td>
+            <td>1/2</td>
+        </tr>
+        
+        <tr>
+            <td>129</td>
+            <td><strong><a href="https://www.start.gg/user/53306b88" target="_blank">Kaidy</a></strong> <span class="badge badge-red">DQ</span><span class="badge badge-yellow">NEW</span></td>
+            <td>0</td>
+            <td>2025-08-02</td>
+            <td>1/2</td>
+        </tr>
+        
+        <tr>
+            <td>129</td>
+            <td><strong><a href="https://www.start.gg/user/c8a001bb" target="_blank">BST | VladMan</a></strong> <span class="badge badge-red">DQ</span><span class="badge badge-yellow">NEW</span></td>
+            <td>0</td>
+            <td>2025-08-02</td>
+            <td>1/2</td>
+        </tr>
+        
+        <tr>
+            <td>129</td>
+            <td><strong><a href="https://www.start.gg/user/1faf304c" target="_blank">Lejecard</a></strong> <span class="badge badge-yellow">NEW</span></td>
+            <td>0</td>
+            <td>2025-08-02</td>
+            <td>2/2</td>
+        </tr>
+        
+        <tr>
+            <td>129</td>
+            <td><strong><a href="https://www.start.gg/user/4609f3eb" target="_blank">Haniel</a></strong> <span class="badge badge-red">DQ</span><span class="badge badge-yellow">NEW</span></td>
+            <td>0</td>
+            <td>2025-08-02</td>
+            <td>0/2</td>
+        </tr>
+        
+        <tr>
+            <td>129</td>
+            <td><strong><a href="https://www.start.gg/user/f6c8ff5b" target="_blank">Asterius</a></strong> <span class="badge badge-red">DQ</span><span class="badge badge-yellow">NEW</span></td>
+            <td>0</td>
+            <td>2025-08-02</td>
+            <td>0/2</td>
+        </tr>
+        
+        <tr>
+            <td>129</td>
+            <td><strong><a href="https://www.start.gg/user/37c489f0" target="_blank">Babols</a></strong> <span class="badge badge-yellow">NEW</span></td>
+            <td>0</td>
+            <td>2025-08-02</td>
+            <td>2/3</td>
+        </tr>
+        
+        <tr>
+            <td>129</td>
+            <td><strong><a href="https://www.start.gg/user/8df9accf" target="_blank">supyuna</a></strong> <span class="badge badge-red">DQ</span><span class="badge badge-yellow">NEW</span></td>
+            <td>0</td>
+            <td>2025-08-02</td>
+            <td>0/2</td>
+        </tr>
+        
+        <tr>
+            <td>129</td>
+            <td><strong><a href="https://www.start.gg/user/23897430" target="_blank">Alex</a></strong> <span class="badge badge-red">DQ</span><span class="badge badge-yellow">NEW</span></td>
+            <td>0</td>
+            <td>2025-08-02</td>
+            <td>0/2</td>
+        </tr>
+        
+        <tr>
+            <td>129</td>
+            <td><strong><a href="https://www.start.gg/user/45ecc2fd" target="_blank">Bogart</a></strong> <span class="badge badge-red">DQ</span><span class="badge badge-yellow">NEW</span></td>
+            <td>0</td>
+            <td>2025-08-02</td>
+            <td>0/2</td>
+        </tr>
+        
+        <tr>
+            <td>129</td>
+            <td><strong><a href="https://www.start.gg/user/ba5a0401" target="_blank">KUNOICHI</a></strong> <span class="badge badge-orange">INIT</span></td>
+            <td>2</td>
+            <td>2024-09-14</td>
+            <td>2/2</td>
+        </tr>
+        
+        <tr>
+            <td>129</td>
+            <td><strong><a href="https://www.start.gg/user/b5606eee" target="_blank">Kitsune</a></strong> <span class="badge badge-yellow">NEW</span></td>
+            <td>0</td>
+            <td>2025-08-02</td>
+            <td>2/2</td>
+        </tr>
+        
+        <tr>
+            <td>129</td>
+            <td><strong><a href="https://www.start.gg/user/b47ddbd8" target="_blank">PastelNoir</a></strong> <span class="badge badge-red">DQ</span><span class="badge badge-blue">REG</span></td>
+            <td>8</td>
+            <td>2020-12-12</td>
+            <td>0/2</td>
+        </tr>
+        
+        <tr>
+            <td>129</td>
+            <td><strong><a href="https://www.start.gg/user/ee9d3d61" target="_blank">Dee Ow K</a></strong> <span class="badge badge-red">DQ</span><span class="badge badge-yellow">NEW</span></td>
+            <td>0</td>
+            <td>2025-08-02</td>
+            <td>1/2</td>
+        </tr>
+        
+        <tr>
+            <td>129</td>
+            <td><strong><a href="https://www.start.gg/user/33e0cb30" target="_blank">TBL | Z34L</a></strong> <span class="badge badge-red">DQ</span><span class="badge badge-yellow">NEW</span></td>
+            <td>0</td>
+            <td>2025-08-02</td>
+            <td>1/3</td>
+        </tr>
+        
+        <tr>
+            <td>129</td>
+            <td><strong><a href="https://www.start.gg/user/f4a11fed" target="_blank">Kaitien</a></strong> <span class="badge badge-red">DQ</span><span class="badge badge-yellow">NEW</span></td>
+            <td>0</td>
+            <td>2025-08-02</td>
+            <td>0/2</td>
+        </tr>
+        
+        <tr>
+            <td>129</td>
+            <td><strong><a href="https://www.start.gg/user/762fa45d" target="_blank">Savytar</a></strong> <span class="badge badge-red">DQ</span><span class="badge badge-yellow">NEW</span></td>
+            <td>0</td>
+            <td>2025-08-02</td>
+            <td>0/2</td>
+        </tr>
+        
+        <tr>
+            <td>129</td>
+            <td><strong><a href="https://www.start.gg/user/2dc7808f" target="_blank">LVL | qqqq.</a></strong> <span class="badge badge-red">DQ</span><span class="badge badge-yellow">NEW</span></td>
+            <td>0</td>
+            <td>2025-08-02</td>
+            <td>0/2</td>
+        </tr>
+        
+        <tr>
+            <td>129</td>
+            <td><strong><a href="https://www.start.gg/user/53cb271f" target="_blank">Genbu | Aziel</a></strong> <span class="badge badge-red">DQ</span><span class="badge badge-yellow">NEW</span></td>
+            <td>0</td>
+            <td>2025-08-02</td>
+            <td>0/2</td>
+        </tr>
+        
+        <tr>
+            <td>129</td>
+            <td><strong><a href="https://www.start.gg/user/771ba5ba" target="_blank">NFR | Naevis</a></strong> <span class="badge badge-yellow">NEW</span></td>
+            <td>0</td>
+            <td>2025-08-02</td>
+            <td>2/2</td>
+        </tr>
+        
+        <tr>
+            <td>129</td>
+            <td><strong><a href="https://www.start.gg/user/1b74e6f3" target="_blank">Dantemajin</a></strong> <span class="badge badge-red">DQ</span><span class="badge badge-yellow">NEW</span></td>
+            <td>0</td>
+            <td>2025-08-02</td>
+            <td>0/2</td>
+        </tr>
+        
+        <tr>
+            <td>129</td>
+            <td><strong><a href="https://www.start.gg/user/5660620c" target="_blank">NFR | Naevis</a></strong> <span class="badge badge-red">DQ</span><span class="badge badge-yellow">NEW</span></td>
+            <td>0</td>
+            <td>2025-08-02</td>
+            <td>0/2</td>
+        </tr>
+        
+        <tr>
+            <td>129</td>
+            <td><strong><a href="https://www.start.gg/user/7610569e" target="_blank">NFR | NSS | Mina</a></strong> <span class="badge badge-red">DQ</span><span class="badge badge-yellow">NEW</span></td>
+            <td>0</td>
+            <td>2025-08-02</td>
+            <td>2/3</td>
+        </tr>
+        
+        <tr>
+            <td>129</td>
+            <td><strong><a href="https://www.start.gg/user/40627b13" target="_blank">WL | Wryly</a></strong> <span class="badge badge-red">DQ</span><span class="badge badge-yellow">NEW</span></td>
+            <td>0</td>
+            <td>2025-08-02</td>
+            <td>0/2</td>
+        </tr>
+        
+        <tr>
+            <td>129</td>
+            <td><strong><a href="https://www.start.gg/user/4aeda896" target="_blank">NCB</a></strong> <span class="badge badge-red">DQ</span><span class="badge badge-purple">VET</span></td>
+            <td>22</td>
+            <td>2017-08-20</td>
+            <td>0/2</td>
+        </tr>
+        
+        <tr>
+            <td>129</td>
+            <td><strong><a href="https://www.start.gg/user/c3212404" target="_blank">easy K.O.</a></strong> <span class="badge badge-red">DQ</span><span class="badge badge-yellow">NEW</span></td>
+            <td>0</td>
+            <td>2025-08-02</td>
+            <td>0/2</td>
+        </tr>
+        </tbody>
+                </table>
+            </div>
+        </section>
+
+        <footer>
+            <p>Report generated: 2026-01-17 21:46:01</p>
+            <p>Data source: <a href="https://www.start.gg/tournament/sm-cyberzone-challenger-series-at-sm-city-north-edsa/event/tekken-8" target="_blank">start.gg</a></p>
+        </footer>
+    </div>
+</body>
+</html>
